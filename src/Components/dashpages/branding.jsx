@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+// import "animate.css";
 
 function branding() {
-    return (
-        <div>
-            Branding
-        </div>
-    )
+  return <div className="animate__animated animate__backInUp">Branding</div>;
 }
 
-export default branding
+export default branding;

@@ -15,6 +15,10 @@ function Dashboard() {
   }, []);
   return (
     <>
+      {/* <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="polina.webm" type="video/webm" />
+        <source src="../Video/coffee.mp4" type="video/mp4" />
+      </video> */}
       <div style={{ height: "25vh" }} />
       <div className="section  mt-3 fluid-container text-light">
         <h1
@@ -85,6 +89,7 @@ function Dashboard() {
       <style jsx>{`
         .section h1 {
           color: #ffe462;
+          // color: black;
           text-align: center;
           margin-bottom: 50px;
         }
