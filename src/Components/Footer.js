@@ -14,7 +14,7 @@ function Footer() {
             <table>
               <tr>
                 <td>
-                  <img src={Logo} style={{height:"60px"}}  />
+                  <img src={Logo} style={{height:"60px"}} alt="icon"  />
                 </td>
                 <td className="iconText">
                   We are a team of creatives who are

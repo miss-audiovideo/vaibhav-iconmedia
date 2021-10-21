@@ -40,8 +40,8 @@ const App = () => {
             </HeadingContent>
             <SliderGallery />
             <SliderGalleryReverse />
-            <HeadingContent class="text-center text-capitalize display-3 w-lg-50 w-100 mx-auto slider-reverse-position">
-            </HeadingContent>
+            {/* <HeadingContent class="text-center text-capitalize display-3 w-lg-50 w-100 mx-auto slider-reverse-position">
+            </HeadingContent> */}
             <Dashboard />
             <Testimonial />
             <Quote />
