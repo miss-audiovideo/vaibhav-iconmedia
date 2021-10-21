@@ -15,13 +15,13 @@ const FirstPage = () => {
                 <h1 className="heading_Content animate__animated animate__backInUp">
                   Do you need help with your graphic design ?
                 </h1>
-                <button className="btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__infinite">
+                <button className="btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__slower animate__infinite">
                   Get in Touch
                 </button>
               </div>
               <div className="col-md-6 col-12 order-lg-2 order-1 mx-auto">
                 <img
-                  className="img-fluid container-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite"
+                  className="img-fluid container-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower"
                   src={twelve}
                   alt="main_img"
                 />
