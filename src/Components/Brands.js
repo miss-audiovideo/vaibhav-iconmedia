@@ -1,6 +1,6 @@
 import React from "react";
 import Brand from "./Brand";
-
+// Import ***************************
 const Brands = () => {
   return (
     <>
@@ -19,7 +19,7 @@ const Brands = () => {
             name={"WEICHAI ©"}
             class="py-lg-3 text-center brand-common second-brand animate__animated animate__bounce "
           />
-          {/*brand*/}
+
           <Brand
             name={"SCOTTVEST"}
             class="py-lg-3 text-center brand-common third-brand animate__animated animate__bounce animate__infinite animate__slower"
