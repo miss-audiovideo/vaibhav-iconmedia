@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg pt-lg-4">
         <div className="container-fluid">
-          <Link className="navbar-brand mt-2 ms-5" to="/">
+          <Link className="navbar-brand mt-2 ms-5" to="/vaibhav-iconmedia">
             <img src={homeLogo} width="120px" alt="Main_logo" />
           </Link>
           <button
