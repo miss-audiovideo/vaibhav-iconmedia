@@ -17,10 +17,10 @@ function printDesign() {
         </video> */}
 
         <div className="left">
-          <h1 className="animate__animated animate__fadeInUp animate__slow">
+          <h1 className="animate__animated animate__fadeInUp animate__slow left_h1">
             Print Design
           </h1>
-          <div className="left-img">
+          <div className="left-img animate__animated animate__fadeInUp animate__slow">
             <img className="left-img-one gap" src={Layer6} alt="" />
             <img className="left-img-one gap" src={Layer4} alt="" />
             <img className="left-img-one gap" src={Layer1} alt="" />
@@ -39,14 +39,12 @@ function printDesign() {
             <img src={Layer6} alt="" />
             <img className="shadow" src={Layer7} alt="" /> */}
           {/* </div> */}
-          <div className="right-img">
-            <img src={Layer5} alt="" />
-          </div>
+          <div className="right-img">{/* <img src={Layer5} alt="" /> */}</div>
         </div>
       </div>
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
-        h1 {
+        .left_h1 {
           font-family: "Rampart One", cursive;
         }
         .shadow {
