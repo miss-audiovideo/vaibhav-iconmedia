@@ -24,7 +24,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/vaibhav-iconmedia">
             <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent">
               Get the attention your brand deserves
             </HeadingContent>
