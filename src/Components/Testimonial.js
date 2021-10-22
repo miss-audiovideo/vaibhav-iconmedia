@@ -3,9 +3,9 @@ import React from "react";
 function Testimonial() {
   return (
     <>
-    
+
       <div className="testimonials" >
-        <h1 >
+        <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
           Less process,
           <br />
           more productivity
@@ -18,44 +18,45 @@ function Testimonial() {
         </p>
 
         <div className="testimonials">
-        <h2 style={{fontFamily: "Quicksand", }}>Testimonials</h2>
-        <div className="cardsTest">
-          <div className="testcards">
-            <div className="testcards1"></div>
-            <div className="testcards2"></div>
-            <div className="testcards3"></div>
-          </div>
-          <div className="text">
-            <div className="client">
-              <h3>Client name</h3>
-              <p className="color">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                laboriosam ipsum consequatur atque at! Tempore nam dolorum
-                fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
-                suscipit delectus veritatis quidem, dolor vitae non.
-              </p>
+          <h2 style={{ fontFamily: "Quicksand" }} className=" animate__animated animate__zoomIn animate__infinite animate__slower">Testimonials</h2>
+          <div className="cardsTest">
+            <div className="testcards">
+              <div className="testcards1 animate__animated animate__bounce animate__infinite animate__slower"></div>
+              <div className="testcards2 animate__animated animate__bounce animate__infinite animate__slower"></div>
+              <div className="testcards3 animate__animated animate__bounce animate__infinite animate__slower"></div>
             </div>
-            <div className="client">
-              <h3>Client name</h3>
-              <p className="color">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                laboriosam ipsum consequatur atque at! Tempore nam dolorum
-                fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
-                suscipit delectus veritatis quidem, dolor vitae non.
-              </p>
-            </div>
-            <div className="client">
-              <h3>Client name</h3>
-              <p className="color">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                laboriosam ipsum consequatur atque at! Tempore nam dolorum
-                fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
-                suscipit delectus veritatis quidem, dolor vitae non.
-              </p>
+            <div className="text">
+              <div className="client">
+                <h3>Client name</h3>
+                <p className="color">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                  laboriosam ipsum consequatur atque at! Tempore nam dolorum
+                  fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
+                  suscipit delectus veritatis quidem, dolor vitae non.
+                </p>
+              </div>
+              <div className="client">
+                <h3>Client name</h3>
+                <p className="color">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                  laboriosam ipsum consequatur atque at! Tempore nam dolorum
+                  fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
+                  suscipit delectus veritatis quidem, dolor vitae non.
+                </p>
+              </div>
+              <div className="client">
+                <h3>Client name</h3>
+                <p className="color">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                  laboriosam ipsum consequatur atque at! Tempore nam dolorum
+                  fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
+                  suscipit delectus veritatis quidem, dolor vitae non.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div></div>
+      </div>
       <style jsx>{`
         .testimonials h1,
         h2 {
