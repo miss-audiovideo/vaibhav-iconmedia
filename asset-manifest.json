@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/vaibhav-iconmedia/static/css/main.ee3fe1ee.chunk.css",
-    "main.js": "/vaibhav-iconmedia/static/js/main.794d6b03.chunk.js",
-    "main.js.map": "/vaibhav-iconmedia/static/js/main.794d6b03.chunk.js.map",
-    "runtime-main.js": "/vaibhav-iconmedia/static/js/runtime-main.47cfb9c3.js",
-    "runtime-main.js.map": "/vaibhav-iconmedia/static/js/runtime-main.47cfb9c3.js.map",
-    "static/css/2.0623869f.chunk.css": "/vaibhav-iconmedia/static/css/2.0623869f.chunk.css",
-    "static/js/2.32f6c4b5.chunk.js": "/vaibhav-iconmedia/static/js/2.32f6c4b5.chunk.js",
-    "static/js/2.32f6c4b5.chunk.js.map": "/vaibhav-iconmedia/static/js/2.32f6c4b5.chunk.js.map",
-    "static/js/3.2e7c56ce.chunk.js": "/vaibhav-iconmedia/static/js/3.2e7c56ce.chunk.js",
-    "static/js/3.2e7c56ce.chunk.js.map": "/vaibhav-iconmedia/static/js/3.2e7c56ce.chunk.js.map",
+    "main.js": "/vaibhav-iconmedia/static/js/main.10587dfc.chunk.js",
+    "main.js.map": "/vaibhav-iconmedia/static/js/main.10587dfc.chunk.js.map",
+    "runtime-main.js": "/vaibhav-iconmedia/static/js/runtime-main.0e97f03f.js",
+    "runtime-main.js.map": "/vaibhav-iconmedia/static/js/runtime-main.0e97f03f.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/vaibhav-iconmedia/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.42d1617b.chunk.js": "/vaibhav-iconmedia/static/js/2.42d1617b.chunk.js",
+    "static/js/2.42d1617b.chunk.js.map": "/vaibhav-iconmedia/static/js/2.42d1617b.chunk.js.map",
+    "static/js/3.5524dcba.chunk.js": "/vaibhav-iconmedia/static/js/3.5524dcba.chunk.js",
+    "static/js/3.5524dcba.chunk.js.map": "/vaibhav-iconmedia/static/js/3.5524dcba.chunk.js.map",
     "index.html": "/vaibhav-iconmedia/index.html",
-    "static/css/2.0623869f.chunk.css.map": "/vaibhav-iconmedia/static/css/2.0623869f.chunk.css.map",
+    "static/css/2.0a9ec390.chunk.css.map": "/vaibhav-iconmedia/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.ee3fe1ee.chunk.css.map": "/vaibhav-iconmedia/static/css/main.ee3fe1ee.chunk.css.map",
-    "static/js/2.32f6c4b5.chunk.js.LICENSE.txt": "/vaibhav-iconmedia/static/js/2.32f6c4b5.chunk.js.LICENSE.txt",
+    "static/js/2.42d1617b.chunk.js.LICENSE.txt": "/vaibhav-iconmedia/static/js/2.42d1617b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/vaibhav-iconmedia/static/media/9.cb68d7cd.jpg",
     "static/media/8.c64c57bb.jpg": "/vaibhav-iconmedia/static/media/8.c64c57bb.jpg",
     "static/media/Layer17.782a5ce5.png": "/vaibhav-iconmedia/static/media/Layer17.782a5ce5.png",
@@ -39,10 +39,10 @@
     "static/media/watch.c9cd9f49.mp4": "/vaibhav-iconmedia/static/media/watch.c9cd9f49.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.47cfb9c3.js",
-    "static/css/2.0623869f.chunk.css",
-    "static/js/2.32f6c4b5.chunk.js",
+    "static/js/runtime-main.0e97f03f.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.42d1617b.chunk.js",
     "static/css/main.ee3fe1ee.chunk.css",
-    "static/js/main.794d6b03.chunk.js"
+    "static/js/main.10587dfc.chunk.js"
   ]
 }
