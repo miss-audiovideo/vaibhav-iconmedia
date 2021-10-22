@@ -10,9 +10,11 @@ function Quote() {
           <br />
           impact on your business.
         </h1>
-        <Button btnSize="btn--medium" btnStyle="btn--white">
-          Design A Quote
-        </Button>
+        <div className="box">
+          <button className="btn btn-outline-warning btnsize">
+            Design A Quote
+          </button>
+        </div>
       </div>
       <style jsx>{`
         .quote h1 {
@@ -28,6 +30,17 @@ function Quote() {
           
             flex-direction: column;
             justify-content: center;
+        }
+        .box{ margin: 0;
+          position: absolute; 
+          top: 70%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        .btnsize{
+          
+          width: 205px;
         }
         @media screen and (max-width: 500px) {
           .quote h1 {
