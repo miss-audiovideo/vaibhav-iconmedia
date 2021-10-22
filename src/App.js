@@ -10,13 +10,14 @@ import MainCard from "./Components/MainCard";
 import FirstPage from "./Components/FirstPage";
 import Brands from "./Components/Brands";
 import Profile from "./Components/Profile";
-import SliderGallery from "./Components/SliderGallery"
+import SliderGallery from "./Components/SliderGallery";
 import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
 import Dashboard from "./Components/Dashboard";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
+import "animate.css";
 
 const App = () => {
   return (
@@ -25,10 +26,10 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/vaibhav-iconmedia">
-            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent">
+            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInLeft">
               Get the attention your brand deserves
             </HeadingContent>
-            <HeadingParagraph class="mt-3 mx-auto text-center text-capitalize headingPara">
+            <HeadingParagraph class="mt-3 mx-auto text-center text-capitalize headingPara animate__animated animate__rubberBand">
               Get quality design without the cost & complexity
             </HeadingParagraph>
             <MainCard />
