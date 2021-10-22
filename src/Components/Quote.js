@@ -11,9 +11,7 @@ function Quote() {
           impact on your business.
         </h1>
         <div className="box">
-          <button className="btn btn-outline-warning btnsize">
-            Design A Quote
-          </button>
+         
         </div>
       </div>
       <style jsx>{`

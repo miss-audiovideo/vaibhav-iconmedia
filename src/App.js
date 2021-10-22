@@ -17,7 +17,7 @@ import Dashboard from "./Components/Dashboard";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
-import "animate.css";
+
 
 const App = () => {
   return (
