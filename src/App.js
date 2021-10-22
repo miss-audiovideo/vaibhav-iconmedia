@@ -5,7 +5,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import HeadingContent from "./Components/HeadingContent";
-import HeadingParagraph from ".//Components/HeadingParagraph";
+import HeadingParagraph from "./Components/HeadingParagraph";
 import MainCard from "./Components/MainCard";
 import FirstPage from "./Components/FirstPage";
 import Brands from "./Components/Brands";
