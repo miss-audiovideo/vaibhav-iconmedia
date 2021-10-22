@@ -109,7 +109,7 @@ function Footer() {
         @media screen and (max-width: 800px) {
           .light {
             height: 500px;
-            padding: 20px 20px 0 20px;
+            padding: 20px 20px 20px 20px;
           }
           .contact {
             display: flex;

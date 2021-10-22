@@ -35,7 +35,7 @@ body {
 }
 .first_card {
   position: relative;
-  bottom: 70px;
+  bottom: 40px;
 }
 .second_card {
   position: relative;
@@ -197,7 +197,7 @@ body {
 
 .slide:nth-child(1),
 .slide:nth-child(10) {
-  background: url(./Components/images/one.jpg);
+  background: url(./Components/images/gallary/1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,7 +206,7 @@ body {
 
 .slide:nth-child(2),
 .slide:nth-child(11) {
-  background: url(./Components/images/two.jpg);
+  background: url(./Components/images/gallary/2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +215,7 @@ body {
 
 .slide:nth-child(3),
 .slide:nth-child(12) {
-  background: url(./Components/images/five.jpg);
+  background: url(./Components/images/gallary/3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -224,7 +224,7 @@ body {
 
 .slide:nth-child(4),
 .slide:nth-child(13) {
-  background: url(./Components/images/six.jpg);
+  background: url(./Components/images/gallary/4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,7 +233,7 @@ body {
 
 .slide:nth-child(5),
 .slide:nth-child(14) {
-  background: url(./Components/images/eight.jpg);
+  background: url(./Components/images/gallary/5.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -242,7 +242,7 @@ body {
 
 .slide:nth-child(6),
 .slide:nth-child(15) {
-  background: url(./Components/images/slidersix.png);
+  background: url(./Components/images/gallary/6.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +251,7 @@ body {
 
 .slide:nth-child(7),
 .slide:nth-child(16) {
-  background: url(./Components/images/sliderfive.png);
+  background: url(./Components/images/gallary/7.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -260,7 +260,7 @@ body {
 
 .slide:nth-child(8),
 .slide:nth-child(17) {
-  background: url(./Components/images/slidertwo.png);
+  background: url(./Components/images/gallary/8.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,7 +269,7 @@ body {
 
 .slide:nth-child(9),
 .slide:nth-child(18) {
-  background: url(./Components/images/sliderone.png);
+  background: url(./Components/images/gallary/9.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -464,7 +464,7 @@ font-size: 30px;
   }
   .small-screen2 {
     position: relative !important;
-    top: 0px !important;
+    top: 25px !important;
   }
   .small-screen3 {
     position: relative !important;
@@ -479,11 +479,11 @@ font-size: 30px;
     flex-wrap: wrap;
   }
   .small-screen4 .card_img {
-    left: 50px;
+    left: 7%;
     width: 32% !important;
   }
   .small-screen4 .img_one {
-    left: -50px;
+    left: -7%;
     position: relative !important;
   }
 
@@ -626,6 +626,7 @@ font-size: 30px;
   }
   .small-screen4 .img_two {
     position: relative !important;
+    top: -35px;
     right: -7% !important;
   }
    .profile-bg {
