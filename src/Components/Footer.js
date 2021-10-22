@@ -31,7 +31,7 @@ function Footer() {
             </table>
             <div className="quickLinks">
               <ul>
-                <li className="heading">Quick Links</li>
+                <li className="heading txsi">Quick Links</li>
                 <li>About</li>
                 <li>Careers</li>
                 <li>Make Payment</li>
@@ -84,7 +84,11 @@ function Footer() {
           padding-left: 10px;
         }
         .textYellow {
+          font-size: 25px;
           color: #ffe462;
+        }
+        .txsi{
+          font-size: 25px;
         }
         .contact {
           display: flex;
@@ -105,7 +109,7 @@ function Footer() {
         @media screen and (max-width: 800px) {
           .light {
             height: 500px;
-            padding: 20px 20px 0 20px;
+            padding: 20px 20px 20px 20px;
           }
           .contact {
             display: flex;

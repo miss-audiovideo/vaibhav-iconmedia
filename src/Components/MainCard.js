@@ -64,7 +64,7 @@ const MainCard = () => {
         />
         <Cards
           src={fCard.sixth}
-          class="d-flex flex-column second_card small-screen3 col-md-2 mx-auto"
+          class="d-flex flex-column second_card small-screen3 col-2 mx-auto"
         />
         <Cards
           src={fCard.seventh}

@@ -15,10 +15,16 @@ function Dashboard() {
   }, []);
   return (
     <>
-
-    <div style={{height:"25vh"}}/>
-      <div className="section  mt-3 fluid-container text-light" >
-        <h1 className="mt-3" style={{fontSize:"55px",fontFamily:"Quicksand,sans-serif"}}>
+      {/* <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="polina.webm" type="video/webm" />
+        <source src="../Video/coffee.mp4" type="video/mp4" />
+      </video> */}
+      <div style={{ height: "25vh" }} />
+      <div className="section  mt-3 fluid-container text-light">
+        <h1
+          className="mt-3 animate__animated animate__zoomIn animate__repeat-2s"
+          style={{ fontSize: "55px", fontFamily: "Quicksand,sans-serif" }}
+        >
           We can design just
           <br /> about anything
         </h1>

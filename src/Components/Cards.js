@@ -1,5 +1,5 @@
 import React from "react";
-// import Image from "./Video/default-image.png";
+import Image from "./Video/default-image.png";
 
 import HoverVideoPlayer from 'react-hover-video-player';
 
@@ -14,7 +14,7 @@ const Cards = (props) => {
           className="card_img img_one"
         /> */}
 
-        <img className="card_img img_one" src={props.src.first} alt="" srcset="" />
+        <img className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite" src={props.src.first} alt="" srcset="" />
     
         <HoverVideoPlayer
             videoSrc={props.src.second}
@@ -52,9 +52,6 @@ const Cards = (props) => {
               />
             }
           /> */}
-
-
-        
       </div>
     </>
   );

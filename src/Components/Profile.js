@@ -7,20 +7,20 @@ const Profile = () => {
   return (
     <>
       <div className="profile-bg text-center ">
-        <h1 className="profile-heading display-4">The right team for job!</h1>
+        <h1 className="profile-heading display-4 animate__animated animate__slideInRight">The right team for job!</h1>
         <div className="container d-flex justify-content-between align-items-center">
           <div class="profile d-flex justify-content-center align-items-center " >
-            <img src={profile1} className = "img-fluid profile-img" alt="Profile_picture" />
+            <img src={profile1} className = "img-fluid profile-img animate__animated animate__bounce animate__infinite" alt="Profile_picture" />
             <p className = "profile-member">Team Member</p>
             <p className = "profile-member-position">founder</p>
           </div>
           <div class="profile d-flex justify-content-center align-items-center " >
-            <img src={profile2} className = "img-fluid profile-img" alt="Profile_picture" />
+            <img src={profile2} className = "img-fluid profile-img  animate__animated animate__bounce animate__infinite" alt="Profile_picture" />
             <p className = "profile-member">Team Member</p>
             <p className = "profile-member-position">designer</p>
           </div>
           <div class="profile d-flex justify-content-center align-items-center " >
-            <img src={profile3} className = "img-fluid profile-img" alt="Profile_picture" />
+            <img src={profile3} className = "img-fluid profile-img animate__animated animate__bounce animate__infinite" alt="Profile_picture" />
             <p className = "profile-member">Team Member</p>
             <p className = "profile-member-position">animator</p>
           </div>
