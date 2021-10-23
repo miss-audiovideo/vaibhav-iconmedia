@@ -8,7 +8,7 @@ const Navbar = () => {
       <Router>
         <nav style={{ backgroundColor: '#2b0405' }} className="navbar navbar-expand-lg navbar-dark ">
           <div className="container">
-            <Link to="/vaibhav-iconmedia" className="navbar-brand mt-2 ms-5">
+            <Link to="/vaibhav-iconmedia" className="navbar-brand">
               <img className="text-white" width="100px" height="30px" src={homeLogo} alt="main_logo"/> 
             </Link>
             <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

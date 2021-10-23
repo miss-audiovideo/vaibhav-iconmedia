@@ -357,7 +357,7 @@ font-size: 30px;
   }
   .small-screen4 .img_one {
     position: relative !important;
-    bottom: 80px !important ;
+    bottom: 70px !important ;
   }
 
   .headingContent {
@@ -460,15 +460,15 @@ font-size: 30px;
   }
   .small-screen1 {
     position: relative;
-    top: 90px;
+    top: 30px;
   }
   .small-screen2 {
     position: relative !important;
-    top: 25px !important;
+    top: 30px !important;
   }
   .small-screen3 {
     position: relative !important;
-    top: 70px !important;
+    top: 30px !important;
   }
   .small-screen4 {
     width: 100%;
@@ -626,7 +626,7 @@ font-size: 30px;
   }
   .small-screen4 .img_two {
     position: relative !important;
-    top: -35px;
+    top: -70px;
     right: -7% !important;
   }
    .profile-bg {
@@ -734,8 +734,8 @@ font-size: 30px;
 @media (min-width: 300px) and (max-width: 400px) {
   .container {
     display: flex !important; 
-    flex-direction: column !important;
-    justify-content: center !important;
+    /* flex-direction: column !important;*/
+    /* justify-content: center !important;  */
     align-items: center !important;
   }
   .profile {
