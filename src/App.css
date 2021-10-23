@@ -680,7 +680,7 @@ font-size: 30px;
     top: 30px !important;
   }
   .profile-bg {
-    height: 140vh;
+    height: 150vh;
   }
 }
 
@@ -702,7 +702,7 @@ font-size: 30px;
     width: 100%;
   }
   .gallery{
-    margin-top: 490px !important;
+    margin-top: 250px !important;
   }
   .container-img{
     position: relative;
