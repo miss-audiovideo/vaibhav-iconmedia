@@ -560,6 +560,7 @@ font-size: 30px;
   }
   .profile-bg {
     height: 45vh;
+    margin-bottom: 250px;
   }
   .profile {
     position: relative !important;
@@ -630,7 +631,7 @@ font-size: 30px;
     right: -7% !important;
   }
    .profile-bg {
-    height: 60vh;
+    height: 45vh;
   }
 }
 
@@ -691,7 +692,7 @@ font-size: 30px;
     bottom: 10px;
   }
   .profile-bg {
-    height: 40vh;
+    height: 38vh;
   }
   .profile {
     position: relative;
@@ -719,7 +720,7 @@ font-size: 30px;
     top: -50px;
   }
   .profile-bg {
-    height:30vh;
+    height:33vh;
   }
   .profile-heading {
     position: relative;
@@ -745,7 +746,7 @@ font-size: 30px;
     top: 30px !important;
   }
   .profile-bg {
-    height: 175vh;
+    height: 37vh;
   }
   
   .container-img{
