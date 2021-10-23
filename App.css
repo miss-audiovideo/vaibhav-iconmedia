@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Italianno&family=Lobster&family=Noto+Sans+Display:wght@300&family=Nova+Oval&display=swap");
-
+/* hello */
 * {
   padding: 0;
   margin: 0;
@@ -276,14 +276,14 @@ body {
   background-origin: border-box;
 }
 
-.testimonials h1{
+.testimonials h1 {
   margin-top: 300px;
   font-family: "Quicksand";
 }
-.testimonials h2{
-  margin-top:200px ;
-font-family:"Quicksand";
-font-size: 30px;
+.testimonials h2 {
+  margin-top: 200px;
+  font-family: "Quicksand";
+  font-size: 30px;
 }
 @keyframes scroll {
   0% {
@@ -312,7 +312,7 @@ font-size: 30px;
   top: 250px !important;
 }
 
- @media (max-width: 740px) {
+@media (max-width: 740px) {
   .main_card_flex {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -371,25 +371,25 @@ font-size: 30px;
   .profile-member {
     width: 100%;
   }
-  .container-img{
+  .container-img {
     width: 60%;
     left: 20% !important;
   }
-  .first_div{
+  .first_div {
     width: 70%;
     text-align: center;
   }
-  .heading_Para{
+  .heading_Para {
     margin: 20px 0 10px 0 !important;
   }
 
-  .brand-common{
+  .brand-common {
     font-size: 0.8rem;
   }
-  .third-brand{
+  .third-brand {
     font-size: 0.8rem !important;
   }
-  .brand-line{
+  .brand-line {
     margin: 60px auto 20px auto !important;
   }
 }
@@ -437,8 +437,7 @@ font-size: 30px;
 
 /* newly added */
 
-
- @media (max-width: 740px) {
+@media (max-width: 740px) {
   .main_card_flex {
     /* display: flex !important; */
     flex-wrap: wrap !important;
@@ -525,7 +524,7 @@ font-size: 30px;
     position: relative;
   }
 
-  .profile-member{
+  .profile-member {
     margin-top: 20px;
   }
   .first_div {
@@ -548,7 +547,6 @@ font-size: 30px;
   .brand-common {
     padding: 5px 0;
   }
-  
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -609,46 +607,44 @@ font-size: 30px;
     line-height: 2.7rem;
   }
 
-  .brand-common{
+  .brand-common {
     font-size: 0.8rem;
   }
-  .third-brand{
+  .third-brand {
     font-size: 0.8rem !important;
   }
-  .brand-line{
+  .brand-line {
     margin: 60px auto 20px auto !important;
   }
 }
-@media (max-width: 690px){
+@media (max-width: 690px) {
   .small-screen4 .img_one {
     position: relative !important;
     right: 25% !important;
   }
   .small-screen4 .img_two {
     position: relative !important;
-    
   }
-   .profile-bg {
+  .profile-bg {
     height: 100vh;
   }
 }
 
-@media (max-width: 485px){
-  .brand-common{
+@media (max-width: 485px) {
+  .brand-common {
     width: 30% !important;
     padding: 10px !important;
     text-align: center;
   }
   .headingContent {
-    width: 90%  !important;
+    width: 90% !important;
     line-height: 2.7rem;
   }
 
   .headingPara {
     width: 90%;
   }
-
- }
+}
 @media (max-width: 300px) {
   .brand-common {
     width: 40% !important;
@@ -699,10 +695,10 @@ font-size: 30px;
   .profile-member {
     width: 100%;
   }
-  .gallery{
+  .gallery {
     margin-top: 490px !important;
   }
-  .container-img{
+  .container-img {
     position: relative;
     left: -1% !important;
   }
@@ -713,28 +709,28 @@ font-size: 30px;
     font-size: 16px;
     width: 100%;
   }
-  
+
   .profile {
     position: relative;
     top: -50px;
   }
   .profile-bg {
-    height:30vh;
+    height: 30vh;
   }
   .profile-heading {
     position: relative;
     bottom: 40px !important;
   }
-  
-  .container-img{
+
+  .container-img {
     position: relative;
     left: -1% !important;
   }
-} 
+}
 
 @media (min-width: 300px) and (max-width: 400px) {
   .container {
-    display: flex !important; 
+    display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
@@ -748,8 +744,8 @@ font-size: 30px;
   .profile-bg {
     height: 175vh;
   }
-  
-  .container-img{
+
+  .container-img {
     position: relative;
     left: -1% !important;
   }
@@ -761,10 +757,8 @@ font-size: 30px;
     left: 8%;
   }
 }
-@media screen and (width:480px){
-  .container-img{
+@media screen and (width: 480px) {
+  .container-img {
     display: none;
   }
-  
 }
-
