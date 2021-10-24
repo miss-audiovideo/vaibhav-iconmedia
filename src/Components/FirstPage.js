@@ -4,7 +4,7 @@ import twelve from "./images/twelve.jpg";
 const FirstPage = () => {
   return (
     <>
-      <div className="container-fluid my-lg-5 py-lg-5 ">
+      <div className="container-fluid my-lg-5 py-lg-5 top-mrgn">
         <div className="row mt-lg-5 pt-lg-5">
           <div className="col-md-10 mx-auto">
             <div className="row d-flex justify-content-center align-items-center">

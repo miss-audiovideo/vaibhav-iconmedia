@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
+import ThreeCards from "./ThreeCards";
 import img1 from "./images/8.jpg";
 import video1 from "./Video/coffee.mp4";
 import video2 from "./Video/video.mp4";
@@ -50,25 +51,25 @@ const MainCard = () => {
   return (
     <>
       <div class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2">
-        <Cards
+        <ThreeCards
           src={fCard}
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
         <Cards
           src={fCard.fourth}
-          class="d-flex flex-column second_card small-screen1 col-2 mx-auto"
+          class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
         />
         <Cards
           src={fCard.fifth}
-          class="d-flex flex-column third_card small-screen2 col-2 mx-auto"
+          class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
         />
         <Cards
           src={fCard.sixth}
-          class="d-flex flex-column second_card small-screen3 col-2 mx-auto"
+          class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
         />
-        <Cards
+        <ThreeCards
           src={fCard.seventh}
-          class="d-flex flex-column first_card small-screen4 col-2 mx-auto"
+          class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
       </div>
     </>

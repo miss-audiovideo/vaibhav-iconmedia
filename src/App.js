@@ -49,13 +49,13 @@ const App = () => {
             <Footer />
           </Route>
 
-          <Route path={process.env.PUBLIC_URL + '/about'}>
+          <Route path='/about'>
             <FirstPage />
             <Brands />
             <Footer />
           </Route>
 
-          <Route path={process.env.PUBLIC_URL + '/gallery'}>
+          <Route path='/gallery'>
             <div className="fluid-container mb-3">
               <SliderGallery />
               <SliderGalleryReverse />
@@ -63,7 +63,7 @@ const App = () => {
             <Footer className="mt-3" />
           </Route>
 
-          <Route path={process.env.PUBLIC_URL + '/get-in-touch'}>
+          <Route path='/get-in-touch'>
             <Contact />
             <Testimonial />
             <Quote />

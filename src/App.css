@@ -41,14 +41,14 @@ body {
 }
 .first_card {
   position: relative;
-  bottom: 40px;
+  bottom: 0px;
 }
 .second_card {
   position: relative;
-  top: 30px;
+  top: 0px;
 }
 .third_card {
-  top: 90px;
+  top: 70px;
   position: relative;
 }
 .card_img {
@@ -399,6 +399,13 @@ font-size: 30px;
     margin: 60px auto 20px auto !important;
   }
 }
+.d-flex-c {
+  display: flex;
+}
+.top-mrgn{
+  margin-top: 50px;
+}
+
 /* @media (max-width: 690px){
   .small-screen4 .img_one {
     position: relative !important;
@@ -467,14 +474,17 @@ font-size: 30px;
   .small-screen1 {
     position: relative;
     top: 30px;
+    display: none;
   }
   .small-screen2 {
     position: relative !important;
     top: 30px !important;
+    display: none;
   }
   .small-screen3 {
     position: relative !important;
     top: 30px !important;
+    display: none;
   }
   .small-screen4 {
     width: 100%;
