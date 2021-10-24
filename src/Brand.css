@@ -1,0 +1,12 @@
+.brand-img {
+  /* width: 100px; */
+  /* height: 100px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  /* color: #ffe462; */
+  /* background-image: url("./Components/images/Testimonials\ BG.png"); */
+}

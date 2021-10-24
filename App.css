@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Italianno&family=Lobster&family=Noto+Sans+Display:wght@300&family=Nova+Oval&display=swap");
-/* hello */
+
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +12,9 @@
 }
 body {
   background: #2b0505 !important;
+}
+.heading-contentOne {
+  color: #ffc107;
 }
 .nav-style {
   font-family: "Poppins", sans-serif !important;
@@ -22,6 +25,9 @@ body {
   font-family: "Quicksand", sans-serif !important;
   padding-top: 10rem;
   line-height: 4.1rem;
+}
+.heading-contentTwo {
+  color: white;
 }
 .headingPara {
   width: 28%;

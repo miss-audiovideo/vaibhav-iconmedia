@@ -1,20 +1,22 @@
 import React from "react";
 import Logo from "./images/homeLogo.png";
+import facebook from "./images/facebook.png";
+import instagram from "./images/instagram.png";
+import twitter from "./images/twitter.png";
+import linkedin from "./images/linkedin.png";
 
 function Footer() {
   return (
     <>
-    {/* <div className="bg-dark"> */}
+      {/* <div className="bg-dark"> */}
 
-
-        <div className=" light text-light">
-          <section className="container">
+      <div className=" light text-light">
+        <section className="container">
           <div className="contact">
-
             <table>
               <tr>
                 <td>
-                  <img src={Logo} style={{height:"60px"}} alt="icon"  />
+                  <img src={Logo} style={{ height: "60px" }} alt="icon" />
                 </td>
                 <td className="iconText">
                   We are a team of creatives who are
@@ -39,35 +41,46 @@ function Footer() {
               </ul>
             </div>
           </div>
-          </section>
-        </div>
-        <div className=" copy-social-container ">
-          <div className="container copy-social text-light">
-          <small > &#169;  2021,Icon Media House. Made &#10084; with in Toronto.
+        </section>
+      </div>
+      <div className=" copy-social-container ">
+        <div className="container copy-social text-light">
+          <small>
+            {" "}
+            &#169; 2021,Icon Media House. Made &#10084; with in Toronto.
           </small>
           <small className="text-end">
             Follow us on:
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-twitter"></i>
-            </small>
-          </div>
+            <i class="fab fa-facebook">
+              <img src={facebook} alt="" width="45px" height="45px" />
+            </i>
+            <i class="fab fa-instagram">
+              <img src={instagram} alt="" width="50px" height="50px" />
+            </i>
+            <i class="fab fa-linkedin-in">
+              <img src={linkedin} alt="" width="50px" height="50px" />
+            </i>
+            <i class="fab fa-twitter">
+              <img src={twitter} alt="" width="45px" height="45px" />
+            </i>
+          </small>
         </div>
+      </div>
       <style jsx>{`
-      .fa-facebook,.fa-instagram,.fa-linkedin-in,.fa-twitter{
-        font-size:1rem;
-        padding:0 10px;
-      }
+        .fa-facebook,
+        .fa-instagram,
+        .fa-linkedin-in,
+        .fa-twitter {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
         .light {
           height: 300px;
           background-color: #333333;
           padding: 50px;
         }
-        .copy-social-container{
+        .copy-social-container {
           background-color: #191919;
-
-
         }
         .copy-social {
           height: 50px;
@@ -87,7 +100,7 @@ function Footer() {
           font-size: 25px;
           color: #ffe462;
         }
-        .txsi{
+        .txsi {
           font-size: 25px;
         }
         .contact {
@@ -124,9 +137,7 @@ function Footer() {
           }
         }
       `}</style>
-    {/* </div> */}
-
-
+      {/* </div> */}
     </>
   );
 }

@@ -6,30 +6,71 @@ const Navbar = () => {
   return (
     <>
       <Router>
-        <nav style={{ backgroundColor: '#2b0405' }} className="navbar navbar-expand-lg navbar-dark ">
+        <nav
+          style={{ backgroundColor: "#2b0405" }}
+          className="navbar navbar-expand-lg navbar-dark "
+        >
           <div className="container">
             <Link to="/vaibhav-iconmedia" className="navbar-brand">
-              <img className="text-white" width="100px" height="30px" src={homeLogo} alt="main_logo"/> 
+              <img
+                className="text-white"
+                width="130px"
+                height="50px"
+                src={homeLogo}
+                alt="main_logo"
+              />
             </Link>
-            <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              className="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span className="navbar-toggler-icon text-white font-"></span>
             </button>
-            <div className="collapse navbar-collapse justify-content-end text-center" id="navbarNavDropdown">
+            <div
+              className="collapse navbar-collapse justify-content-end text-center"
+              id="navbarNavDropdown"
+            >
               <ul className="navbar-nav text-white">
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link text-white mt-2" aria-current="page">About</Link>
+                  <Link
+                    to="/about"
+                    className=" navbar-img nav-link text-white mt-2"
+                    aria-current="page"
+                  >
+                    About
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/gallery" className="nav-link text-white mt-2">Gallery</Link>
+                  <Link
+                    to="/gallery"
+                    className="navbar-img nav-link text-white mt-2"
+                  >
+                    Gallery
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/get-in-touch" className="nav-link"  ><button className="btn btn-outline-warning">Get In Touch</button></Link>
+                  <Link to="/get-in-touch" className="nav-link">
+                    <button className=" navbar-img btn btn-outline-warning">
+                      Get In Touch
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
       </Router>
+      <style jsx>{`
+        .navbar-img {
+          font-size: 22px;
+          font-weight: bold;
+        }
+      `}</style>
     </>
   );
 };
