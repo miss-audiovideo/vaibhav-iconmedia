@@ -23,6 +23,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
+        
         <Switch>
           <Route exact path="/vaibhav-iconmedia">
             <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInLeft">
@@ -52,25 +53,25 @@ const App = () => {
             <Footer />
           </Route>
 
-          <Route path='/about'>
-            <FirstPage />
+          <Route  exact path={'/about'}>
+  <FirstPage />
             <Brands />
             <Footer />
           </Route>
+ <Route  exact path={'/gallery'}>
 
-          <Route path='/gallery'>
+
             <div className="fluid-container mb-3">
               <SliderGallery />
               <SliderGalleryReverse />
             </div>
             <Footer className="mt-3" />
           </Route>
+<Route exact path={'/get-in-touch'}>
 
-          <Route path='/get-in-touch'>
-            <Contact />
-            <Testimonial />
-            <Quote />
-            <Footer />
+       
+      <Contact />
+           
           </Route>
         </Switch>
       </Router>

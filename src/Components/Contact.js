@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import { db } from "../firebase";
 import countryList from 'react-select-country-list'
-
+import emailjs from 'emailjs-com'
 const Contact = () => {
     const [email, setEmail] = useState("");
     const [first, setNameFirst] = useState("");
@@ -17,6 +17,7 @@ const Contact = () => {
     const changeHandler = (value) => {
         setValue(value);
     };
+
     // const [loader, setLoader] = useState(false);
     const toggle = (e) => {
         setState({ addClass: !addClass })
@@ -25,6 +26,30 @@ const Contact = () => {
     if (addClass) {
         boxClass.push('js-form');
     }
+
+    const sendEmail = () => {
+       
+
+        emailjs.send('service_4n9awhh',
+
+            'template_5vxcjyd',
+            {
+                email: email,
+                first: first,
+                last: last,
+                country: value,
+                company: company,
+                number: number,
+                comment: comment
+            },
+            'user_h6Ttnd80UW8eec5uK2xbM')
+
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     const handleSubmit = (e) => {
         e.preventDefault();
         // setLoader(true);
@@ -40,6 +65,7 @@ const Contact = () => {
             })
             .then(() => {
                 // setLoader(false);
+                sendEmail()
                 alert("Your message has been submitted👍");
             })
             .catch((error) => {
