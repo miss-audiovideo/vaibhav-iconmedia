@@ -1,6 +1,16 @@
 import React from "react";
 import Brand from "./Brand";
-
+import Allstate from "./images/Allstate.png";
+import Darkbean from "./images/Darkbean.png";
+import mistyvalley from "./images/mistyvalley.png";
+import pantheraazul from "./images/pantheraazul.png";
+import remax from "./images/RE_MAX.png";
+import snapfit from "./images/snapfit.png";
+import studio97 from "./images/studio97.png";
+import subway from "./images/Subway.png";
+import nozzle from "./images/Nozzle.png";
+import hudsonwatches from "./images/Hudson Watches.png";
+import "../Brands.css";
 const Brands = () => {
   return (
     <>
@@ -10,47 +20,47 @@ const Brands = () => {
         <h1 className="brand-line text-center pt-lg-5 pb-lg-4 animate__animated animate__jackInTheBox animate__delay-10s ">
           Leading Brands
         </h1>
-        <div className="container-fluid d-flex justify-content-center align-items-center flex-wrap mt-lg-4 mb-lg-4 brand-names mx-auto w-100">
+        <div className="brands">
           <Brand
-            name={"Rinnai"}
-            class="py-lg-3 text-center brand-common first-brand animate__animated animate__bounce  animate__infinite animate__slower"
+            src={Allstate}
+            class=" brand-img py-lg-3 text-brands-img first-brand animate__animated animate__bounce  animate__infinite animate__slower"
           />
           <Brand
-            name={"WEICHAI ©"}
-            class="py-lg-3 text-center brand-common second-brand animate__animated animate__bounce "
+            src={Darkbean}
+            class="brand-img py-lg-3 text-brands-img second-brand animate__animated animate__bounce "
           />
 
           <Brand
-            name={"SCOTTVEST"}
-            class="py-lg-3 text-center brand-common third-brand animate__animated animate__bounce animate__infinite animate__slower"
+            src={mistyvalley}
+            class="brand-img third-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
-            name={"ALLSTATE"}
-            class="py-lg-3 text-center brand-common fourth-brand animate__animated animate__bounce"
+            src={pantheraazul}
+            class="brand-img brand-common fourth-brand animate__animated animate__bounce"
           />
           <Brand
-            name={"NAVISTAR"}
-            class="py-lg-3 text-center brand-common fifth-brand animate__animated animate__bounce animate__infinite animate__slower"
+            src={remax}
+            class="brand-img brand-common fifth-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
-            name={"SUBWAY🍕"}
-            class="py-lg-3 text-center brand-common sixth-brand animate__animated animate__bounce"
+            src={snapfit}
+            class="brand-img brand-common sixth-brand animate__animated animate__bounce"
           />
           <Brand
-            name={"BUFFERIN"}
-            class="py-lg-3 text-center brand-common seventh-brand animate__animated animate__bounce animate__infinite animate__slower"
+            src={studio97}
+            class="brand-img brand-common seventh-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
-            name={"ireVU"}
-            class="py-lg-3 text-center brand-common eightth-brand animate__animated animate__bounce"
+            src={subway}
+            class="brand-img brand-common eightth-brand animate__animated animate__bounce"
           />
           <Brand
-            name={"TIKYUN"}
-            class="py-lg-3 text-center brand-common ninth-brand animate__animated animate__bounce animate__infinite animate__slower"
+            src={nozzle}
+            class="brand-img brand-common ninth-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
-            name={"CHARGEZOOM"}
-            class="py-lg-3 text-center brand-common tenth-brand animate__animated animate__bounce"
+            src={hudsonwatches}
+            class="brand-img brand-common tenth-brand animate__animated animate__bounce"
           />
         </div>
       </div>

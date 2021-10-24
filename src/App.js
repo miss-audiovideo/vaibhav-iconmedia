@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
@@ -18,7 +18,6 @@ import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 
-
 const App = () => {
   return (
     <>
@@ -28,7 +27,11 @@ const App = () => {
         <Switch>
           <Route exact path="/vaibhav-iconmedia">
             <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInLeft">
-              Get the attention your brand deserves
+              <span className="heading-contentOne">Get the</span>
+              <span className="heading-contentTwo"> attention</span>
+              <br />
+              <span className="heading-contentOne">your brand</span>
+              <span className="heading-contentTwo"> deserves</span>
             </HeadingContent>
             <HeadingParagraph class="mt-3 mx-auto text-center text-capitalize headingPara animate__animated animate__rubberBand">
               Get quality design without the cost & complexity
@@ -51,24 +54,25 @@ const App = () => {
           </Route>
 
           <Route  exact path={'/about'}>
-            <FirstPage />
+  <FirstPage />
             <Brands />
             <Footer />
           </Route>
+ <Route  exact path={'/gallery'}>
 
-          <Route  exact path={'/gallery'}>
+
             <div className="fluid-container mb-3">
               <SliderGallery />
               <SliderGalleryReverse />
             </div>
             <Footer className="mt-3" />
           </Route>
+<Route exact path={'/get-in-touch'}>
 
-          <Route exact path={'/get-in-touch'}>
-            <Contact />
+       
+      <Contact />
            
           </Route>
-          
         </Switch>
       </Router>
     </>
