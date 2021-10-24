@@ -42,8 +42,8 @@ let fCard = {
   },
   fifth: {
     first: honey,
-    second: video1,
-    third: greeting,
+    second: greeting,
+    third: video1,
     fourth: three,
   },
 };
