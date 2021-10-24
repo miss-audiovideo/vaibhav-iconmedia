@@ -49,13 +49,13 @@ const App = () => {
             <Footer />
           </Route>
 
-          <Route exact path="/about">
+          <Route path="/about">
             <FirstPage />
             <Brands />
             <Footer />
           </Route>
 
-          <Route exact path="/gallery">
+          <Route path="/gallery">
             <div className="fluid-container mb-3">
               <SliderGallery />
               <SliderGalleryReverse />
