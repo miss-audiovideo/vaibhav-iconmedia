@@ -4,7 +4,7 @@ import "../Brand.css";
 const Brand = (props) => {
   return (
     <>
-      <span style={{ width: "20%" }} className={props.class}>
+      <span style={{ width: " " }} className={props.class}>
         <img
           className="brand-img"
           src={props.src}
