@@ -789,31 +789,12 @@ font-size: 30px;
 }
 .js-form{
   display: block;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.section-title {
-  font-family: helvetica;
-  font-weight: 100;
-  font-size: 30px;
-  color: #2badd9;
-  margin-bottom: 0px;
-}
-
-p {
-  color: #ffffff;
-  font-family: helvetica;
-  margin: 15px 0;
-  font-size: 12px;
-}
 
 .color{
   color: #2b0505;
-}
-
-p a{
-  color: #ffe70b;
-  text-decoration: none;
 }
 
 .half-width {

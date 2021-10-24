@@ -7,15 +7,15 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [first, setNameFirst] = useState("");
     const [last, setNameLast] = useState("");
-    const [price, setPrice] = useState("");
+    const [company, setCompany] = useState("");
     const [number, setNumber] = useState("");
     const [addClass, setState] = useState("");
-    // const [country, setCountry] = useState("");
+    const [comment, setComment] = useState("");
     const [value, setValue] = useState("");
     const options = useMemo(() => countryList().getData(), []);
     console.log(options)
     const changeHandler = (value) => {
-      setValue(value);
+        setValue(value);
     };
     // const [loader, setLoader] = useState(false);
     const toggle = (e) => {
@@ -34,8 +34,9 @@ const Contact = () => {
                 first: first,
                 last: last,
                 country: value,
-                price: price,
+                price: company,
                 number: number,
+                comment: comment
             })
             .then(() => {
                 // setLoader(false);
@@ -50,8 +51,9 @@ const Contact = () => {
         setNameFirst("");
         setNameLast("");
         setValue("");
-        setPrice("");
+        setCompany("");
         setNumber("");
+        setComment("");
     }
     return (
         <>
@@ -72,14 +74,16 @@ const Contact = () => {
                         <label className="label" htmlFor="country">Country </label>
                         <Select id="country" options={options} value={value} onChange={(e) => setValue(e.target.value)} onChange={changeHandler} size="1" required="" className="form-field" />
                         <div className="half-width">
-                            <label className="label" htmlFor="price">Price</label>
-                            <input type="text" id="price" size="" required="" value={price} onChange={(e) => setPrice(e.target.value)} className="form-field input" placeholder="Price" />
+                            <label className="label" htmlFor="company">Price</label>
+                            <input type="text" id="company" size="" required="" value={company} onChange={(e) => setCompany(e.target.value)} className="form-field input" placeholder="Company Name" />
                         </div>
                         <div className="half-width">
                             <label className="label" htmlFor="number">Contact No.</label>
                             <input type="text" id="number" size="" required="" maxLength="13" value={number} onChange={(e) => setNumber(e.target.value)} className=" form-field input" placeholder="Contact Number" />
                         </div>
                         <div className="clear"></div>
+                        <label className="label" htmlFor="comment">Comment</label>
+                        <input type="text" id="comment" size="" value={comment} onChange={(e) => setComment(e.target.value)} className=" form-field input" placeholder="Comment" />
                     </div>
                     <button id="submit" className="btn btn-outline-warning box" type="submit" value="Send!">Submit</button>
                 </form>
