@@ -331,7 +331,7 @@ body {
 }
 
 .slider .slide-track1 {
-  animation: scroll 80s linear alternate-reverse;
+  animation: scroll 80s linear alternate-reverse infinite;
   display: flex;
   width: calc(300px * 18);
 }
