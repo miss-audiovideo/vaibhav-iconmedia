@@ -15,13 +15,13 @@ const ThreeCards = (props) => {
         /> */}
         <img className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite" src={props.src.first} alt="" srcset="" />
         <HoverVideoPlayer
-            videoSrc={props.src.second}
+            videoSrc={props.src.third}
             className="card_img img_two"
             restartOnPaused
             muted={false}
             pausedOverlay={
               <img
-                src={props.src.third}
+                src={props.src.second}
                 alt=""
                 style={{
                   // Make the image expand to cover the video's dimensions
@@ -50,7 +50,7 @@ const ThreeCards = (props) => {
               />
             }
           /> */}
-          <img className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite" src={props.src.first} alt="" srcset="" />
+          <img className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite" src={props.src.fourth} alt="" srcset="" />
       </div>
     </>
   );
