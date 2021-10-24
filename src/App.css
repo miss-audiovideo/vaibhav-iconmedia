@@ -23,19 +23,11 @@ body {
   padding-top: 10rem;
   line-height: 4.1rem;
 }
-<<<<<<< HEAD
-.heading-contentOne {
-  color: #ffc107;
-}
-.heading-contentTwo {
-  color: white;
-=======
 .headingContent2 {
   color: rgb(255, 193, 7) !important;
   font-family: "Quicksand", sans-serif !important;
   line-height: 4.1rem;
   padding: 20px;
->>>>>>> 35b2f87714d20a5f4ee3fbaa9b89d0cf8dc94578
 }
 .headingPara {
   width: 28%;
@@ -290,13 +282,8 @@ body {
   background-origin: border-box;
 }
 
-<<<<<<< HEAD
-.testimonials h1 {
-  margin-top: 300px;
-=======
 .testimonials h1{
   margin-top: 200px;
->>>>>>> 35b2f87714d20a5f4ee3fbaa9b89d0cf8dc94578
   font-family: "Quicksand";
 }
 .testimonials h2 {
@@ -727,13 +714,8 @@ body {
   .profile-member {
     width: 100%;
   }
-<<<<<<< HEAD
-  .gallery {
-    margin-top: 490px !important;
-=======
   .gallery{
     margin-top: 250px !important;
->>>>>>> 35b2f87714d20a5f4ee3fbaa9b89d0cf8dc94578
   }
   .container-img {
     position: relative;
@@ -821,14 +803,6 @@ body {
   color: #2b0505;
 }
 
-<<<<<<< HEAD
-p a {
-  color: #2badd9;
-  text-decoration: none;
-}
-
-=======
->>>>>>> 35b2f87714d20a5f4ee3fbaa9b89d0cf8dc94578
 .half-width {
   width: 50%;
   float: left;
@@ -897,12 +871,6 @@ select.form-field {
   padding-right: 20%;
 }
 
-<<<<<<< HEAD
-.submit:hover {
-  color: #2badd9;
-  background: #fff;
-=======
 .input{
   padding: 10px;
->>>>>>> 35b2f87714d20a5f4ee3fbaa9b89d0cf8dc94578
 }
