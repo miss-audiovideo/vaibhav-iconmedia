@@ -1,49 +1,48 @@
 import React from "react";
 import Cards from "./Cards";
 import ThreeCards from "./ThreeCards";
-import img1 from "./images/8.jpg";
+// import img1 from "./images/8.jpg";
 import video1 from "./Video/coffee.mp4";
 import video2 from "./Video/video.mp4";
 import video3 from "./Video/watch.mp4";
-import img8 from "./Video/default-image.png";
+// import img8 from "./Video/default-image.png";
 // import two from "./images/two.jpg";
-// import three from "./images/three.jpg";
-// import four from "./images/four.jpg";
-// import five from "./images/five.jpg";
-// import six from "./images/six.jpg";
-import img2 from "./images/seven.jpg";
-import img7 from "./images/eight.jpg";
-// import nine from "./images/nine.jpg";
-import img3 from "./images/ten.jpg";
-import img6 from "./images/eleven.jpg";
-import img4 from "./images/twelve.jpg";
-import img5 from "./images/thirteen.jpg";
+import builder from "./images/builder.jpg";
+import chinese from "./images/chinese.jpg";
+import jam from "./images/jam.jpg";
+import run from "./images/run.jpg";
+import girl from "./images/girl.jpg";
+import can from "./images/can.jpg";
+import drinks from "./images/drinks.jpg";
+import honey from "./images/honey.jpg";
+import greeting from "./images/greeting.jpg";
+import swag from "./images/swag.jpg";
 
 let fCard = {
-  first: img1,
-  second: video1,
-  third: img2,
-  fourth: {
-    first: img6,
-    second: video2,
-    third: img8,
+  first: girl,
 
+  second: video1,
+  third: run,
+  eight: girl,
+  fourth: {
+    first: chinese,
+    second: video2,
+    third: can,
   },
   fifth: {
-    first: img5,
+    first: honey,
     second: video3,
-  third: img6,
-
+    third: greeting,
   },
   sixth: {
-    first: img7,
+    first: swag,
     second: video1,
-  third: img3,
+    third: drinks,
   },
   seventh: {
-    first: img2,
+    first: jam,
     second: video3,
-    third: img4,
+    third: builder,
   },
 };
 

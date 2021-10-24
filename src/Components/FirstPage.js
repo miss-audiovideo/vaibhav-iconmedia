@@ -13,7 +13,8 @@ const FirstPage = () => {
                   What we do ?
                 </p>
                 <h1 className="heading_Content animate__animated animate__backInUp">
-                  Do you need help with your graphic design ?
+                  Do you need help with <br />
+                  your graphic design ?
                 </h1>
                 <button className="btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__slower animate__infinite">
                   Get in Touch

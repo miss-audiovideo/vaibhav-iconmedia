@@ -1,10 +1,13 @@
 import React from "react";
+import imgOne from "../Components/images/userone.png";
+import imgTwo from "../Components/images/usertwo.png";
+import imgThree from "../Components/images/userthree.png";
+// import testimonial from "../Components/images/Testimonials BG.png";
 
 function Testimonial() {
   return (
     <>
-
-      <div className="testimonials" >
+      <div className="testimonials">
         <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
           Less process,
           <br />
@@ -18,39 +21,54 @@ function Testimonial() {
         </p>
 
         <div className="testimonials">
-          <h2 style={{ fontFamily: "Quicksand" }} className=" animate__animated animate__zoomIn animate__infinite animate__slower">Testimonials</h2>
+          <h2
+            style={{ fontFamily: "Quicksand" }}
+            className=" animate__animated animate__zoomIn animate__infinite animate__slower"
+          >
+            Testimonials
+          </h2>
           <div className="cardsTest">
+            {/* <img src={testimonial} alt="" /> */}
             <div className="testcards">
-              <div className="testcards1 animate__animated animate__bounce animate__infinite animate__slower"></div>
-              <div className="testcards2 animate__animated animate__bounce animate__infinite animate__slower"></div>
-              <div className="testcards3 animate__animated animate__bounce animate__infinite animate__slower"></div>
+              <div className="testcards1 animate__animated animate__bounce animate__infinite animate__slower">
+                <img src={imgOne} alt="" width="100px" height="100px" />
+              </div>
+              <div className="testcards2 animate__animated animate__bounce animate__infinite animate__slower">
+                <img src={imgTwo} alt="" width="100px" height="100px" />
+              </div>
+              <div className="testcards3 animate__animated animate__bounce animate__infinite animate__slower">
+                <img src={imgThree} alt="" width="100px" height="100px" />
+              </div>
             </div>
             <div className="text">
               <div className="client">
                 <h3>Client name</h3>
                 <p className="color">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                  laboriosam ipsum consequatur atque at! Tempore nam dolorum
-                  fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
-                  suscipit delectus veritatis quidem, dolor vitae non.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Vitae laboriosam ipsum consequatur atque at! Tempore nam
+                  dolorum fugiat iusto dolores quo blanditiis, nesciunt,
+                  officiis pariatur suscipit delectus veritatis quidem, dolor
+                  vitae non.
                 </p>
               </div>
               <div className="client">
                 <h3>Client name</h3>
                 <p className="color">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                  laboriosam ipsum consequatur atque at! Tempore nam dolorum
-                  fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
-                  suscipit delectus veritatis quidem, dolor vitae non.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Vitae laboriosam ipsum consequatur atque at! Tempore nam
+                  dolorum fugiat iusto dolores quo blanditiis, nesciunt,
+                  officiis pariatur suscipit delectus veritatis quidem, dolor
+                  vitae non.
                 </p>
               </div>
               <div className="client">
                 <h3>Client name</h3>
                 <p className="color">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                  laboriosam ipsum consequatur atque at! Tempore nam dolorum
-                  fugiat iusto dolores quo blanditiis, nesciunt, officiis pariatur
-                  suscipit delectus veritatis quidem, dolor vitae non.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Vitae laboriosam ipsum consequatur atque at! Tempore nam
+                  dolorum fugiat iusto dolores quo blanditiis, nesciunt,
+                  officiis pariatur suscipit delectus veritatis quidem, dolor
+                  vitae non.
                 </p>
               </div>
             </div>
@@ -64,19 +82,21 @@ function Testimonial() {
           text-align: center;
         }
         .testimonials {
+          // background-image: url("./Components/images/Testimonials\ BG.png");
+          // z-index: 1;
           margin-top: 50px;
         }
         .testimonials p {
           text-align: center;
         }
-        .testimonials h2{
-          font-size:55px;
-      
+        .testimonials h2 {
+          font-size: 55px;
         }
         .cardsTest {
           margin-top: 100px;
           height: 300px;
           background-color: #f7d6cd;
+          // background-image: url("./Components/images/Testimonials\ BG.png");
         }
         .testcards {
           position: relative;
@@ -86,10 +106,11 @@ function Testimonial() {
         }
         .testcards1,
         .testcards3 {
-          background-color: #187e8a;
+          // background-img: #187e8a;
+          // background-image: url("./Components/images/userone.png");
         }
         .testcards2 {
-          background-color: #ffc857;
+          // background-color: #ffc857;
         }
         .testcards1,
         .testcards2,
@@ -171,7 +192,7 @@ function Testimonial() {
           .testimonials p {
             width: 45%;
             margin: 0 auto;
-            color:white;
+            color: white;
           }
           .text {
             padding: 0;
