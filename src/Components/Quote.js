@@ -10,6 +10,7 @@ function Quote() {
           <br />
           impact on your business.
         </h1>
+
         <button className="quote-button">Get in touch</button>
         <div className="box"></div>
       </div>
@@ -39,6 +40,7 @@ function Quote() {
           border: 2px solid #ffe462;
           font-weight: bold;
         }
+<<<<<<< HEAD
         .box {
           margin: 0;
           position: absolute;
@@ -48,6 +50,10 @@ function Quote() {
           transform: translate(-50%, -50%);
         }
         .btnsize {
+=======
+        .btnsize{
+          
+>>>>>>> 35b2f87714d20a5f4ee3fbaa9b89d0cf8dc94578
           width: 205px;
         }
         .quotes-button {

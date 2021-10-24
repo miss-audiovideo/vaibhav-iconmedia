@@ -162,7 +162,7 @@ function Testimonial() {
         @media screen and (max-width: 800px) {
           .cardsTest {
             margin-top: 50px;
-            height: 1000px;
+            height: 1200px;
           }
           .text {
             margin-top: 0;
