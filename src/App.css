@@ -186,7 +186,7 @@ body {
 
 .slider {
   background: white;
-  height: 250px;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -219,7 +219,7 @@ body {
 .slider .slide-track {
   animation: scroll 80s linear infinite;
   display: flex;
-  width: calc(250px * 18);
+  width: calc(300px * 18);
 }
 
 .slider .slide-track:hover {
@@ -227,8 +227,8 @@ body {
 }
 
 .slider .slide {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
 }
 
 .slide:nth-child(1),
@@ -333,7 +333,7 @@ body {
 .slider .slide-track1 {
   animation: scroll 80s linear alternate-reverse;
   display: flex;
-  width: calc(250px * 18);
+  width: calc(300px * 18);
 }
 
 .slider .slide-track1:hover {
