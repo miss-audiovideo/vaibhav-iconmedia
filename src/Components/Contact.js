@@ -28,7 +28,6 @@ const Contact = () => {
     }
 
     const sendEmail = () => {
-       
 
         emailjs.send('service_4n9awhh',
 
