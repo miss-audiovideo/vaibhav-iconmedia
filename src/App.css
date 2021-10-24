@@ -166,7 +166,6 @@ body {
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100%;
   position: absolute;
@@ -461,7 +460,7 @@ body {
   .small-screen1,
   .small-screen2,
   .small-screen3 {
-    width: 35% !important;
+    width: 45% !important;
   }
   .card_img {
     margin: 0 10px;
