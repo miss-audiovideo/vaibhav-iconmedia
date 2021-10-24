@@ -110,6 +110,36 @@ body {
 .tenth-brand {
   font-family: "Nova Oval", cursive;
 }
+@media (min-width: 860px) {
+  
+  .brands {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    /* font-size: 100px; */
+  }
+}
+@media (max-width: 860px) {
+  .brands{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.brand-img {
+  /* width: 100px; */
+  /* height: 100px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  /* color: #ffe462; */
+  /* background-image: url("./Components/images/Testimonials\ BG.png"); */
+}
 .profile-bg {
   height: 350px;
   width: 100%;
@@ -392,6 +422,7 @@ body {
   .brand-common {
     font-size: 0.8rem;
   }
+
   .third-brand {
     font-size: 0.8rem !important;
   }

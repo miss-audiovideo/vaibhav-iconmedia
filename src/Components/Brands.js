@@ -10,7 +10,7 @@ import studio97 from "./images/studio97.png";
 import subway from "./images/Subway.png";
 import nozzle from "./images/Nozzle.png";
 import hudsonwatches from "./images/Hudson Watches.png";
-import "../Brands.css";
+
 const Brands = () => {
   return (
     <>
