@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import Select from "react-select";
 import { db } from "../firebase";
+import countryList from 'react-select-country-list'
 
 const Contact = () => {
     const [email, setEmail] = useState("");
     const [first, setNameFirst] = useState("");
     const [last, setNameLast] = useState("");
-    const [interest, setInterest] = useState("");
     const [price, setPrice] = useState("");
     const [number, setNumber] = useState("");
-    const [addClass, setState] = useState("")
+    const [addClass, setState] = useState("");
+    // const [country, setCountry] = useState("");
+    const [value, setValue] = useState("");
+    const options = useMemo(() => countryList().getData(), []);
+    console.log(options)
+    const changeHandler = (value) => {
+      setValue(value);
+    };
     // const [loader, setLoader] = useState(false);
-
     const toggle = (e) => {
         setState({ addClass: !addClass })
     }
@@ -21,13 +28,12 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // setLoader(true);
-
         db.collection("contacts")
             .add({
                 email: email,
                 first: first,
                 last: last,
-                interest: interest,
+                country: value,
                 price: price,
                 number: number,
             })
@@ -43,53 +49,42 @@ const Contact = () => {
         setEmail("");
         setNameFirst("");
         setNameLast("");
-        setInterest("");
+        setValue("");
         setPrice("");
         setNumber("");
     }
     return (
-        <div className="email">
-            <h2 className="section-title">Contact Us</h2>
-            <div className="form-container">
+        <>
+            <h2 className="text-center text-capitalize display-2 w-50 mx-auto headingContent2">Contact Us</h2>
+            <div className="form-container center-block">
                 <form id="email-form" onSubmit={handleSubmit}>
-                    <input type="email" id="email" size="50" value={email} className="form-field js-expand" onChange={(e) => setEmail(e.target.value)} onClick={toggle.bind(this)} placeholder="Enter your email address" />
+                    <input type="email" id="email" size="50" value={email} className="form-field input js-expand" onChange={(e) => setEmail(e.target.value)} onClick={toggle.bind(this)} placeholder="Enter your email address" />
                     <div className={boxClass.join(' ')}>
                         <div className="half-width">
                             <label className="label" htmlFor="first">First Name</label>
-                            <input type="text" id="first" size="30" value={first} onChange={(e) => setNameFirst(e.target.value)} required="" className="form-field" placeholder="First Name" />
+                            <input type="text" id="first" size="30" value={first} onChange={(e) => setNameFirst(e.target.value)} required="" className="form-field input" placeholder="First Name" />
                         </div>
                         <div className="half-width">
                             <label className="label" htmlFor="last">Last Name</label>
-                            <input type="text" id="last" size="30" value={last} onChange={(e) => setNameLast(e.target.value)} required="" className="form-field" placeholder="Last Name" />
+                            <input type="text" id="last" size="30" value={last} onChange={(e) => setNameLast(e.target.value)} required="" className="form-field input" placeholder="Last Name" />
                         </div>
                         <div className="clear"></div>
-                        <label className="label" htmlFor="interest">Requirements </label>
-                        <select id="interest" value={interest} onChange={(e) => setInterest(e.target.value)} size="1" required="" className="form-field">
-                            <option disabled="" value="selected">Select Your Needs</option>
-                            <optgroup label="Front End:">
-                                <option value="GMAT">GMAT</option>
-                            </optgroup>
-                            <optgroup label="Back End:">
-                                <option value="SAT">SAT</option>
-                            </optgroup>
-                            <optgroup label="Other:">
-                                <option value="UNKNOWN">Don't Know</option>
-                            </optgroup>
-                        </select>
+                        <label className="label" htmlFor="country">Country </label>
+                        <Select id="country" options={options} value={value} onChange={(e) => setValue(e.target.value)} onChange={changeHandler} size="1" required="" className="form-field" />
                         <div className="half-width">
                             <label className="label" htmlFor="price">Price</label>
-                            <input type="text" id="price" size="" required="" value={price} onChange={(e) => setPrice(e.target.value)} className=" form-field" placeholder="Price" />
+                            <input type="text" id="price" size="" required="" value={price} onChange={(e) => setPrice(e.target.value)} className="form-field input" placeholder="Price" />
                         </div>
                         <div className="half-width">
                             <label className="label" htmlFor="number">Contact No.</label>
-                            <input type="text" id="number" size="" required="" maxLength="13" value={number} onChange={(e) => setNumber(e.target.value)} className=" form-field" placeholder="Contact Number" />
+                            <input type="text" id="number" size="" required="" maxLength="13" value={number} onChange={(e) => setNumber(e.target.value)} className=" form-field input" placeholder="Contact Number" />
                         </div>
                         <div className="clear"></div>
                     </div>
-                    <button id="submit" className="submit js-expand" type="submit" value="Send!">Submit</button>
+                    <button id="submit" className="btn btn-outline-warning box" type="submit" value="Send!">Submit</button>
                 </form>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -11,7 +11,7 @@ function Quote() {
           impact on your business.
         </h1>
         <div className="box">
-         
+        
         </div>
       </div>
       <style jsx>{`
@@ -28,13 +28,6 @@ function Quote() {
           
             flex-direction: column;
             justify-content: center;
-        }
-        .box{ margin: 0;
-          position: absolute; 
-          top: 70%;
-          left: 50%;
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
         }
         .btnsize{
           
