@@ -43,7 +43,7 @@ function Footer() {
           </div>
         </section>
       </div>
-      <div className=" copy-social-container ">
+     <div className=" copy-social-container ">
         <div className="container copy-social text-light">
           <small>
             {" "}

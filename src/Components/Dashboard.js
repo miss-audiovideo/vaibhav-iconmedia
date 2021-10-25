@@ -23,7 +23,7 @@ function Dashboard() {
       <div className="section  mt-3 fluid-container text-light">
         <h1
           className="mt-3 animate__animated animate__zoomIn animate__repeat-2s"
-          style={{ fontSize: "55px", fontFamily: "Futura-Medium,sans-serif" }}
+          style={{ fontSize: "55px", fontFamily: "" }}
         >
           We can design just
           <br /> about anything

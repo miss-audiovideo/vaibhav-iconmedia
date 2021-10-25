@@ -7,8 +7,8 @@
 /* hi */
 * {
   padding: 0;
-  margin: 0;
-  /* box-sizing: border-box; */
+  
+    
 }
 body {
   background: #2b0505 !important;
@@ -63,7 +63,7 @@ body {
   position: relative;
 }
 .card_img {
-  border-radius: 12px !important;
+  border-radius: 20px !important;
   margin-bottom: 25px !important;
 }
 .heading_Para {
@@ -165,7 +165,7 @@ body {
 .profile {
   width: 30%;
   margin: 55px 0;
-  padding: 0px 20px;
+ 
   flex-direction: column;
 }
 .profile-img {
@@ -542,6 +542,7 @@ body {
   .small-screen4 .img_one {
     left: -7%;
     position: relative !important;
+  
   }
 
   .headingContent {
