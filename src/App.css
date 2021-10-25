@@ -122,8 +122,8 @@ body {
 }
 @media (max-width: 860px) {
   .brands{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-around;
   }
@@ -589,6 +589,7 @@ body {
   }
   .brand-line {
     margin-top: 250px !important;
+    margin-bottom: 50px;
   }
   .brand-names {
     padding: 15px;
