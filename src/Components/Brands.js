@@ -23,11 +23,11 @@ const Brands = () => {
         <div className="brands">
           <Brand
             src={Allstate}
-            class=" brand-img py-lg-3 text-brands-img first-brand animate__animated animate__bounce  animate__infinite animate__slower"
+            class="brand-img first-brand animate__animated animate__bounce  animate__infinite animate__slower"
           />
           <Brand
             src={Darkbean}
-            class="brand-img py-lg-3 text-brands-img second-brand animate__animated animate__bounce "
+            class="brand-img second-brand animate__animated animate__bounce "
           />
 
           <Brand
@@ -36,31 +36,31 @@ const Brands = () => {
           />
           <Brand
             src={pantheraazul}
-            class="brand-img brand-common fourth-brand animate__animated animate__bounce"
+            class="brand-img fourth-brand animate__animated animate__bounce"
           />
           <Brand
             src={remax}
-            class="brand-img brand-common fifth-brand animate__animated animate__bounce animate__infinite animate__slower"
+            class="brand-img fifth-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
             src={snapfit}
-            class="brand-img brand-common sixth-brand animate__animated animate__bounce"
+            class="brand-img sixth-brand animate__animated animate__bounce"
           />
           <Brand
             src={studio97}
-            class="brand-img brand-common seventh-brand animate__animated animate__bounce animate__infinite animate__slower"
+            class="brand-img seventh-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
             src={subway}
-            class="brand-img brand-common eightth-brand animate__animated animate__bounce"
+            class="brand-img eightth-brand animate__animated animate__bounce"
           />
           <Brand
             src={nozzle}
-            class="brand-img brand-common ninth-brand animate__animated animate__bounce animate__infinite animate__slower"
+            class="brand-img ninth-brand animate__animated animate__bounce animate__infinite animate__slower"
           />
           <Brand
             src={hudsonwatches}
-            class="brand-img brand-common tenth-brand animate__animated animate__bounce"
+            class="brand-img tenth-brand animate__animated animate__bounce"
           />
         </div>
       </div>
