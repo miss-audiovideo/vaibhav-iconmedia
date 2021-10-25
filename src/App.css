@@ -14,7 +14,7 @@ body {
   background: #2b0505 !important;
 }
 .nav-style {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Futura-Medium", sans-serif !important;
   color: #fff !important;
 }
 .headingContent {
@@ -25,15 +25,15 @@ body {
 }
 .headingContent2 {
   color: rgb(255, 193, 7) !important;
-  font-family: "Quicksand", sans-serif !important;
+  font-family: "Futura-Medium", sans-serif !important;
   line-height: 4.1rem;
   padding: 20px;
 }
-.heading-contentOne{
+.heading-contentOne {
   color: rgb(255, 193, 7) !important;
   font-size: 60px;
 }
-.heading-contentTwo{
+.heading-contentTwo {
   color: white;
   font-size: 60px;
 }
@@ -122,7 +122,6 @@ body {
   font-family: "Nova Oval", cursive;
 }
 @media (min-width: 860px) {
-  
   .brands {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -132,7 +131,7 @@ body {
   }
 }
 @media (max-width: 860px) {
-  .brands{
+  .brands {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -323,7 +322,7 @@ body {
   background-origin: border-box;
 }
 
-.testimonials h1{
+.testimonials h1 {
   margin-top: 200px;
   font-family: "Quicksand";
 }
@@ -445,7 +444,7 @@ body {
 .d-flex-c {
   display: flex;
 }
-.top-mrgn{
+.top-mrgn {
   margin-top: 50px;
 }
 
@@ -758,7 +757,7 @@ body {
   .profile-member {
     width: 100%;
   }
-  .gallery{
+  .gallery {
     margin-top: 250px !important;
   }
   .container-img {
@@ -839,9 +838,8 @@ body {
 }
 .js-form {
   display: block;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-
 
 .color {
   color: #2b0505;
@@ -900,9 +898,9 @@ select.form-field {
     no-repeat 98% center;
 }
 
-.box{ 
+.box {
   margin-top: 80px;
-  position: absolute; 
+  position: absolute;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -915,6 +913,6 @@ select.form-field {
   padding-right: 20%;
 }
 
-.input{
+.input {
   padding: 10px;
 }

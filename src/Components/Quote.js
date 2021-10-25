@@ -10,12 +10,18 @@ function Quote() {
           <br />
           impact on your business.
         </h1>
-        <Button className="quote-button btn btn-outline-warning">Design a quote</Button>
+        <Button
+          className="quote-button btn btn-outline-warning"
+          style={{ fontFamily: "Futura-Medium,sans-serif" }}
+        >
+          Design a quote
+        </Button>
       </div>
       <style jsx>{`
         .quote h1 {
           color: #ffe462;
           text-align: center;
+          font-family: "Futura-Medium", sans-serif !important;
         }
         .quote {
           height: 500px;
@@ -36,7 +42,8 @@ function Quote() {
           margin-left: auto;
           border-radius: 5px;
           border: 2px solid #ffe462;
-          font-weight: bold;
+          // font-weight: bold;
+          font-family: "Futura-Book", sans-serif !important;
         }
         .box {
           margin: 0;

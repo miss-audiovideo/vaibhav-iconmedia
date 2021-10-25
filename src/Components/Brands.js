@@ -17,7 +17,7 @@ const Brands = () => {
       <div>
         <br />
         <br />
-        <h1 className="brand-line text-center pt-lg-5 pb-lg-4 animate__animated animate__jackInTheBox animate__delay-10s ">
+        <h1 className="firstpage brand-line text-center pt-lg-5 pb-lg-4 animate__animated animate__jackInTheBox animate__delay-10s ">
           Leading Brands
         </h1>
         <div className="brands">
@@ -67,6 +67,14 @@ const Brands = () => {
       <br />
       <br />
       <br />
+      <style jsx>{`
+        @media screen and (max-width: 800px) {
+          .brand-img {
+            width: 120px;
+            height: 80px;
+          }
+        }
+      `}</style>
     </>
   );
 };
