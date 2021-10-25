@@ -3,6 +3,7 @@ import Select from "react-select";
 import { db } from "../firebase";
 import countryList from 'react-select-country-list'
 import emailjs from 'emailjs-com'
+import twelve from "./images/twelve.jpg";
 const Contact = () => {
     const [email, setEmail] = useState("");
     const [first, setNameFirst] = useState("");
@@ -82,11 +83,11 @@ const Contact = () => {
     }
     return (
         <>
-            <h2 className="text-capitalize display-2 w-50 contact-alng headingContent2">LET'S
-CREATE
-EXPERIENCES!</h2>
-            <div className="form-container center-block">
-                <form id="email-form" onSubmit={handleSubmit}>
+        <div className="split">
+            <div>
+            <h2 className="text-capitalize display-2 w-50 contact-alng headingContent2">LET'S CREATE EXPERIENCES!</h2>
+            {/* <div className="form-container center-block"> */}
+                <form id="email-form" className="alng" onSubmit={handleSubmit}>
                     <input type="email" id="email" size="50" value={email} className="form-field input js-expand" onChange={(e) => setEmail(e.target.value)} onClick={toggle.bind(this)} placeholder="Enter your email address" />
                     <div className={boxClass.join(' ')}>
                         <div className="half-width">
@@ -114,9 +115,18 @@ EXPERIENCES!</h2>
                     </div>
                     <button id="submit" className="btn btn-outline-warning box" type="submit" value="Send!">Submit</button>
                 </form>
-
-                
+            {/* </div> */}
             </div>
+            <div>
+                <div className="">
+                <img
+                    className="img-fluid container-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower"
+                    src={twelve}
+                    alt="main_img"
+                />
+                </div>
+            </div>
+        </div>
         </>
     );
 };

@@ -899,13 +899,7 @@ select.form-field {
     no-repeat 98% center;
 }
 
-.box {
-  margin-top: 80px;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+
 
 .center-block {
   display: block;
@@ -920,8 +914,25 @@ select.form-field {
 
 .contact-alng{
   text-align: left;
-  margin-left: 20%;
-  font-size: 7vw;
+  margin-left: 10%;
+  font-size: 5vw;
   padding-top: 50px;
   font-weight: bold;
+}
+.split{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.alng{
+  margin-left: 13%;
+  margin-right: 13%;
+}
+.split > .box{
+  
+    margin-top: 80px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
 }
