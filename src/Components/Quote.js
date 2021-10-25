@@ -18,10 +18,18 @@ function Quote() {
         </Button>
       </div>
       <style jsx>{`
+        @font-face {
+          font-family: futuramedium;
+          src: url("./fonts/futura\ medium\ bt.ttf");
+        }
+        @font-face {
+          font-family: futurabook;
+          src: url("./fonts/Futura\ Book.ttf");
+        }
         .quote h1 {
           color: #ffe462;
           text-align: center;
-          font-family: "Futura-Medium", sans-serif !important;
+          font-family: futuramedium;
         }
         .quote {
           height: 500px;
@@ -43,7 +51,7 @@ function Quote() {
           border-radius: 5px;
           border: 2px solid #ffe462;
           // font-weight: bold;
-          font-family: "Futura-Book", sans-serif !important;
+          font-family: futurabook;
         }
         .box {
           margin: 0;

@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "./images/homeLogo.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import facebook from "./images/facebook.png";
+import instagram from "./images/instagram.png";
+import twitter from "./images/twitter.png";
+import linkedin from "./images/linkedin.png";
 
 function Footer() {
   return (
@@ -18,7 +18,7 @@ function Footer() {
                 <td>
                   <img src={Logo} style={{ height: "60px" }} alt="icon" />
                 </td>
-                <td className="iconText">
+                <td className="iconText footer">
                   We are a team of creatives who are
                   <br />
                   thrilled to create, ignite and succeed your
@@ -26,14 +26,14 @@ function Footer() {
                   business with all the things digital.
                 </td>
               </tr>
-              <tr className="textYellow">Email</tr>
-              <tr className="">priya@iconmediahouse.com</tr>
-              <tr className="textYellow">Contact</tr>
+              <tr className="footer textYellow">Email</tr>
+              <tr className="footer">priya@iconmediahouse.com</tr>
+              <tr className="footer textYellow">Contact</tr>
               <tr>+1647-627-2546</tr>
             </table>
             <div className="quickLinks">
               <ul>
-                <li className="heading txsi">Quick Links</li>
+                <li className=" footer heading txsi">Quick Links</li>
                 <li>About</li>
                 <li>Careers</li>
                 <li>Make Payment</li>
@@ -43,23 +43,48 @@ function Footer() {
           </div>
         </section>
       </div>
-    <div className=" copy-social-container ">
-        <div className="container copy-social text-light">
+      <div className=" copy-social-container ">
+        <div className="footer container copy-social text-light">
           <small>
             {" "}
             &#169; 2021,Icon Media House. Made &#10084; with in Toronto.
           </small>
-          <small >
-            {" "}
+          <small className="footer text-end">
             Follow us on:
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faLinkedin} />
-            
+            <i class="facebook">
+              <img src={facebook} alt="" width="37px" height="37px" />
+            </i>
+            <i class="instagram">
+              <img src={instagram} alt="" width="45px" height="45px" />
+            </i>
+            <i class="instagram">
+              <img src={linkedin} alt="" width="45px" height="45px" />
+            </i>
+            {/* <i class="fab fa-twitter">
+              <img src={twitter} alt="" width="45px" height="45px" />
+            </i> */}
           </small>
         </div>
       </div>
       <style jsx>{`
+        // .fa-facebook,
+        // .fa-instagram,
+        // .fa-linkedin-in,
+        // .fa-twitter {
+        //   font-size: 1rem;
+        //   padding: 0 10px;
+        // }
+        @font-face {
+          font-family: futuramedium;
+          src: url("./fonts/futura\ medium\ bt.ttf");
+        }
+        @font-face {
+          font-family: futurabook;
+          src: url("./fonts/Futura\ Book.ttf");
+        }
+        .footer{
+          font-family:futuramedium;
+        }
         .text-end {
           display: flex;
           align-items: center;
@@ -76,8 +101,8 @@ function Footer() {
         }
         .copy-social {
           height: 50px;
-          display: grid;
-          grid-template-columns: auto auto;
+          display: flex;
+          flex-direction: row;
           justify-content: space-between;
           align-items: center;
           // padding: 0 50px 0 50px;

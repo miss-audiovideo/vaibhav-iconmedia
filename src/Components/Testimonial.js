@@ -13,10 +13,7 @@ function Testimonial() {
           <br />
           more productivity
         </h1>
-        <p
-          className="text-light"
-          style={{ fontFamily: "Futura-Book,sans-serif" }}
-        >
+        <p className="text-light" style={{ fontFamily: "futurabook" }}>
           No more email chains, no more print-and-scan change
           <br /> requests, no more missed deadlines. We've simplified the <br />
           design process so you can see results faster and we can
@@ -25,7 +22,7 @@ function Testimonial() {
 
         <div className="testimonials">
           <h2
-            style={{ fontFamily: "Futura-Medium,sans-serif" }}
+            style={{ fontFamily: "futuramedium" }}
             className=" animate__animated animate__zoomIn animate__infinite animate__slower"
           >
             Testimonials
@@ -46,10 +43,7 @@ function Testimonial() {
             <div className="text">
               <div className="client">
                 <h3>Client name</h3>
-                <p
-                  className="color"
-                  style={{ fontFamily: "Futura-Book,sans-serif" }}
-                >
+                <p className="color" style={{ fontFamily: "futurabook" }}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
                   dolorum fugiat iusto dolores quo blanditiis, nesciunt,
@@ -59,10 +53,7 @@ function Testimonial() {
               </div>
               <div className="client">
                 <h3>Client name</h3>
-                <p
-                  className="color"
-                  style={{ fontFamily: "Futura-Book,sans-serif" }}
-                >
+                <p className="color" style={{ fontFamily: "futurabook" }}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
                   dolorum fugiat iusto dolores quo blanditiis, nesciunt,
@@ -72,7 +63,7 @@ function Testimonial() {
               </div>
               <div className="client">
                 <h3>Client name</h3>
-                <p className="color">
+                <p className="color" style={{ fontFamily: "futurabook" }}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
                   dolorum fugiat iusto dolores quo blanditiis, nesciunt,
@@ -85,6 +76,14 @@ function Testimonial() {
         </div>
       </div>
       <style jsx>{`
+        @font-face {
+          font-family: futuramedium;
+          src: url("./fonts/futura\ medium\ bt.ttf");
+        }
+        @font-face {
+          font-family: futurabook;
+          src: url("./fonts/Futura\ Book.ttf");
+        }
         .testimonials h1,
         h2 {
           color: #ffe462;
