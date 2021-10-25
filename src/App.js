@@ -26,7 +26,7 @@ const App = () => {
         <Navbar />
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/vaibhav-iconmedia">
             <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInUp">
               <span className="heading-contentOne">GET THE</span>
               <span className="heading-contentTwo"> ATTENTION</span>
