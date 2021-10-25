@@ -24,6 +24,7 @@ function Dashboard() {
         <h1
           className="mt-3 animate__animated animate__zoomIn animate__repeat-2s"
           style={{ fontSize: "55px", fontFamily: "futuramedium" }}
+          style={{ fontSize: "55px", fontFamily: "futuramedium" }}
         >
           We can design just
           <br /> about anything

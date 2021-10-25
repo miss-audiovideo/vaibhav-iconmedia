@@ -30,13 +30,11 @@ const App = () => {
             <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInUp">
               <span className="heading-contentOne">GET THE</span>
               <span className="heading-contentTwo"> ATTENTION</span>
-              <br />
+            <br/>
               <span className="heading-contentOne">YOUR BRAND</span>
               <span className="heading-contentTwo"> DESERVES</span>
             </HeadingContent>
-            <HeadingParagraph class="mt-3 mx-auto text-center text-capitalize headingPara animate__animated animate__rubberBand">
-              Get quality design without the cost & complexity
-            </HeadingParagraph>
+            
             <MainCard />
             <FirstPage />
             <Brands />

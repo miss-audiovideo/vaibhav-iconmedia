@@ -1,29 +1,30 @@
 import React from "react";
 import Cards from "./Cards";
 import ThreeCards from "./ThreeCards";
-import video1 from "./Video/coffee.mp4";
-import video2 from "./Video/video.mp4";
-import video3 from "./Video/watch.mp4";
-// import img8 from "./Video/default-image.png";
+import video1 from "./Video/v1.mp4";
+import can from "./images/can.jpg";
+import video2 from "./Video/v2.mp4";
+import jam from "./images/jam.jpg";
+import video3 from "./Video/v3.mp4";
 import six from "./images/six.jpg";
 import three from "./images/three.jpg";
 import builder from "./images/builder.jpg";
 import chinese from "./images/chinese.jpg";
-import jam from "./images/jam.jpg";
 import run from "./images/run.jpg";
 import girl from "./images/girl.jpg";
-import can from "./images/can.jpg";
 import drinks from "./images/drinks.jpg";
 import honey from "./images/honey.jpg";
 import greeting from "./images/greeting.jpg";
 import swag from "./images/swag.jpg";
+import uniqe from "./images/uniqe.jpg";
+import uniqe2 from "./images/uniqe2.jpg";
 
 let fCard = {
   first: {
     first: girl,
-    second: run,
+    second: can,
     third: video1,
-    fourth: six,
+    fourth: builder,
   },
   second: {
     first: swag,
@@ -31,19 +32,19 @@ let fCard = {
     third: drinks,
   },
   third: {
-    first: jam,
+    first: run,
     second: video3,
-    third: builder,
+    third: uniqe,
   },
   fourth: {
     first: chinese,
     second: video2,
-    third: can,
+    third: jam,
   },
   fifth: {
     first: honey,
-    second: greeting,
-    third: video1,
+    second: uniqe2,
+    third: video3,
     fourth: three,
   },
 };

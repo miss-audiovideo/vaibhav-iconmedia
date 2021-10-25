@@ -7,8 +7,6 @@
 /* hi */
 * {
   padding: 0;
-  margin: 0;
-  /* box-sizing: border-box; */
 }
 @font-face {
   font-family: futuramedium;
@@ -21,15 +19,23 @@
 body {
   background: #2b0505 !important;
 }
+.nav-pad {
+  padding-top: 10px;
+}
 .nav-style {
   font-family: "futurabook";
   color: #fff !important;
 }
 .headingContent {
   color: rgb(255, 193, 7) !important;
+
   font-family: "futuramedium";
   padding-top: 10rem;
   line-height: 4.1rem;
+
+  font-family: "Futura-Medium", sans-serif !important;
+  padding-top: 5rem;
+  line-height: 3rem;
 }
 
 .headingContent2 {
@@ -73,7 +79,7 @@ body {
   position: relative;
 }
 .card_img {
-  border-radius: 12px !important;
+  border-radius: 20px !important;
   margin-bottom: 25px !important;
 }
 .heading_Para {
@@ -175,7 +181,6 @@ body {
 .profile {
   width: 30%;
   margin: 55px 0;
-  padding: 0px 20px;
   flex-direction: column;
 }
 .profile-img {
@@ -199,7 +204,7 @@ body {
   transform: rotate(-6deg);
 }
 .gallery {
-  margin-top: 180px !important;
+  margin-top: 280px !important;
 }
 
 /* slider */
