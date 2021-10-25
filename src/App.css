@@ -31,11 +31,11 @@ body {
 }
 .heading-contentOne {
   color: rgb(255, 193, 7) !important;
-  font-size: 60px;
+  font-size: 50px;
 }
 .heading-contentTwo {
   color: white;
-  font-size: 60px;
+  font-size: 50px;
 }
 .headingPara {
   width: 28%;
@@ -139,7 +139,7 @@ body {
   }
 }
 .brand-img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -701,6 +701,7 @@ body {
   .headingContent {
     width: 90% !important;
     line-height: 2.7rem;
+    
   }
 
   .headingPara {
@@ -915,4 +916,12 @@ select.form-field {
 
 .input {
   padding: 10px;
+}
+
+.contact-alng{
+  text-align: left;
+  margin-left: 20%;
+  font-size: 7vw;
+  padding-top: 50px;
+  font-weight: bold;
 }

@@ -82,7 +82,9 @@ const Contact = () => {
     }
     return (
         <>
-            <h2 className="text-center text-capitalize display-2 w-50 mx-auto headingContent2">Contact Us</h2>
+            <h2 className="text-capitalize display-2 w-50 contact-alng headingContent2">LET'S
+CREATE
+EXPERIENCES!</h2>
             <div className="form-container center-block">
                 <form id="email-form" onSubmit={handleSubmit}>
                     <input type="email" id="email" size="50" value={email} className="form-field input js-expand" onChange={(e) => setEmail(e.target.value)} onClick={toggle.bind(this)} placeholder="Enter your email address" />
@@ -112,6 +114,8 @@ const Contact = () => {
                     </div>
                     <button id="submit" className="btn btn-outline-warning box" type="submit" value="Send!">Submit</button>
                 </form>
+
+                
             </div>
         </>
     );
