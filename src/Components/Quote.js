@@ -10,7 +10,7 @@ function Quote() {
           <br />
           impact on your business.
         </h1>
-        <Button className="quote-button btn btn-outline-warning">Get in touch</Button>
+        <Button className="quote-button btn btn-outline-warning">Design a quote</Button>
       </div>
       <style jsx>{`
         .quote h1 {

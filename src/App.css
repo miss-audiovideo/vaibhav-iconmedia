@@ -29,12 +29,23 @@ body {
   line-height: 4.1rem;
   padding: 20px;
 }
+.heading-contentOne{
+  color: rgb(255, 193, 7) !important;
+  font-size: 60px;
+}
+.heading-contentTwo{
+  color: white;
+  font-size: 60px;
+}
 .headingPara {
   width: 28%;
   color: #fff;
   font-size: 1.4rem;
   font-family: "Futura-Book", sans-serif !important;
   line-height: 1.9rem;
+}
+.navbar-dark .navbar-toggler {
+  border-color: rgb(255, 193, 7);
 }
 .main_card {
   top: 100px;
