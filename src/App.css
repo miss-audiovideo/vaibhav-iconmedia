@@ -916,3 +916,11 @@ select.form-field {
 .input {
   padding: 10px;
 }
+
+.contact-alng{
+  text-align: left;
+  margin-left: 20%;
+  font-size: 7vw;
+  padding-top: 50px;
+  font-weight: bold;
+}

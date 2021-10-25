@@ -82,7 +82,7 @@ const Contact = () => {
     }
     return (
         <>
-            <h2 className="text-center text-capitalize display-2 w-50 mx-auto headingContent2">LET'S
+            <h2 className="text-capitalize display-2 w-50 contact-alng headingContent2">LET'S
 CREATE
 EXPERIENCES!</h2>
             <div className="form-container center-block">
