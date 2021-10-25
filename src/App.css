@@ -936,3 +936,9 @@ select.form-field {
     transform: translate(-50%, -50%);
   
 }
+.contact-img{
+  width: 75%;
+  border-radius: 15px;
+  margin-top: 150px;
+  left: 23%;
+}

@@ -120,7 +120,7 @@ const Contact = () => {
             <div>
                 <div className="">
                 <img
-                    className="img-fluid container-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower"
+                    className="img-fluid contact-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower"
                     src={twelve}
                     alt="main_img"
                 />
