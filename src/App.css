@@ -13,6 +13,9 @@
 body {
   background: #2b0505 !important;
 }
+.nav-pad{
+  padding-top: 10px;
+}
 .nav-style {
   font-family: "Futura-Medium", sans-serif !important;
   color: #fff !important;

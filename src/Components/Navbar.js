@@ -10,11 +10,11 @@ const Navbar = () => {
           style={{ backgroundColor: "#2b0405" }}
           className="navbar navbar-expand-lg navbar-dark "
         >
-          <div className="container">
+          <div className="container nav-pad">
             <Link to="/vaibhav-iconmedia" className="navbar-brand">
               <img
                 className="text-white"
-                width="130px"
+                width="150px"
                 height="50px"
                 src={homeLogo}
                 alt="main_logo"
