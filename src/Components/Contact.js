@@ -97,7 +97,7 @@ const Contact = () => {
     <>
       <div className="split">
         <div>
-          <h2 className="text-capitalize display-2 w-50 contact-alng headingContent2">
+          <h2 className="contact-txt text-capitalize display-2 w-50 contact-alng headingContent2">
             LET'S CREATE EXPERIENCES!
           </h2>
           {/* <div className="form-container center-block"> */}
@@ -234,15 +234,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {/* <style jsx>{`
-        @media screen and (max-width: 800px) {
-          .contact-lottie {
-            flex-direction: "column";
-            width: "300px";
-            height: "300px";
-          }
+      <style jsx>{`
+        .contact-txt {
+          fontfamily: futuramedium;
         }
-      `}</style> */}
+      `}</style>
     </>
   );
 };

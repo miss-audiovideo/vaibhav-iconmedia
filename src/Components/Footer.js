@@ -18,7 +18,7 @@ function Footer() {
                 <td>
                   <img src={Logo} style={{ height: "60px" }} alt="icon" />
                 </td>
-                <td className="iconText">
+                <td className="iconText footer">
                   We are a team of creatives who are
                   <br />
                   thrilled to create, ignite and succeed your
@@ -26,14 +26,14 @@ function Footer() {
                   business with all the things digital.
                 </td>
               </tr>
-              <tr className="textYellow">Email</tr>
-              <tr className="">priya@iconmediahouse.com</tr>
-              <tr className="textYellow">Contact</tr>
+              <tr className="footer textYellow">Email</tr>
+              <tr className="footer">priya@iconmediahouse.com</tr>
+              <tr className="footer textYellow">Contact</tr>
               <tr>+1647-627-2546</tr>
             </table>
             <div className="quickLinks">
               <ul>
-                <li className="heading txsi">Quick Links</li>
+                <li className=" footer heading txsi">Quick Links</li>
                 <li>About</li>
                 <li>Careers</li>
                 <li>Make Payment</li>
@@ -44,12 +44,12 @@ function Footer() {
         </section>
       </div>
       <div className=" copy-social-container ">
-        <div className="container copy-social text-light">
+        <div className="footer container copy-social text-light">
           <small>
             {" "}
             &#169; 2021,Icon Media House. Made &#10084; with in Toronto.
           </small>
-          <small className="text-end">
+          <small className="footer text-end">
             Follow us on:
             <i class="facebook">
               <img src={facebook} alt="" width="37px" height="37px" />
@@ -74,6 +74,17 @@ function Footer() {
         //   font-size: 1rem;
         //   padding: 0 10px;
         // }
+        @font-face {
+          font-family: futuramedium;
+          src: url("./fonts/futura\ medium\ bt.ttf");
+        }
+        @font-face {
+          font-family: futurabook;
+          src: url("./fonts/Futura\ Book.ttf");
+        }
+        .footer{
+          font-family:futuramedium;
+        }
         .text-end {
           display: flex;
           align-items: center;

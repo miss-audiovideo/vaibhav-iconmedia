@@ -19,11 +19,11 @@ function Dashboard() {
         <source src="polina.webm" type="video/webm" />
         <source src="../Video/coffee.mp4" type="video/mp4" />
       </video> */}
-      <div style={{ height: "25vh", fontFamily: "Futura-Medium,sans-serif" }} />
+      <div style={{ height: "25vh", fontFamily: "futuramedium" }} />
       <div className="section  mt-3 fluid-container text-light">
         <h1
           className="mt-3 animate__animated animate__zoomIn animate__repeat-2s"
-          style={{ fontSize: "55px", fontFamily: "Futura-Medium,sans-serif" }}
+          style={{ fontSize: "55px", fontFamily: "futuramedium" }}
         >
           We can design just
           <br /> about anything
@@ -87,6 +87,14 @@ function Dashboard() {
         </div>
       </div>
       <style jsx>{`
+        @font-face {
+          font-family: futuramedium;
+          src: url("./fonts/futura\ medium\ bt.ttf");
+        }
+        @font-face {
+          font-family: futurabook;
+          src: url("./fonts/Futura\ Book.ttf");
+        }
         .section h1 {
           color: #ffe462;
           text-align: center;

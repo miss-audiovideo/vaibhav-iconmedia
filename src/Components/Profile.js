@@ -8,8 +8,8 @@ const Profile = () => {
     <>
       <div className="profile-bg text-center ">
         <h1
-          className="profile-heading display-4 animate__animated animate__slideInRight"
-          style={{ fontFamily: "Futura-Medium,sans-serif" }}
+          className="profile-text profile-heading display-4 animate__animated animate__slideInRight"
+          // style={{ fontFamily: "Futura-Medium,sans-serif" }}
         >
           The right team for job!
         </h1>
@@ -20,8 +20,8 @@ const Profile = () => {
               className="img-fluid profile-img animate__animated animate__bounce animate__infinite"
               alt="Profile_picture"
             />
-            <p className="profile-member">Team Member</p>
-            <p className="profile-member-position">founder</p>
+            <p className="profile-member profile-para">Team Member</p>
+            <p className="profile-member-position profile-para">founder</p>
           </div>
           <div class="profile d-flex justify-content-center align-items-center ">
             <img
@@ -29,8 +29,8 @@ const Profile = () => {
               className="img-fluid profile-img  animate__animated animate__bounce animate__infinite"
               alt="Profile_picture"
             />
-            <p className="profile-member">Team Member</p>
-            <p className="profile-member-position">designer</p>
+            <p className="profile-member profile-para">Team Member</p>
+            <p className="profile-member-position profile-para">designer</p>
           </div>
           <div class="profile d-flex justify-content-center align-items-center ">
             <img
@@ -38,11 +38,29 @@ const Profile = () => {
               className="img-fluid profile-img animate__animated animate__bounce animate__infinite"
               alt="Profile_picture"
             />
-            <p className="profile-member">Team Member</p>
-            <p className="profile-member-position">animator</p>
+            <p className="profile-member profile-para">Team Member</p>
+            <p className="profile-member-position profile-para">animator</p>
           </div>
         </div>
       </div>
+      <style jsx>
+        {`
+          @font-face {
+            font-family: futuramedium;
+            src: url("./fonts/futura\ medium\ bt.ttf");
+          }
+          @font-face {
+            font-family: futurabook;
+            src: url("./fonts/Futura\ Book.ttf");
+          }
+          .profile-text {
+            font-family: futuramedium;
+          }
+          .profile-para {
+            font-family: futurabook;
+          }
+        `}
+      </style>
     </>
   );
 };

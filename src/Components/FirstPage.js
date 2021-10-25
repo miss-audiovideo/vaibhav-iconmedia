@@ -16,7 +16,7 @@ const FirstPage = () => {
                   Do you need help with <br />
                   your graphic design ?
                 </h1>
-                <button className="firstpage btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__slower animate__infinite">
+                <button className="firstpage-bt btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__slower animate__infinite">
                   Get in Touch
                 </button>
               </div>
@@ -33,8 +33,19 @@ const FirstPage = () => {
       </div>
       <style jsx>
         {`
+          @font-face {
+            font-family: futuramedium;
+            src: url("./fonts/futura\ medium\ bt.ttf");
+          }
+          @font-face {
+            font-family: futurabook;
+            src: url("./fonts/Futura\ Book.ttf");
+          }
           .firstpage {
-            font-family: "Futura-Medium", sans-serif !important;
+            font-family: futuramedium;
+          }
+          .firstpage-bt {
+            font-family: futurabook;
           }
         `}
       </style>

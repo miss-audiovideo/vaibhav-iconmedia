@@ -39,7 +39,7 @@ const Navbar = () => {
                 <li className="nav-item">
                   <Link
                     to="/about"
-                    className=" navbar-img nav-link text-white mt-2"
+                    className=" nav-text navbar-img nav-link text-white mt-2"
                     aria-current="page"
                   >
                     About
@@ -48,14 +48,14 @@ const Navbar = () => {
                 <li className="nav-item">
                   <Link
                     to="/gallery"
-                    className="navbar-img nav-link text-white mt-2"
+                    className="nav-text navbar-img nav-link text-white mt-2"
                   >
                     Gallery
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/get-in-touch" className="nav-link">
-                    <button className=" navbar-img btn btn-outline-warning">
+                    <button className="nav-text navbar-img btn btn-outline-warning">
                       Get In Touch
                     </button>
                   </Link>
@@ -66,6 +66,17 @@ const Navbar = () => {
         </nav>
       </Router>
       <style jsx>{`
+        @font-face {
+          font-family: futuramedium;
+          src: url("./fonts/futura\ medium\ bt.ttf");
+        }
+        @font-face {
+          font-family: futurabook;
+          src: url("./fonts/Futura\ Book.ttf");
+        }
+        .nav-text {
+          font-family: futurabook;
+        }
         .navbar-img {
           font-size: 22px;
           // font-weight: bold;
