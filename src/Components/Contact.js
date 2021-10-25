@@ -54,13 +54,13 @@ const Contact = () => {
         // setLoader(true);
         db.collection("contacts")
             .add({
-                email: email,
-                first: first,
-                last: last,
-                country: value,
-                price: company,
-                number: number,
-                comment: comment
+                Email: email,
+                First_Name: first,
+                Last_Name: last,
+                Country: value,
+                Company_Name: company,
+                Contact_number: number,
+                Comment: comment
             })
             .then(() => {
                 // setLoader(false);
