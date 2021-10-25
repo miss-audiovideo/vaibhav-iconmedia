@@ -214,7 +214,7 @@ const Contact = () => {
                     {/* </div> */}
                 </div>
                 <div>
-                    <div // className="contact-lottie" 
+                    <div className="contact-img" 
                     style={{
                         //   width: `300px`,
                         //   height: `300px`,
