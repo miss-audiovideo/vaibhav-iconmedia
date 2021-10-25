@@ -15,7 +15,9 @@ function printDesign() {
           {/* <h1>hello</h1> */}
 
           <center>
-            <h1>Print Design</h1>
+            <h1 style={{ fontFamily: "Futura-Medium,sans-serif" }}>
+              Print Design
+            </h1>
             <br />
             <img className="dashpage__image" src={Layer1}></img>
             <img className="dashpage__image" src={Layer2}></img>

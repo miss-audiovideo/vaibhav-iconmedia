@@ -51,28 +51,34 @@ function Footer() {
           </small>
           <small className="text-end">
             Follow us on:
-            <i class="fab fa-facebook">
-              <img src={facebook} alt="" width="45px" height="45px" />
+            <i class="facebook">
+              <img src={facebook} alt="" width="37px" height="37px" />
             </i>
-            <i class="fab fa-instagram">
-              <img src={instagram} alt="" width="50px" height="50px" />
+            <i class="instagram">
+              <img src={instagram} alt="" width="45px" height="45px" />
             </i>
-            <i class="fab fa-linkedin-in">
-              <img src={linkedin} alt="" width="50px" height="50px" />
+            <i class="instagram">
+              <img src={linkedin} alt="" width="45px" height="45px" />
             </i>
-            <i class="fab fa-twitter">
+            {/* <i class="fab fa-twitter">
               <img src={twitter} alt="" width="45px" height="45px" />
-            </i>
+            </i> */}
           </small>
         </div>
       </div>
       <style jsx>{`
-        .fa-facebook,
-        .fa-instagram,
-        .fa-linkedin-in,
-        .fa-twitter {
-          font-size: 1rem;
-          padding: 0 10px;
+        // .fa-facebook,
+        // .fa-instagram,
+        // .fa-linkedin-in,
+        // .fa-twitter {
+        //   font-size: 1rem;
+        //   padding: 0 10px;
+        // }
+        .text-end {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-wrap: wrap;
         }
         .light {
           height: 300px;
@@ -135,6 +141,16 @@ function Footer() {
             width: 100%;
             padding: 0;
           }
+          @media screen and (max-width: 500px) {
+           .facebook{
+            width:15px;
+            height:15px;
+           }
+           .instagram{
+             width:15px;
+             height:15px;
+             flex-wrap:wrap;
+           }
         }
       `}</style>
       {/* </div> */}

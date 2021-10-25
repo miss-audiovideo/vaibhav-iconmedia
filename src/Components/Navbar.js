@@ -29,7 +29,7 @@ const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon text-white font-"></span>
+              <span className="navbar-toggler-icon text-white font-warning"></span>
             </button>
             <div
               className="collapse navbar-collapse justify-content-end text-center"
@@ -68,7 +68,10 @@ const Navbar = () => {
       <style jsx>{`
         .navbar-img {
           font-size: 22px;
-          font-weight: bold;
+          // font-weight: bold;
+        }
+        .navbar-button {
+          color: yellow;
         }
       `}</style>
     </>

@@ -9,14 +9,14 @@ const FirstPage = () => {
           <div className="col-md-10 mx-auto">
             <div className="row d-flex justify-content-center align-items-center">
               <div className="col-md-6 col-12 order-lg-1 order-2 first_div">
-                <p className="heading_Para animate__animated animate__backInDown">
+                <p className="firstpage heading_Para animate__animated animate__backInDown">
                   What we do ?
                 </p>
-                <h1 className="heading_Content animate__animated animate__backInUp">
+                <h1 className="firstpage heading_Content animate__animated animate__backInUp">
                   Do you need help with <br />
                   your graphic design ?
                 </h1>
-                <button className="btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__slower animate__infinite">
+                <button className="firstpage btn btn-outline-warning px-3 mt-3 animate__animated animate__pulse animate__delay-2s animate__slower animate__infinite">
                   Get in Touch
                 </button>
               </div>
@@ -31,6 +31,13 @@ const FirstPage = () => {
           </div>
         </div>
       </div>
+      <style jsx>
+        {`
+          .firstpage {
+            font-family: "Futura-Medium", sans-serif !important;
+          }
+        `}
+      </style>
     </>
   );
 };
