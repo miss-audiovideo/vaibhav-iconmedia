@@ -40,6 +40,7 @@ body {
 }
 .heading-contentOne {
   color: rgb(255, 193, 7) !important;
+  font-family: "futuramedium";
   font-size: 50px;
 }
 .heading-contentTwo {
