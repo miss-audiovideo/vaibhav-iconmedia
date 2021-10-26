@@ -1,10 +1,5 @@
 import React from "react";
 import Logo from "./images/homeLogo.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -54,10 +49,7 @@ function Footer() {
           </small>
           <small className="text-end">
             <div>Follow us on:</div>
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faLinkedin} />
-            <FontAwesomeIcon icon={faInstagram} />
+            
           </small>
         </div>
       </div>
