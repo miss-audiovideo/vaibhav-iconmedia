@@ -30,11 +30,11 @@ const App = () => {
             <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInUp">
               <span className="heading-contentOne">GET THE</span>
               <span className="heading-contentTwo"> ATTENTION</span>
-            <br/>
+              <br />
               <span className="heading-contentOne">YOUR BRAND</span>
-              <span className="heading-contentTwo"> DESERVES</span>
+              <span className="heading-contentThree"> DESERVES</span>
             </HeadingContent>
-            
+
             <MainCard />
             <FirstPage />
             <Brands />
@@ -57,16 +57,18 @@ const App = () => {
             <Brands />
             <Footer />
           </Route>
-          
-          <Route exact path="/gallery" component={ <div className="fluid-container mb-3">
-              <SliderGallery />
-              <SliderGalleryReverse />
+
+          <Route
+            exact
+            path="/gallery"
+            component={
+              <div className="fluid-container mb-3">
+                <SliderGallery />
+                <SliderGalleryReverse />
                 <Footer className="mt-3" />
-            </div>}>
-          
-           
-          
-          </Route>
+              </div>
+            }
+          ></Route>
           <Route exact path="/get-in-touch">
             <Contact />
           </Route>

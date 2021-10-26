@@ -16,6 +16,10 @@
   font-family: futurabook;
   src: url("./fonts/Futura\ Book.ttf");
 }
+@font-face {
+  font-family: futurameditalic;
+  src: url("./fonts/Futura\ Medium\ Italic\ font.ttf");
+}
 body {
   background: #2b0505 !important;
 }
@@ -51,6 +55,12 @@ body {
 }
 .heading-contentTwo {
   color: white;
+  font-family: "futuramedium";
+  font-size: 50px;
+}
+.heading-contentThree {
+  color: white;
+  font-family: "futurameditalic";
   font-size: 50px;
 }
 .headingPara {

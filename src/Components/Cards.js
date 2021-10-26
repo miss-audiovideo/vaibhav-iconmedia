@@ -17,11 +17,27 @@ const Cards = (props) => {
           src={props.src.first}
           alt=""
           srcset=""
+          style={{
+            // Make the image expand to cover the video's dimensions
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            // borderRadius: "15px !imporatnt",
+          }}
         />
 
         <HoverVideoPlayer
+          style={{
+            // Make the image expand to cover the video's dimensions
+            // width: "100%",
+            // height: "100%",
+            objectFit: "cover",
+            borderRadius: "10px !imporatnt",
+            boxSizing: "border-box",
+            overflow: "hidden",
+          }}
           videoSrc={props.src.second}
-          className="card_img img_two"
+          className="card_img img_two "
           restartOnPaused
           muted={false}
           pausedOverlay={
@@ -33,6 +49,7 @@ const Cards = (props) => {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
+                borderRadius: "10px !important",
               }}
             />
           }
