@@ -13,39 +13,41 @@ import chinese from "./images/chinese.jpg";
 import run from "./images/run.jpg";
 import girl from "./images/girl.jpg";
 import drinks from "./images/drinks.jpg";
-import honey from "./images/honey.jpg";
+import watch from "./images/watch.jpg";
 import greeting from "./images/greeting.jpg";
 import swag from "./images/swag.jpg";
 import uniqe from "./images/uniqe.jpg";
 import uniqe2 from "./images/uniqe2.jpg";
+import honey from "./images/honey.jpg";
+import wonder from "./images/wonder.jpg";
 
 let fCard = {
   first: {
     first: girl,
-    second: can,
+    second: run,
     third: video1,
-    fourth: builder,
+    fourth: can,
   },
   second: {
-    first: swag,
+    first: honey,
     second: video2,
     third: drinks,
   },
   third: {
-    first: run,
-    second: video3,
-    third: uniqe,
-  },
-  fourth: {
     first: chinese,
-    second: video2,
+    second: video3,
     third: jam,
   },
+  fourth: {
+    first: wonder,
+    second: video2,
+    third: swag,
+  },
   fifth: {
-    first: honey,
-    second: uniqe2,
+    first: builder,
+    second: greeting,
     third: video3,
-    fourth: three,
+    fourth: watch,
   },
 };
 
@@ -54,12 +56,14 @@ const MainCard = () => {
     <>
       <div class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2">
         <ThreeCards
+          // style={{ borderRadius: "5px" }}
           src={fCard.first}
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
         <Cards
           src={fCard.second}
           class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
+          // style={{ borderRadius: "5px" }}
         />
         <Cards
           src={fCard.third}

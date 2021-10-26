@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "./Video/default-image.png";
 
-import HoverVideoPlayer from 'react-hover-video-player';
-
+import HoverVideoPlayer from "react-hover-video-player";
 
 const ThreeCards = (props) => {
   return (
@@ -13,26 +12,47 @@ const ThreeCards = (props) => {
           alt="video_source"
           className="card_img img_one"
         /> */}
-        <img className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite" src={props.src.first} alt="" srcset="" />
+        <img
+          className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
+          src={props.src.first}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "15px !important",
+            // boxSizing: "border-box",
+            // overflow: "hidden",
+          }}
+          alt=""
+          srcset=""
+        />
         <HoverVideoPlayer
-            videoSrc={props.src.third}
-            className="card_img img_two"
-            restartOnPaused
-            muted={false}
-            pausedOverlay={
-              <img
-                src={props.src.second}
-                alt=""
-                style={{
-                  // Make the image expand to cover the video's dimensions
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            }
-          />
-          {/* <HoverVideoPlayer
+          style={{
+            borderRadius: "15px !important",
+            boxSizing: "border-box",
+            overflow: "hidden",
+          }}
+          videoSrc={props.src.third}
+          className="card_img img_two"
+          restartOnPaused
+          muted={false}
+          pausedOverlay={
+            <img
+              src={props.src.second}
+              alt=""
+              style={{
+                // Make the image expand to cover the video's dimensions
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "10px",
+                boxSizing: "border-box",
+                overflow: "hidden",
+              }}
+            />
+          }
+        />
+        {/* <HoverVideoPlayer
             videoSrc={props.src.third}
             className="card_img "
             restartOnPaused
@@ -50,7 +70,12 @@ const ThreeCards = (props) => {
               />
             }
           /> */}
-          <img className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite" src={props.src.fourth} alt="" srcset="" />
+        <img
+          className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
+          src={props.src.fourth}
+          alt=""
+          srcset=""
+        />
       </div>
     </>
   );
