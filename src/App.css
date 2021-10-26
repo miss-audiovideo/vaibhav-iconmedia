@@ -25,6 +25,7 @@ body {
 }
 .nav-pad {
   padding-top: 10px;
+  
 }
 .nav-style {
   font-family: "futurabook";
@@ -35,25 +36,35 @@ body {
 
   font-family: "futuramedium";
   padding-top: 10rem;
-  line-height: 4.1rem;
+  line-height: 45px;
 
   font-family: "Futura-Medium", sans-serif !important;
   padding-top: 5rem;
-  line-height: 3rem;
+  
 }
 
 .headingContent2 {
-  color: rgb(255, 193, 7) !important;
+  color: #ffc857 !important;
   font-family: "futuramedium";
   line-height: 4.1rem;
   padding: 20px;
+  
 }
 .heading-contentOne {
-  color: rgb(255, 193, 7) !important;
+  color: #ffc857 !important;
   font-family: "futuramedium";
-  font-size: 50px;
+  font-size: 54px;
+  letter-spacing: 4px;
+}
+.heading-contentOnes {
+  color: #ffc857 !important;
+  font-family: "futuramedium";
+  font-size: 53px;
+  
+ 
 }
 .heading-contentTwo {
+
   color: white;
   font-family: "futuramedium";
   font-size: 50px;
@@ -62,10 +73,23 @@ body {
   color: white;
   font-family: "futurameditalic";
   font-size: 50px;
+
+  color: #eaeaf0;
+  letter-spacing: 4px;
+  font-size: 54px;
+  font-family: "futuramedium";
+ 
+}
+.heading-contentTwos {
+  color: #eaeaf0;
+  font-size: 53px;font-family: "futuramedium";
+  
+  
+ 
 }
 .headingPara {
   width: 28%;
-  color: #fff;
+  color: #eaeaf0;
   font-size: 1.4rem;
   font-family: "futurabook";
   line-height: 1.9rem;

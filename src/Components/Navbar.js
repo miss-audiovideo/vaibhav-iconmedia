@@ -15,7 +15,7 @@ const Navbar = () => {
               <img
                 className="text-white"
                 width="150px"
-                height="50px"
+                height="50px" 
                 src={homeLogo}
                 alt="main_logo"
               />
@@ -78,7 +78,7 @@ const Navbar = () => {
           font-family: futurabook;
         }
         .navbar-img {
-          font-size: 22px;
+          font-size: 16px;
           // font-weight: bold;
         }
         .navbar-button {
