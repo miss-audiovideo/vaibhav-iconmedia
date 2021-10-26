@@ -34,10 +34,6 @@ const App = () => {
               <br />
               <span className="heading-contentOne">YOUR BRAND</span>
               <span className="heading-contentThree"> DESERVES</span>
-
-              <br />
-              <span className="heading-contentOnes">YOUR BRAND</span>
-              <span className="heading-contentTwos"> DESERVES</span>
             </HeadingContent>
 
             <MainCard />
