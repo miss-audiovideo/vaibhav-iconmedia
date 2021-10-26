@@ -80,6 +80,7 @@ const Contact = () => {
                 // setLoader(false);
             });
 
+
         setEmail("");
         setNameFirst("");
         setNameLast("");
@@ -97,7 +98,7 @@ const Contact = () => {
         <>
             <div className="split">
                 <div>
-                    <h2 className="text-capitalize display-2 w-50 contact-alng headingContent2">
+                    <h2 className="contact-txt text-capitalize display-2 w-50 contact-alng headingContent2">
                         LET'S CREATE EXPERIENCES!
                     </h2>
                     {/* <div className="form-container center-block"> */}
@@ -214,24 +215,35 @@ const Contact = () => {
                     {/* </div> */}
                 </div>
                 <div>
-                    <div className="contact-img" 
-                    style={{
-                        //   width: `300px`,
-                        //   height: `300px`,
-                        display: `flex`,
-                        flex: `wrap`,
-                        alignItems: `center`,
-                        justifyContent: `center`,
-                    }}
+                    <div
+                        className="contact-img"
+                        style={{
+                            //   width: `300px`,
+                            //   height: `300px`,
+                            display: `flex`,
+                            flex: `wrap`,
+                            alignItems: `center`,
+                            justifyContent: `center`,
+                        }}
                     >
-                        {/* <img className="img-fluid contact-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower" src={twelve} alt="main_img" /> */}
+                        {/* <img
+                        className="img-fluid contact-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower"
+                        src={twelve}
+                        alt="main_img"
+                        /> */}
                         <Lottie className="contact-lottie" options={defaultOptions} />
                     </div>
                 </div>
             </div>
-            {/* <style jsx>{` @media screen and (max-width: 800px) { .contact-lottie { flex-direction: "column"; width: "300px"; height: "300px";}}`}</style> */}
+            <style jsx>{`
+            .contact-txt {
+            fontfamily: futuramedium;
+            }
+            `}</style>
         </>
     );
+
 };
+
 
 export default Contact;
