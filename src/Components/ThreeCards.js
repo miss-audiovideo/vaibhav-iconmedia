@@ -40,6 +40,8 @@ const ThreeCards = (props) => {
               alt=""
               style={{
                 // Make the image expand to cover the video's dimensions
+                height:"100%",
+                width:"100%",
                 objectFit: "cover",
                 borderRadius: "10px",
                 boxSizing: "border-box",
