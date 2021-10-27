@@ -1,0 +1,54 @@
+.NewDash {
+  margin-top: 200px;
+  margin-left: 75px;
+  margin-right: 75px;
+  /* width: 800px; */
+  /* background: pink; */
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.NewDash-Left {
+  /* background: green; */
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NewDash-Right {
+  /* background: orange; */
+  flex: 0.4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.NewDash-frame {
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+.NewDash-img {
+  margin: 15px;
+  border-radius: 10px;
+}
+/* .NewDash-textOne {
+  display: flex;
+  flex-direction: row;
+  background: blue;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+} */
+.NewDash-text {
+  /* padding: 20px; */
+}
+
+.NewDash-texting {
+  background: #ffcccc;
+  color: #7158e2;
+  padding: 26px;
+  border-radius: 10px;
+  /* margin: 5px; */
+}
