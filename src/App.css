@@ -283,8 +283,8 @@ word-spacing: 2px;
 }
 
 .slider .slide {
-  height: 340px;
-  width: 340px;
+  height: 260px;
+  width: 260px;
 }
 
 .slide:nth-child(1),
