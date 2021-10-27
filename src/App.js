@@ -32,7 +32,7 @@ const App = () => {
               <span className="heading-contentTwo"> ATTENTION</span>
 
               <br />
-              <span className="heading-contentOne">YOUR BRAND</span>
+              <span className="heading-contentOnes">YOUR BRAND</span>
               <span className="heading-contentThree"> DESERVES</span>
             </HeadingContent>
 

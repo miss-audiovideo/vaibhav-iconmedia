@@ -34,11 +34,11 @@ body {
   color: rgb(255, 193, 7) !important;
 
   font-family: "futuramedium";
-  padding-top: 10rem;
-  line-height: 45px;
+  padding-top: 4rem;
+  line-height: 50px;
 
   font-family: "Futura-Medium", sans-serif !important;
-  padding-top: 5rem;
+ 
 }
 
 .headingContent2 {
@@ -47,26 +47,32 @@ body {
   line-height: 4.1rem;
   padding: 20px;
 }
-.heading-contentOne {
-  color: #ffc857 !important;
-  font-family: "futuramedium";
-  font-size: 54px;
-  letter-spacing: 4px;
-}
 .heading-contentOnes {
   color: #ffc857 !important;
   font-family: "futuramedium";
   font-size: 53px;
+  font-weight: 550;
+
+}
+.heading-contentOne {
+  color: #ffc857 !important;
+  font-family: "futuramedium";
+  font-size: 53px;
+  font-weight: 550;
+letter-spacing: 2px;
+word-spacing: 2px;
 }
 .heading-contentTwo {
   color: white;
+  letter-spacing: 2px;
   font-family: "futuramedium";
-  font-size: 50px;
+  word-spacing: 2.2px;
+  font-size: 53px; font-weight: 550;
 }
 .heading-contentThree {
   color: white;
   font-family: "futurameditalic";
-  font-size: 50px;
+  font-size: 54px; font-weight: 550;
 
   /* color: #eaeaf0; */
   /* letter-spacing: 4px; */
@@ -93,14 +99,14 @@ body {
 }
 .first_card {
   position: relative;
-  bottom: 30px;
+ top: 10;
 }
 .second_card {
   position: relative;
-  top: -30px;
+  top: -60px;
 }
 .third_card {
-  top: 40px;
+  top: 10px;
   position: relative;
 }
 .card_img {
