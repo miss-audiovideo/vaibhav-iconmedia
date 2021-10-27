@@ -1,9 +1,7 @@
 import React from "react";
 import Logo from "./images/homeLogo.png";
-import facebook from "./images/facebook.png";
-import instagram from "./images/instagram.png";
-import twitter from "./images/twitter.png";
-import linkedin from "./images/linkedin.png";
+
+
 
 function Footer() {
   return (
@@ -49,31 +47,13 @@ function Footer() {
             {" "}
             &#169; 2021,Icon Media House. Made &#10084; with in Toronto.
           </small>
-          <small className="footer text-end">
-            Follow us on:
-            <i class="facebook">
-              <img src={facebook} alt="" width="37px" height="37px" />
-            </i>
-            <i class="instagram">
-              <img src={instagram} alt="" width="45px" height="45px" />
-            </i>
-            <i class="instagram">
-              <img src={linkedin} alt="" width="45px" height="45px" />
-            </i>
-            {/* <i class="fab fa-twitter">
-              <img src={twitter} alt="" width="45px" height="45px" />
-            </i> */}
+          <small className="text-end">
+            <div>Follow us on:</div>
+            
           </small>
         </div>
       </div>
       <style jsx>{`
-        // .fa-facebook,
-        // .fa-instagram,
-        // .fa-linkedin-in,
-        // .fa-twitter {
-        //   font-size: 1rem;
-        //   padding: 0 10px;
-        // }
         @font-face {
           font-family: futuramedium;
           src: url("./fonts/futura\ medium\ bt.ttf");
@@ -85,6 +65,16 @@ function Footer() {
         .footer{
           font-family:futuramedium;
         }
+        .copy-social-container {
+          background-color: #191919;
+          height: auto;
+        }
+        .copy-social {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          }
         .text-end {
           display: flex;
           align-items: center;
@@ -95,17 +85,6 @@ function Footer() {
           height: 300px;
           background-color: #333333;
           padding: 50px;
-        }
-        .copy-social-container {
-          background-color: #191919;
-        }
-        .copy-social {
-          height: 50px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          // padding: 0 50px 0 50px;
         }
         .iconText {
           font-size: 12px;
@@ -152,17 +131,6 @@ function Footer() {
             width: 100%;
             padding: 0;
           }
-          @media screen and (max-width: 500px) {
-           .facebook{
-            width:15px;
-            height:15px;
-           }
-           .instagram{
-             width:15px;
-             height:15px;
-             flex-wrap:wrap;
-           }
-        }
       `}</style>
       {/* </div> */}
     </>

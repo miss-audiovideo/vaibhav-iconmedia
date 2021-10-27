@@ -16,8 +16,6 @@ const ThreeCards = (props) => {
           className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
           src={props.src.first}
           style={{
-            width: "100%",
-            height: "100%",
             objectFit: "cover",
             borderRadius: "15px !important",
             // boxSizing: "border-box",
@@ -42,8 +40,8 @@ const ThreeCards = (props) => {
               alt=""
               style={{
                 // Make the image expand to cover the video's dimensions
-                width: "100%",
-                height: "100%",
+                height:"100%",
+                width:"100%",
                 objectFit: "cover",
                 borderRadius: "10px",
                 boxSizing: "border-box",
