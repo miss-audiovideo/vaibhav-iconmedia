@@ -1,54 +1,41 @@
 .NewDash {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 75px;
   margin-right: 75px;
-  /* width: 800px; */
-  /* background: pink; */
-  color: red;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 .NewDash-Left {
-  /* background: green; */
-  flex: 0.6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NewDash-Right {
-  /* background: orange; */
+  padding-top: 10px;
   flex: 0.4;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.NewDash-frame {
-  /* display: flex; */
-  flex-wrap: wrap;
+.NewDash-Right {
+  display: grid;
+  padding-left: 20px;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  
 }
 .NewDash-img {
   margin: 15px;
   border-radius: 10px;
 }
-/* .NewDash-textOne {
-  display: flex;
-  flex-direction: row;
-  background: blue;
-  color: white;
-  margin: 10px;
-  font-size: 20px;
-} */
-.NewDash-text {
-  /* padding: 20px; */
+.NewDash-btn {
+  background: #187e8a;
+  border-radius: 10px;
+  height: 3.6vw;
+  text-align: center;
 }
 
-.NewDash-texting {
-  background: #ffcccc;
-  color: #7158e2;
-  padding: 26px;
-  border-radius: 10px;
-  /* margin: 5px; */
+.color-text{
+  color: #fff;
+  font-size: 1.6vw;
 }
