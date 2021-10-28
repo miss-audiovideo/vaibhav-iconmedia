@@ -178,7 +178,7 @@ hr {
 
 .print-text{
     grid-area: print-text;
-    background: linear-gradient(#187f8acb, #187f8acb),url("F:\React Projects\miss audio video\vaibhav-iconmedia-main\src\Components\images\3.jpg");
+    /* background: linear-gradient(#187f8acb, #187f8acb),url("F:\React Projects\miss audio video\vaibhav-iconmedia-main\src\Components\images\3.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
