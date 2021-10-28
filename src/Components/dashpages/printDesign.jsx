@@ -6,7 +6,7 @@ import Layer4 from "../SGI/Layer20.png";
 import Layer5 from "../SGI/Layer21.png";
 import Layer6 from "../SGI/Layer22.png";
 import Layer7 from "../SGI/Layer23.png";
-import "./print.css";
+
 
 function printDesign() {
   return (
