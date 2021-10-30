@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vaibhav-iconmedia/static/css/main.23ff8e36.chunk.css",
+    "main.css": "/vaibhav-iconmedia/static/css/main.6845eb25.chunk.css",
     "main.js": "/vaibhav-iconmedia/static/js/main.c9692582.chunk.js",
     "main.js.map": "/vaibhav-iconmedia/static/js/main.c9692582.chunk.js.map",
     "runtime-main.js": "/vaibhav-iconmedia/static/js/runtime-main.6907654e.js",
@@ -12,7 +12,7 @@
     "static/js/3.c4c81e99.chunk.js.map": "/vaibhav-iconmedia/static/js/3.c4c81e99.chunk.js.map",
     "index.html": "/vaibhav-iconmedia/index.html",
     "static/css/2.0623869f.chunk.css.map": "/vaibhav-iconmedia/static/css/2.0623869f.chunk.css.map",
-    "static/css/main.23ff8e36.chunk.css.map": "/vaibhav-iconmedia/static/css/main.23ff8e36.chunk.css.map",
+    "static/css/main.6845eb25.chunk.css.map": "/vaibhav-iconmedia/static/css/main.6845eb25.chunk.css.map",
     "static/js/2.399faffc.chunk.js.LICENSE.txt": "/vaibhav-iconmedia/static/js/2.399faffc.chunk.js.LICENSE.txt",
     "static/media/App.css": "/vaibhav-iconmedia/static/media/futura medium bt.4e762c29.ttf",
     "static/media/10.8aa0209e.jpg": "/vaibhav-iconmedia/static/media/10.8aa0209e.jpg",
@@ -100,7 +100,7 @@
     "static/js/runtime-main.6907654e.js",
     "static/css/2.0623869f.chunk.css",
     "static/js/2.399faffc.chunk.js",
-    "static/css/main.23ff8e36.chunk.css",
+    "static/css/main.6845eb25.chunk.css",
     "static/js/main.c9692582.chunk.js"
   ]
 }
