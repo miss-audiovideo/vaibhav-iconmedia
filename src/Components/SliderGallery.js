@@ -31,6 +31,7 @@ const SliderGallery = () => {
         {`
           .slider {
             background-color: #2b0505;
+           
           }
           .slide {
             margin-left: 10px;

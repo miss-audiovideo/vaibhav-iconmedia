@@ -94,8 +94,8 @@ const Brands = () => {
         }
         @media screen and (max-width: 800px) {
           .brand-img {
-            width: 120px;
-            height: 80px;
+            width: 15vw;
+            height: auto;
           }
         }
       `}</style>
