@@ -487,6 +487,16 @@ word-spacing: 2px;
     margin: 60px auto 20px auto !important;
   }
 }
+@media (max-width:768px) {
+  .container-img {
+    width: 60%;
+    left: 20% !important;
+  }
+  .first_div {
+    width: 70%;
+    text-align: center;
+  }
+}
 .d-flex-c {
   display: flex;
 }
