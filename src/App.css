@@ -38,7 +38,6 @@ body {
   line-height: 50px;
 
   font-family: "Futura-Medium", sans-serif !important;
- 
 }
 
 .headingContent2 {
@@ -52,27 +51,28 @@ body {
   font-family: "futuramedium";
   font-size: 53px;
   font-weight: 550;
-
 }
 .heading-contentOne {
   color: #ffc857 !important;
   font-family: "futuramedium";
   font-size: 53px;
   font-weight: 550;
-letter-spacing: 2px;
-word-spacing: 2px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 .heading-contentTwo {
   color: white;
   letter-spacing: 2px;
   font-family: "futuramedium";
   word-spacing: 2.2px;
-  font-size: 53px; font-weight: 550;
+  font-size: 53px;
+  font-weight: 550;
 }
 .heading-contentThree {
   color: white;
   font-family: "futurameditalic";
-  font-size: 54px; font-weight: 550;
+  font-size: 54px;
+  font-weight: 550;
 
   /* color: #eaeaf0; */
   /* letter-spacing: 4px; */
@@ -99,7 +99,7 @@ word-spacing: 2px;
 }
 .first_card {
   position: relative;
- top: 10;
+  top: 10;
 }
 .second_card {
   position: relative;
