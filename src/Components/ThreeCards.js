@@ -7,41 +7,24 @@ const ThreeCards = (props) => {
   return (
     <>
       <div className={props.class}>
-        {/* <video
-          src={props.src.first}
-          alt="video_source"
-          className="card_img img_one"
-        /> */}
-        <img
-          className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
-          src={props.src.first}
-          style={{
-            objectFit: "cover",
-            borderRadius: "15px !important",
-            // boxSizing: "border-box",
-            // overflow: "hidden",
-          }}
-          alt=""
-          srcset=""
-        />
         <HoverVideoPlayer
           style={{
             borderRadius: "15px !important",
             boxSizing: "border-box",
             overflow: "hidden",
           }}
-          videoSrc={props.src.third}
+          videoSrc={props.src.second}
           className="card_img img_two"
           restartOnPaused
           muted={false}
           pausedOverlay={
             <img
-              src={props.src.second}
+              src={props.src.first}
               alt=""
               style={{
                 // Make the image expand to cover the video's dimensions
-                height:"100%",
-                width:"100%",
+                height: "100%",
+                width: "100%",
                 objectFit: "cover",
                 borderRadius: "10px",
                 boxSizing: "border-box",
@@ -50,29 +33,57 @@ const ThreeCards = (props) => {
             />
           }
         />
-        {/* <HoverVideoPlayer
-            videoSrc={props.src.third}
-            className="card_img "
-            restartOnPaused
-            muted={false}
-            pausedOverlay={
-              <img
-                src={Image}
-                alt=""
-                style={{
-                  // Make the image expand to cover the video's dimensions
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "",
-                }}
-              />
-            }
-          /> */}
-        <img
-          className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
-          src={props.src.fourth}
-          alt=""
-          srcset=""
+        <HoverVideoPlayer
+          style={{
+            borderRadius: "15px !important",
+            boxSizing: "border-box",
+            overflow: "hidden",
+          }}
+          videoSrc={props.src.fourth}
+          className="card_img img_two"
+          restartOnPaused
+          muted={false}
+          pausedOverlay={
+            <img
+              src={props.src.third}
+              alt=""
+              style={{
+                // Make the image expand to cover the video's dimensions
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                borderRadius: "10px",
+                boxSizing: "border-box",
+                overflow: "hidden",
+              }}
+            />
+          }
+        />
+        <HoverVideoPlayer
+          style={{
+            borderRadius: "15px !important",
+            boxSizing: "border-box",
+            overflow: "hidden",
+          }}
+          videoSrc={props.src.sixth}
+          className="card_img img_two"
+          restartOnPaused
+          muted={false}
+          pausedOverlay={
+            <img
+              src={props.src.fifth}
+              alt=""
+              style={{
+                // Make the image expand to cover the video's dimensions
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                borderRadius: "10px",
+                boxSizing: "border-box",
+                overflow: "hidden",
+              }}
+            />
+          }
         />
       </div>
     </>
