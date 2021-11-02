@@ -30,7 +30,7 @@ const SliderGallery = () => {
       <style jsx>
         {`
           .slider {
-            // background-color: #2b0505;
+            // background-color: transparent;
           }
           .slide {
             margin-left: 10px;

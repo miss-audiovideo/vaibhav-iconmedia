@@ -30,7 +30,7 @@ const SliderGalleryReverse = () => {
       <style jsx>
         {`
           .slider {
-            background-color: #2b0505;
+            background-color: transparent;
           }
           .slide2 {
             margin-left: 10px;
