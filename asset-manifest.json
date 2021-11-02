@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vaibhav-iconmedia/static/css/main.833f0a5c.chunk.css",
-    "main.js": "/vaibhav-iconmedia/static/js/main.53b75cb8.chunk.js",
-    "main.js.map": "/vaibhav-iconmedia/static/js/main.53b75cb8.chunk.js.map",
+    "main.css": "/vaibhav-iconmedia/static/css/main.0389db0a.chunk.css",
+    "main.js": "/vaibhav-iconmedia/static/js/main.572f3d50.chunk.js",
+    "main.js.map": "/vaibhav-iconmedia/static/js/main.572f3d50.chunk.js.map",
     "runtime-main.js": "/vaibhav-iconmedia/static/js/runtime-main.e3a27adc.js",
     "runtime-main.js.map": "/vaibhav-iconmedia/static/js/runtime-main.e3a27adc.js.map",
     "static/css/2.0623869f.chunk.css": "/vaibhav-iconmedia/static/css/2.0623869f.chunk.css",
-    "static/js/2.6a72fa4e.chunk.js": "/vaibhav-iconmedia/static/js/2.6a72fa4e.chunk.js",
-    "static/js/2.6a72fa4e.chunk.js.map": "/vaibhav-iconmedia/static/js/2.6a72fa4e.chunk.js.map",
+    "static/js/2.80320b7a.chunk.js": "/vaibhav-iconmedia/static/js/2.80320b7a.chunk.js",
+    "static/js/2.80320b7a.chunk.js.map": "/vaibhav-iconmedia/static/js/2.80320b7a.chunk.js.map",
     "static/js/3.3d16e5e2.chunk.js": "/vaibhav-iconmedia/static/js/3.3d16e5e2.chunk.js",
     "static/js/3.3d16e5e2.chunk.js.map": "/vaibhav-iconmedia/static/js/3.3d16e5e2.chunk.js.map",
     "index.html": "/vaibhav-iconmedia/index.html",
     "static/css/2.0623869f.chunk.css.map": "/vaibhav-iconmedia/static/css/2.0623869f.chunk.css.map",
-    "static/css/main.833f0a5c.chunk.css.map": "/vaibhav-iconmedia/static/css/main.833f0a5c.chunk.css.map",
-    "static/js/2.6a72fa4e.chunk.js.LICENSE.txt": "/vaibhav-iconmedia/static/js/2.6a72fa4e.chunk.js.LICENSE.txt",
+    "static/css/main.0389db0a.chunk.css.map": "/vaibhav-iconmedia/static/css/main.0389db0a.chunk.css.map",
+    "static/js/2.80320b7a.chunk.js.LICENSE.txt": "/vaibhav-iconmedia/static/js/2.80320b7a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/vaibhav-iconmedia/static/media/futura medium bt.4e762c29.ttf",
     "static/media/13.130d1fd3.jpg": "/vaibhav-iconmedia/static/media/13.130d1fd3.jpg",
     "static/media/20.8a969a59.jpg": "/vaibhav-iconmedia/static/media/20.8a969a59.jpg",
@@ -82,8 +82,8 @@
   "entrypoints": [
     "static/js/runtime-main.e3a27adc.js",
     "static/css/2.0623869f.chunk.css",
-    "static/js/2.6a72fa4e.chunk.js",
-    "static/css/main.833f0a5c.chunk.css",
-    "static/js/main.53b75cb8.chunk.js"
+    "static/js/2.80320b7a.chunk.js",
+    "static/css/main.0389db0a.chunk.css",
+    "static/js/main.572f3d50.chunk.js"
   ]
 }
