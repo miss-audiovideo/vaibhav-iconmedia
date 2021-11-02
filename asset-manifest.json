@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vaibhav-iconmedia/static/css/main.e19a4d94.chunk.css",
-    "main.js": "/vaibhav-iconmedia/static/js/main.7d852422.chunk.js",
-    "main.js.map": "/vaibhav-iconmedia/static/js/main.7d852422.chunk.js.map",
+    "main.js": "/vaibhav-iconmedia/static/js/main.53b75cb8.chunk.js",
+    "main.js.map": "/vaibhav-iconmedia/static/js/main.53b75cb8.chunk.js.map",
     "runtime-main.js": "/vaibhav-iconmedia/static/js/runtime-main.e3a27adc.js",
     "runtime-main.js.map": "/vaibhav-iconmedia/static/js/runtime-main.e3a27adc.js.map",
     "static/css/2.0623869f.chunk.css": "/vaibhav-iconmedia/static/css/2.0623869f.chunk.css",
@@ -84,6 +84,6 @@
     "static/css/2.0623869f.chunk.css",
     "static/js/2.6a72fa4e.chunk.js",
     "static/css/main.e19a4d94.chunk.css",
-    "static/js/main.7d852422.chunk.js"
+    "static/js/main.53b75cb8.chunk.js"
   ]
 }
