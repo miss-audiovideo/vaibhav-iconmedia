@@ -18,12 +18,12 @@ const Brands = () => {
         <br />
         <br />
         <h1
-          // style={{
-          //   fontFamily: `futuramedium`,
-          // }}
+          style={{
+            fontFamily: `futuramedium`,
+          }}
           className=" firstpage brand-line text-center pt-lg-5 pb-lg-5 animate__animated animate__jackInTheBox animate__delay-10s "
         >
-          Leading Brands
+          BRANDS WE HAVE WORKED WITH
         </h1>
         <div className="brands">
           <Brand
@@ -89,7 +89,7 @@ const Brands = () => {
           // backdrop-filter: blur(4px) saturate(200%);
           -webkit-backdrop-filter: blur(4px) saturate(200%);
           background-color: rgba(114, 114, 114, 0.5);
-          border-radius: 12px;
+          // border-radius: 12px;
           border: 1px solid rgba(255, 255, 255, 0.125);
         }
         .heading_brands {
@@ -97,6 +97,10 @@ const Brands = () => {
         }
         .firstpage {
           font-family: futuramedium;
+          // -webkit-backdrop-filter: blur(4px) saturate(200%);
+          // background-color: rgba(114, 114, 114, 0.5);
+          // border-radius: 12px;
+          // border: 1px solid rgba(255, 255, 255, 0.125);
         }
         @media screen and (max-width: 800px) {
           .brand-img {
