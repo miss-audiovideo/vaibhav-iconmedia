@@ -18,6 +18,8 @@ import greeting from "./images/greeting.jpg";
 import swag from "./images/swag.jpg";
 import honey from "./images/honey.jpg";
 import wonder from "./images/wonder.jpg";
+import jams from "./images/21.jpg";
+import sweet from "./images/20.jpg";
 
 let fCard = {
   first: {
@@ -25,7 +27,7 @@ let fCard = {
     second: video4,
     third: run,
     fourth: video1,
-    fifth: can,
+    fifth: jams,
     sixth: video4
   },
   second: {
@@ -48,7 +50,7 @@ let fCard = {
     second: video5,
     third: greeting,
     fourth: video3,
-    fifth: watch,
+    fifth: sweet,
     sixth: video5
   },
 };
