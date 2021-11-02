@@ -21,7 +21,8 @@
   src: url("./fonts/Futura\ Medium\ Italic\ font.ttf");
 }
 body {
-  background: #2b0505 !important;
+  /* background: #2b0505 !important; */
+  background-image: url("./Components/images/Leaf.jpeg");
 }
 .nav-pad {
   padding-top: 10px;
@@ -32,33 +33,42 @@ body {
 }
 .headingContent {
   color: rgb(255, 193, 7) !important;
-
+  margin-top: 75px;
   font-family: "futuramedium";
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   line-height: 50px;
-
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  /* /* padding-right: 10px; */
+  /* backdrop-filter: blur(4px) saturate(200%);  */
+  /* -webkit-backdrop-filter: blur(4px) saturate(200%); */
+  /* background-color: rgba(114, 114, 114, 0.5); */
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.125);
   font-family: "Futura-Medium", sans-serif !important;
 }
 
-.headingContent2 {
+/* .headingContent2 {
   color: #ffc857 !important;
   font-family: "futuramedium";
   line-height: 4.1rem;
   padding: 20px;
-}
+} */
 .heading-contentOnes {
   color: #ffc857 !important;
   font-family: "futuramedium";
   font-size: 53px;
   font-weight: 550;
 }
-.heading-contentOne {
+/* .heading-contentOne {
   color: #ffc857 !important;
   font-family: "futuramedium";
   font-size: 53px;
   font-weight: 550;
   letter-spacing: 2px;
   word-spacing: 2px;
+  padding: 15px;
 }
 .heading-contentTwo {
   color: white;
@@ -67,7 +77,7 @@ body {
   word-spacing: 2.2px;
   font-size: 53px;
   font-weight: 550;
-}
+} */
 .heading-contentThree {
   color: white;
   font-family: "futurameditalic";
@@ -90,6 +100,11 @@ body {
   font-size: 1.4rem;
   font-family: "futurabook";
   line-height: 1.9rem;
+}
+.head-style {
+  padding-top: 150px;
+  border: none !important;
+  margin: auto;
 }
 .navbar-dark .navbar-toggler {
   border-color: rgb(255, 193, 7);
@@ -168,6 +183,7 @@ body {
 .tenth-brand {
   font-family: "futurabook";
 }
+
 @media (min-width: 860px) {
   .brands {
     display: grid;
@@ -175,6 +191,38 @@ body {
     align-items: center;
     justify-content: space-around;
     /* font-size: 100px; */
+  }
+}
+@media (min-width: 700px) {
+  .heading-contentOnes {
+    font-size: 43px;
+    font-weight: bolder;
+  }
+  .heading-contentThree {
+    font-size: 43px;
+    font-weight: bolder;
+  }
+  .headingContent {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 300px) {
+  .heading-contentOnes {
+    /* font-size: 24px; */
+    font-weight: bolder;
+    padding: auto;
+  }
+  .heading-contentThree {
+    /* font-size: 24px; */
+    font-weight: bolder;
+    padding: auto;
+  }
+  .headingContent {
+    margin-bottom: 50px;
+    /* margin: auto; */
+    /* padding-top: 10px !important; */
+    /* border: none; */
   }
 }
 @media (max-width: 860px) {
@@ -200,7 +248,8 @@ body {
 .profile-bg {
   height: 350px;
   width: 100%;
-  background: linear-gradient(to right, #fd79a8, 50%, #fab1a0);
+  /* background: linear-gradient(to right, #fd79a8, 50%, #fab1a0); */
+  background-image: url("./Components/images/Leaf.jpeg");
   color: #fff;
   font-family: "futurabook";
   position: relative;
@@ -241,7 +290,7 @@ body {
 /* slider */
 
 .slider {
-  background: white;
+  /* background: white; */
   height: 340px;
   /* margin: 0 auto; */
   overflow: hidden;
@@ -572,7 +621,7 @@ body {
     margin: 60px auto 20px auto !important;
   }
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .container-img {
     width: 60%;
     left: 20% !important;

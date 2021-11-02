@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import Button from "./Buttons";
 import Image from "./images/c.png";
-import { Modal } from "react-bootstrap";
+import { Modal, ModalFooter } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalHeader from "react-bootstrap/esm/ModalHeader";
+// import ModalOne from "../Modals/ModalOne.jsx";
+
 const Quote = () => {
+  const [next, setNext] = useState(false);
+  const [next2, setNext2] = useState(false);
   const [open, setOpen] = useState(false);
   return (
     <>
       <div className="quote animate__animated animate__bounce animate__delay-3s">
         <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
-          Let's create a measurable
+          <span style={{ color: "white" }}>Let's create a measurable</span>
           <br />
           impact on your business.
         </h1>
@@ -19,32 +25,75 @@ const Quote = () => {
         >
           Design a quote
         </button>
-        <Modal
-          show={open}
-          className="animate__animated animate__fadeInBottomRight animate-slower animate__delay-1s"
-        >
-          <Modal.Header className="modal-head text-center"></Modal.Header>
-          <Modal.Body>
+        <Modal show={open}>
+          {/* <ModalOne /> */}
+          <ModalHeader></ModalHeader>
+          <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
                 "Design A Quote"
               </h1>
               <h3>What services would you like to option ?</h3>
-              <p className="modal-p">UI/UX</p>
-              <p className="modal-p">Branding</p>
-              <p className="modal-p">Developement</p>
-              <p className="modal-p">Marketing</p>
-              <p className="modal-p">All Services</p>
+              <Link className="modal-link" to="./Modals/ModalOne">
+                <p className="modal-p">UI/UX</p>
+              </Link>
+              <Link className="modal-link">
+                <p className="modal-p">Branding</p>
+              </Link>
+              <Link className="modal-link">
+                <p className="modal-p">Developement</p>
+              </Link>
+              <Link className="modal-link">
+                <p className="modal-p">Marketing</p>
+              </Link>
+              <Link className="modal-link">
+                <p className="modal-p">All Services</p>
+              </Link>
             </center>
-          </Modal.Body>
-          <Modal.Footer>
-            {/* <button onClick={() => setOpen(false)}>close Modal</button> */}
-            <i
-              class="fa fa-times cross"
-              aria-hidden="true"
-              onClick={() => setOpen(false)}
-            ></i>
-          </Modal.Footer>
+            <ModalFooter>
+              <button
+                // className="quote-button"
+                onClick={() => {
+                  setNext(true);
+                  setOpen(false);
+                }}
+              >
+                next
+              </button>
+              <button onClick={() => setOpen(false)}>close Modal</button>
+            </ModalFooter>
+          </div>
+        </Modal>
+        <Modal show={next}>
+          <div>
+            <center>
+              <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
+                "Design A Quote"
+              </h1>
+              hello
+            </center>
+            <button
+              onClick={() => {
+                setNext2(true);
+                setNext(false);
+              }}
+            >
+              Continue
+            </button>
+            <button onClick={() => setNext(false)}>close Modal</button>
+          </div>
+        </Modal>
+        <Modal show={next2}>
+          <div>
+            <center>
+              <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
+                "Design A Quote"
+              </h1>
+              hello222
+            </center>
+            {/* <button>finish</button> */}
+            <button onClick={() => setNext2(false)}>close Modal</button>
+          </div>
         </Modal>
       </div>
       <style jsx>{`
@@ -59,6 +108,9 @@ const Quote = () => {
         .modal-p {
           padding: 10px;
           font-size: 24px;
+          text-decoration: none;
+          color: #2f3542;
+          underline: none;
         }
         .modal-p:hover {
           background: #b2bec3;
@@ -67,6 +119,9 @@ const Quote = () => {
           // display: flex;
           // text-align: center;
           color: red;
+        }
+        .modal-link {
+          text-decoration: none;
         }
         .cross {
           font-size: 20px;
@@ -86,7 +141,8 @@ const Quote = () => {
         .quote {
           height: 500px;
           display: flex;
-          background-image: url(${Image});
+          // background-image: url(${Image});
+          background-image: url("./images/Leaf.jpeg");
           background-size: cover;
           background-position: center;
 
@@ -94,14 +150,15 @@ const Quote = () => {
           justify-content: center;
         }
         .quote-button {
-          background-color: #2d0707;
-          color: #ffe462;
+          // background-color: blue;
+          // color: #ffe462;
+          color: white;
           padding: 10px;
           margin-top: 20px;
           margin-right: auto;
           margin-left: auto;
           border-radius: 5px;
-          border: 2px solid #ffe462;
+          border: 2px solid white;
           // font-weight: bold;
           font-family: futurabook;
         }
@@ -115,8 +172,6 @@ const Quote = () => {
         }
         .btnsize {
           width: 205px;
-        }
-        .quotes-button {
         }
 
         @media screen and (max-width: 500px) {
