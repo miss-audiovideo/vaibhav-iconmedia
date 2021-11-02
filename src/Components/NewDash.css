@@ -9,7 +9,6 @@
   flex-wrap: wrap;
 }
 @media (min-width: 980px) {
-  
   .NewDash-Left {
     padding-left: 10px;
     flex: 0.4;
@@ -18,7 +17,7 @@
     align-items: center;
     justify-content: center;
   }
-  .NewDash-Video{
+  .NewDash-Video {
     display: none;
   }
 }
@@ -27,7 +26,6 @@
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;
-  
 }
 .NewDash-img {
   margin: 15px;
@@ -39,40 +37,41 @@
   height: 3.6vw; */
   text-align: center;
 }
-.btn-new{
+.btn-new {
   display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn-new:hover{
+.btn-new:hover {
   color: rgb(29, 28, 28);
 }
 
-.btn-icon{
+.btn-icon {
   width: 40px;
   height: 40px;
 }
-.color-text{
+.color-text {
   color: #fff;
   font-size: 1.6vw;
 }
 
-.dashcard{
+.dashcard {
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto;
   width: auto;
   backdrop-filter: blur(0px) saturate(200%);
   -webkit-backdrop-filter: blur(0px) saturate(200%);
@@ -82,9 +81,7 @@
 }
 
 @media (max-width: 980px) {
-  
   .dashcard {
-    
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -94,22 +91,22 @@
 
   .NewDash-text {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto  auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
   }
 
-  .NewDash-Right{
+  .NewDash-Right {
     display: none;
   }
-  .NewDash-Video{
+  .NewDash-Video {
     display: flex;
     justify-content: center;
   }
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
   .dashcard {
     width: auto;
     display: grid;
@@ -128,10 +125,10 @@
     padding-top: 10px;
   }
 
-  .NewDash-Right{
+  .NewDash-Right {
     display: none;
   }
-  .NewDash-Video{
+  .NewDash-Video {
     display: flex;
     justify-content: center;
   }

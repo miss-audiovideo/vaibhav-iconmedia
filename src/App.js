@@ -6,7 +6,7 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar";
 import HeadingContent from "./Components/HeadingContent";
-import HeadingParagraph from "./Components/HeadingParagraph";
+// import HeadingParagraph from "./Components/HeadingParagraph";
 import MainCard from "./Components/MainCard";
 import FirstPage from "./Components/FirstPage";
 import Brands from "./Components/Brands";
@@ -14,7 +14,7 @@ import Profile from "./Components/Profile";
 import SliderGallery from "./Components/SliderGallery";
 import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
-import Dashboard from "./Components/Dashboard";
+// import Dashboard from "./Components/Dashboard";
 import NewDash from "./Components/NewDash";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
@@ -29,19 +29,20 @@ const App = () => {
 
         <Switch>
           <Route exact path="/vaibhav-iconmedia">
-            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInUp">
-              <span className="heading-contentOne">GET THE</span>
+            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
+              {/* <span className="heading-contentOne">GET THE</span>
               <span className="heading-contentTwo"> ATTENTION</span>
-              <br />
-              <span className="heading-contentOnes">YOUR BRAND</span>
-              <span className="heading-contentThree"> DESERVES</span>
+              <br /> */}
+              <span className="heading-contentOnes">DESIGN THE</span>
+              <span className="heading-contentThree"> FUTURE</span>
             </HeadingContent>
 
             <MainCard />
             <FirstPage />
             <Brands />
             <Profile />
-            <HeadingContent class="text-center text-capitalize display-3 w-50 mt-lg-5  mx-auto headingContent gallery">
+            {/* <HeadingContent class="head-style text-center text-capitalize display-3 w-50 mt-lg-6  mx-auto headingContent gallery"> */}
+            <HeadingContent class="head-style text-center text-capitalize display-3 w-50 mt-lg-6  headingContent gallery">
               Gallery
             </HeadingContent>
             <SliderGallery />
@@ -82,4 +83,3 @@ const App = () => {
 };
 
 export default App;
-

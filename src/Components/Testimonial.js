@@ -42,7 +42,7 @@ function Testimonial() {
             </div>
             <div className="text">
               <div className="client">
-                <h3>Client name</h3>
+                <h3 className="client-head">Client name</h3>
                 <p className="color" style={{ fontFamily: "futurabook" }}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
@@ -52,7 +52,7 @@ function Testimonial() {
                 </p>
               </div>
               <div className="client">
-                <h3>Client name</h3>
+                <h3 className="client-head">Client name</h3>
                 <p className="color" style={{ fontFamily: "futurabook" }}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
@@ -62,7 +62,7 @@ function Testimonial() {
                 </p>
               </div>
               <div className="client">
-                <h3>Client name</h3>
+                <h3 className="client-head">Client name</h3>
                 <p className="color" style={{ fontFamily: "futurabook" }}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
@@ -87,6 +87,7 @@ function Testimonial() {
         .testimonials h1,
         h2 {
           color: #ffe462;
+          // color: white;
           text-align: center;
         }
         .testimonials {
@@ -96,6 +97,7 @@ function Testimonial() {
         }
         .testimonials p {
           text-align: center;
+          color: white;
         }
         .testimonials h2 {
           font-size: 55px;
@@ -103,7 +105,7 @@ function Testimonial() {
         .cardsTest {
           margin-top: 100px;
           height: 300px;
-          background-color: #f7d6cd;
+          // background-color: #f7d6cd;
           // background-image: url("./Components/images/Testimonials\ BG.png");
         }
         .testcards {
@@ -140,10 +142,22 @@ function Testimonial() {
           padding: 0 50px 0 50px;
         }
         .text .client {
-          width: 200px;
+          align-items: center;
+          margin-top: -15px;
+          width: 260px;
+          height: 300px;
+          -webkit-backdrop-filter: blur(4px) saturate(200%);
+          background-color: rgba(114, 114, 114, 0.5);
+          border-radius: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .client-head {
+          color: white;
+          padding-top: 20px;
         }
         .text p {
           font-size: 14px;
+          padding-top: 20px;
         }
         @media screen and (max-width: 1150px) {
           .cardsTest {
