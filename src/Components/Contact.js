@@ -5,7 +5,7 @@ import countryList from "react-select-country-list";
 import emailjs from "emailjs-com";
 import Lottie from "react-lottie";
 import animationData from "../lotties/email.json";
-// import twelve from "./images/twelve.jpg";
+
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [first, setNameFirst] = useState("");
@@ -201,6 +201,44 @@ const Contact = () => {
                 className=" form-field input"
                 placeholder="Comment"
               />
+            <div class="check-btn">
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux"/>
+                <label for="uxui">UX-UI</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps"/>
+                <label for="apps">Mobile Apps</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech"/>
+                <label for="tech">Web Tech</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo"/>
+                <label for="seo">SEO</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm"/>
+                <label for="smm">SMM</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding"/>
+                <label for="branding">Branding</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning"/>
+                <label for="webdesigning">Web Designing</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop"/>
+                <label for="photoshop">Photoshop</label>
+              </div>
+              <div class="form-group chbox">
+                <input type="checkbox" class="ckbox" name="service" id="other" value="other"/>
+                <label for="other">Other</label>
+              </div>
+            </div>
             </div>
             <button
               id="submit"
