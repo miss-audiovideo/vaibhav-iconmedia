@@ -27,7 +27,13 @@ const Quote = () => {
         </button>
         <Modal show={open}>
           {/* <ModalOne /> */}
-          <ModalHeader></ModalHeader>
+          <ModalHeader>
+            <i
+              className="fa fa-times times-cross"
+              onClick={() => setOpen(false)}
+              aria-hidden="true"
+            ></i>
+          </ModalHeader>
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
@@ -52,27 +58,46 @@ const Quote = () => {
             </center>
             <ModalFooter>
               <button
-                // className="quote-button"
+                className="btn-primary"
                 onClick={() => {
                   setNext(true);
                   setOpen(false);
                 }}
               >
-                next
+                Continue
               </button>
-              <button onClick={() => setOpen(false)}>close Modal</button>
+              <button className="btn-danger" onClick={() => setOpen(false)}>
+                close Modal
+              </button>
             </ModalFooter>
           </div>
         </Modal>
         <Modal show={next}>
+          <ModalHeader>
+            <i
+              className="fa fa-times times-cross"
+              onClick={() => setOpen(false)}
+              aria-hidden="true"
+            ></i>
+          </ModalHeader>
           <div>
             <center>
-              <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
+              {/* <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
                 "Design A Quote"
-              </h1>
-              hello
+              </h1> */}
+              <h3>How do you want to work ?</h3>
+              <Link className="modal-link" to="./Modals/ModalOne">
+                <p className="modal-p">Project</p>
+              </Link>
+              <Link className="modal-link">
+                <p className="modal-p">Retainer</p>
+              </Link>
+              <Link className="modal-link">
+                <p className="modal-p">Hourly</p>
+              </Link>
             </center>
             <button
+              className="btn-primary"
               onClick={() => {
                 setNext2(true);
                 setNext(false);
@@ -80,10 +105,19 @@ const Quote = () => {
             >
               Continue
             </button>
-            <button onClick={() => setNext(false)}>close Modal</button>
+            <button className="btn-danger" onClick={() => setNext(false)}>
+              close Modal
+            </button>
           </div>
         </Modal>
         <Modal show={next2}>
+          <ModalHeader>
+            <i
+              className="fa fa-times times-cross"
+              onClick={() => setOpen(false)}
+              aria-hidden="true"
+            ></i>
+          </ModalHeader>
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
@@ -92,7 +126,9 @@ const Quote = () => {
               hello222
             </center>
             {/* <button>finish</button> */}
-            <button onClick={() => setNext2(false)}>close Modal</button>
+            <button className="btn-danger" onClick={() => setNext2(false)}>
+              close Modal
+            </button>
           </div>
         </Modal>
       </div>
@@ -172,6 +208,25 @@ const Quote = () => {
         }
         .btnsize {
           width: 205px;
+        }
+        .btn-primary {
+          color: white;
+          background: blue;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          font-weight: bolder;
+        }
+        .btn-danger {
+          color: white;
+          background: red;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          font-weight: bolder;
+        }
+        .times-cross {
+          display: flex-end;
         }
 
         @media screen and (max-width: 500px) {
