@@ -16,6 +16,7 @@ import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
 // import Dashboard from "./Components/Dashboard";
 import NewDash from "./Components/NewDash";
+import NewDash2 from "./Components/NewDash2";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
@@ -51,6 +52,7 @@ const App = () => {
             </HeadingContent> */}
             {/* <Dashboard /> */}
             <NewDash />
+            <NewDash2 />
             <Testimonial />
             <Quote />
             <Footer />

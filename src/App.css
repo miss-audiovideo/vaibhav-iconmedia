@@ -419,6 +419,91 @@ body {
   background-size: cover;
   background-origin: border-box;
 }
+.slider .slide2 {
+  height: 260px;
+  width: 260px;
+}
+
+.slide2:nth-child(1),
+.slide2:nth-child(10) {
+  background: url(./Components/images/gallary/10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(2),
+.slide2:nth-child(11) {
+  background: url(./Components/images/gallary/11.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(3),
+.slide2:nth-child(12) {
+  background: url(./Components/images/gallary/12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(4),
+.slide2:nth-child(13) {
+  background: url(./Components/images/gallary/14.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(5),
+.slide2:nth-child(14) {
+  background: url(./Components/images/gallary/15.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(6),
+.slide2:nth-child(15) {
+  background: url(./Components/images/gallary/16.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(7),
+.slide2:nth-child(16) {
+  background: url(./Components/images/gallary/17.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(8),
+.slide2:nth-child(17) {
+  background: url(./Components/images/gallary/18.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(9),
+.slide2:nth-child(18) {
+  background: url(./Components/images/gallary/19.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
 
 .testimonials h1 {
   margin-top: 200px;
@@ -1018,6 +1103,7 @@ select.form-field {
 }
 
 .contact-alng {
+  color: #f1b809;
   text-align: left;
   margin-left: 10%;
   font-size: 5vw;
@@ -1029,8 +1115,8 @@ select.form-field {
   grid-template-columns: auto auto;
 }
 .alng {
-  margin-left: 13%;
-  margin-right: 13%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .split > .box {
   margin-top: 80px;
@@ -1044,4 +1130,68 @@ select.form-field {
   border-radius: 15px;
   margin-top: 150px;
   left: 23%;
+}
+.chbox {
+  color: #f1b809;
+  display: inline-block;
+  border: 1px solid #f1b809;
+  margin: 0px 10px 0px 0px;
+  border-radius: 6px;
+  text-align: center;
+  overflow: hidden;
+  height: 40px;
+  line-height: 36px;
+}
+.chbox input {
+  display: none;
+}
+.chbox label {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  /* font-family: "bold"; */
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 2px 30px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.chbox input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(1) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(2) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(3) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(4) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(5) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(6) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(7) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
+}
+.chbox:nth-child(8) input:checked + label {
+  color: #2b0505;
+  background: #f1b809;
 }
