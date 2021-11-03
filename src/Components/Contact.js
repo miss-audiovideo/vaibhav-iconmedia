@@ -12,16 +12,24 @@ const Contact = () => {
   const [last, setNameLast] = useState("");
   const [company, setCompany] = useState("");
   const [number, setNumber] = useState("");
-  const [addClass, setState] = useState("");
   const [comment, setComment] = useState("");
+  const [uxui, setUXUI] = useState("");
+  const [apps, setApps] = useState("");
+  const [web, setWeb] = useState("");
+  const [seo, setSEO] = useState("");
+  const [smm, setSMM] = useState("");
+  const [branding, setBranding] = useState("");
+  const [webdesigning, setWebdesigning] = useState("");
+  const [photoshop, setPhotoshop] = useState("");
+  const [other, setOther] = useState("");
   const [value, setValue] = useState("");
+  const [addClass, setState] = useState("");
   const options = useMemo(() => countryList().getData(), []);
   console.log(options);
   const changeHandler = (value) => {
     setValue(value);
   };
 
-  // const [loader, setLoader] = useState(false);
   const toggle = (e) => {
     setState({ addClass: !addClass });
   };
@@ -44,6 +52,7 @@ const Contact = () => {
           company: company,
           number: number,
           comment: comment,
+          services: uxui + apps + web + seo + smm + branding + webdesigning + photoshop + other,
         },
         "user_h6Ttnd80UW8eec5uK2xbM"
       )
@@ -59,7 +68,6 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setLoader(true);
     db.collection("contacts")
       .add({
         Email: email,
@@ -69,15 +77,14 @@ const Contact = () => {
         Company_Name: company,
         Contact_number: number,
         Comment: comment,
+        services: uxui + apps + web + seo + smm + branding + webdesigning + photoshop + other,
       })
       .then(() => {
-        // setLoader(false);
         sendEmail();
         alert("Your message has been submitted👍");
       })
       .catch((error) => {
         alert(error.message);
-        // setLoader(false);
       });
 
     setEmail("");
@@ -87,6 +94,15 @@ const Contact = () => {
     setCompany("");
     setNumber("");
     setComment("");
+    setUXUI("");
+    setApps("");
+    setWeb("");
+    setSEO("");
+    setSMM("");
+    setBranding("");
+    setWebdesigning("");
+    setPhotoshop("");
+    setOther("");
   };
   const defaultOptions = {
     loop: true,
@@ -203,39 +219,39 @@ const Contact = () => {
               />
             <div class="check-btn">
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux"/>
+                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux" onPress={(e) => setUXUI(e.target.value)}/>
                 <label for="uxui">UX-UI</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps"/>
+                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps" onPress={(e) => setApps(e.target.value)}/>
                 <label for="apps">Mobile Apps</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech"/>
+                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech" onPress={(e) => setWeb(e.target.value)}/>
                 <label for="tech">Web Tech</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo"/>
+                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo" onPress={(e) => setSEO(e.target.value)}/>
                 <label for="seo">SEO</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm"/>
+                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm" onPress={(e) => setSMM(e.target.value)}/>
                 <label for="smm">SMM</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding"/>
+                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding" onPress={(e) => setBranding(e.target.value)}/>
                 <label for="branding">Branding</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning"/>
+                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning" onPress={(e) => setWebdesigning(e.target.value)}/>
                 <label for="webdesigning">Web Designing</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop"/>
+                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop" onPress={(e) => setPhotoshop(e.target.value)}/>
                 <label for="photoshop">Photoshop</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="other" value="other"/>
+                <input type="checkbox" class="ckbox" name="service" id="other" value="other" onPress={(e) => setOther(e.target.value)}/>
                 <label for="other">Other</label>
               </div>
             </div>
