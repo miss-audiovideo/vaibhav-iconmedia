@@ -30,6 +30,7 @@ const Quote = () => {
         >
           Design a quote
         </button>
+        {/* -------------------------------------------TODO One---------------------------------------- */}
         <Modal show={open}>
           {/* <ModalOne /> */}
           <ModalHeader>
@@ -42,7 +43,7 @@ const Quote = () => {
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                "Design A Quote"
+                Design a quote
               </h1>
               <h3>What services would you like to option ?</h3>
               {/* <Link className="modal-link" to="https://leo9studio.com/"> */}
@@ -76,6 +77,7 @@ const Quote = () => {
               {/* </Link> */}
             </center>
             <ModalFooter>
+              {/* <center> */}{" "}
               <button
                 className="btn-primary"
                 onClick={() => {
@@ -88,8 +90,10 @@ const Quote = () => {
               <button className="btn-danger" onClick={() => setOpen(false)}>
                 close Modal
               </button>
+              {/* </center> */}
             </ModalFooter>
           </div>
+          {/* --------------------------------------TODO Two---------------------------------------------- */}
         </Modal>
         <Modal show={next}>
           <ModalHeader>
@@ -101,9 +105,9 @@ const Quote = () => {
           </ModalHeader>
           <div>
             <center>
-              {/* <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                "Design A Quote"
-              </h1> */}
+              <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
+                Design a quote
+              </h1>
               <h3>How do you want to work ?</h3>
               <a className="link-name" href="https://leo9studio.com/">
                 <p className="modal-p">Project</p>
@@ -148,29 +152,40 @@ const Quote = () => {
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                "Design A Quote"
+                Design a quote
               </h1>
               <div>
                 <strong>
-                  <h3>Your Name</h3>
+                  <label>Your Name : </label>
                 </strong>
                 <input
                   className="input-field"
                   type="text"
-                  placeholder="Enter your Name"
+                  placeholder="     Enter your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
                 <br />
-                <h3>Reachme at</h3>
+                <strong>
+                  <label>Reachme at :</label>
+                </strong>
+
                 <input
+                  className="input-field"
                   type="email"
-                  placeholder="Enter your Email"
+                  placeholder="    hi@iconmediahouse.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <h3>What role do you play in your business ?</h3>
-                <input type="text" />
+                <br />
+                <strong>
+                  <label>What role do you play in your business ?</label>
+                </strong>
+                <input
+                  type="text"
+                  className="input-field"
+                  placeHolder="      Ceo"
+                />
               </div>
             </center>
             {/* <button>finish</button> */}
@@ -200,7 +215,7 @@ const Quote = () => {
             </center>
           </div>
         </Modal>
-        {/* ----------------------------------------------------------------------------------------- */}
+        {/* --------------------------------------------------TODO Three --------------------------------------- */}
 
         <Modal show={next3}>
           <ModalHeader>
@@ -213,26 +228,39 @@ const Quote = () => {
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                "Design A Quote"
+                Design a quote
               </h1>
               <div>
-                <h3>Business Location 🗺</h3>
+                <strong>
+                  <label>Business Location 🗺 :</label>
+                </strong>
                 <input
+                  className="input-field"
                   type="text"
-                  placeholder="Enter your Name"
+                  placeholder="    Toronto, Canada"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
                 <br />
-                <h3>Reachme at 🚴‍♀️</h3>
+                <strong>
+                  <label>Business Name 🚴‍♀️ :</label>
+                </strong>
+
                 <input
+                  className="input-field"
                   type="email"
-                  placeholder="Enter your Email"
+                  placeholder="   Emma Jam's"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <h3>What role do you play in your business ?</h3>
-                <input type="text" />
+                <strong>
+                  <label>What role do you play in your business 🏢? </label>
+                </strong>
+                <input
+                  type="text"
+                  className="input-field"
+                  placeholder="    Web Developement"
+                />
               </div>
             </center>
             {/* <button>finish</button> */}
@@ -258,7 +286,7 @@ const Quote = () => {
             </center>
           </div>
         </Modal>
-        {/* ------------------------------------------------------------------------------------- */}
+        {/* --------------------------------------------TODO four----------------------------------------- */}
         <Modal show={next4}>
           <ModalHeader>
             <i
@@ -270,30 +298,43 @@ const Quote = () => {
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                "Design A Quote"
+                Design a quote
               </h1>
               <div>
-                <h3>Business Name</h3>
+                <strong>
+                  <label>Business Name :</label>
+                </strong>
                 <input
+                  className="input-field"
                   type="text"
-                  placeholder="Emma Jams"
+                  placeholder="    Emma Jams"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
                 <br />
-                <h3>what industry is your business in ?</h3>
+                <strong>
+                  <label>What industry is your business in ? </label>
+                </strong>
                 <input
+                  className="input-field"
                   type="email"
-                  placeholder="Website Developement"
+                  placeholder="    Website Developement"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <h3>What is the brand/product about ?</h3>
-                <input type="text" />
-                <h3>What is the primary goal of your business ?</h3>
-                <input type="text" />
-                <h3>What is your biggest challenge ?</h3>
-                <input type="text" />
+                <strong>
+                  <label>What is the brand/product about ?</label>
+                </strong>
+                <input type="text" className="input-field" />
+                <strong>
+                  <label>What is the primary goal of your business ?</label>
+                </strong>
+                <input type="text" className="input-field" />
+                <strong>
+                  <label>What is your biggest challenge ?</label>
+                </strong>
+
+                <input type="text" className="input-field" />
               </div>
             </center>
             {/* <button>finish</button> */}
@@ -320,7 +361,7 @@ const Quote = () => {
             </center>
           </div>
         </Modal>
-        {/* ------------------------------------------------------------------------------------- */}
+        {/* -------------------------------------------TODO five------------------------------------------ */}
         <Modal show={next5}>
           <ModalHeader>
             <i
@@ -332,25 +373,40 @@ const Quote = () => {
           <div>
             <center>
               <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                "Design A Quote"
+                Design a quote
               </h1>
               <div>
-                <h3>
-                  When people interact with your brand, how do we want them to
-                  feel?
-                </h3>
-                <input type="text" />
-                <h3> Who are some companies that you admire and why?</h3>
-                <input type="text" />
-                <h3>Is there anything you would like to add?</h3>
-                <input type="text" />
+                <strong>
+                  {" "}
+                  <label>
+                    When people interact with your brand, how do we want them to
+                    feel ?
+                  </label>
+                </strong>
+
+                <input type="text" className="input-field" />
+                <br />
+                <strong>
+                  <label>
+                    {" "}
+                    Who are some companies that you admire and why ?
+                  </label>
+                </strong>
+
+                <input type="text" className="input-field" />
+                <br />
+                <strong>
+                  <label>Is there anything you would like to add ? </label>
+                </strong>
+
+                <input type="text" className="input-field" />
               </div>
             </center>
             {/* <button>finish</button> */}
             <ModalFooter>
               {/* <h5>Hello !! i am <span>{name}</span></h5> */}
-              <button className="btn-danger" onClick={() => setNext5(false)}>
-                close Modal
+              <button className="submit-btn" onClick={() => setNext5(false)}>
+                Submit
               </button>
             </ModalFooter>
           </div>
@@ -449,6 +505,14 @@ const Quote = () => {
           border-radius: 5px;
           font-weight: bolder;
         }
+        .submit-btn {
+          color: white;
+          background: #6c5ce7;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          font-weight: bolder;
+        }
         .times-cross {
           display: flex-end;
         }
@@ -459,9 +523,15 @@ const Quote = () => {
           margin: 10px;
         }
         .input-field {
-          border-left: none;
-          border-right: none;
-          border-top: none;
+          border: none;
+          border-bottom: 2px solid silver;
+          outline: none;
+          width: maxContent;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .input-field:hover {
+          border-bottom: 2px solid #be2edd;
         }
         @media screen and (max-width: 500px) {
           .quote h1 {
