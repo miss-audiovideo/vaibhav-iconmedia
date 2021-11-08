@@ -4,6 +4,8 @@ import Image from "./images/c.png";
 import { Modal, ModalFooter } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
+import { send } from 'emailjs-com';
+
 // import ModalOne from "../Modals/ModalOne.jsx";
 
 const Quote = () => {
