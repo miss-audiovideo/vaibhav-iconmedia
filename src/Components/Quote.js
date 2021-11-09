@@ -62,7 +62,7 @@ const Quote = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    db.collection("quotations")
+    db.collection("quotes")
       .add({
         email: email,
         name: name,
