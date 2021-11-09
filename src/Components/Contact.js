@@ -219,39 +219,39 @@ const Contact = () => {
               />
             <div class="check-btn">
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux" onPress={(e) => setUXUI(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux" onPress={(e) => setUXUI(e.target.checked)}/>
                 <label for="uxui">UX-UI</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps" onPress={(e) => setApps(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps" onPress={(e) => setApps(e.target.checked)}/>
                 <label for="apps">Mobile Apps</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech" onPress={(e) => setWeb(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech" onPress={(e) => setWeb(e.target.checked)}/>
                 <label for="tech">Web Tech</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo" onPress={(e) => setSEO(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo" onPress={(e) => setSEO(e.target.checked)}/>
                 <label for="seo">SEO</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm" onPress={(e) => setSMM(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm" onPress={(e) => setSMM(e.target.checked)}/>
                 <label for="smm">SMM</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding" onPress={(e) => setBranding(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding" onPress={(e) => setBranding(e.target.checked)}/>
                 <label for="branding">Branding</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning" onPress={(e) => setWebdesigning(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning" onPress={(e) => setWebdesigning(e.target.checked)}/>
                 <label for="webdesigning">Web Designing</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop" onPress={(e) => setPhotoshop(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop" onPress={(e) => setPhotoshop(e.target.checked)}/>
                 <label for="photoshop">Photoshop</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="other" value="other" onPress={(e) => setOther(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="other" value="other" onPress={(e) => setOther(e.target.checked)}/>
                 <label for="other">Other</label>
               </div>
             </div>

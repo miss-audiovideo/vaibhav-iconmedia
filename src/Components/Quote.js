@@ -1,22 +1,107 @@
 import React, { useState } from "react";
-import Button from "./Buttons";
 import Image from "./images/c.png";
+import { db } from "../firebase";
 import { Modal, ModalFooter } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
-import { send } from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 // import ModalOne from "../Modals/ModalOne.jsx";
 
 const Quote = () => {
-  const [next, setNext] = useState(false);
-  const [next2, setNext2] = useState(false);
-  const [next3, setNext3] = useState(false);
-  const [next4, setNext4] = useState(false);
-  const [next5, setNext5] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [one, setOpen] = useState(false);
+  const [two, setTwo] = useState(false);
+  const [three, setThree] = useState(false);
+  const [four, setFour] = useState(false);
+
   const [name, setName] = useState();
   const [email, setEmail] = useState();
+  const [position, setPosition] = useState();
+  const [location, setLocation] = useState();
+  const [business, setBusiness] = useState();
+  const [work, setWork] = useState();
+  const [industry, setIndustry] = useState();
+  const [product, setProduct] = useState();
+  const [goal, setGoal] = useState();
+  const [challenge, setChallenge] = useState();
+  const [q1, setQ1] = useState();
+  const [q2, setQ2] = useState();
+  const [q3, setQ3] = useState();
+
+  const sendEmail = () => {
+    emailjs
+      .send(
+        "service_4n9awhh",
+
+        "template_5vxcjyd",
+        {
+          email: email,
+          name: name,
+          position: position,
+          location: location,
+          business_name: business,
+          work: work,
+          industry: industry,
+          product: product,
+          goal: goal,
+          challenge: challenge,
+          q1: q1,
+          q2: q2,
+          q3: q3,
+        },
+        "user_h6Ttnd80UW8eec5uK2xbM"
+      )
+
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection("quotations")
+      .add({
+        email: email,
+        name: name,
+        position: position,
+        location: location,
+        business_name: business,
+        work: work,
+        industry: industry,
+        product: product,
+        goal: goal,
+        challenge: challenge,
+        q1: q1,
+        q2: q2,
+        q3: q3,
+      })
+      .then(() => {
+        sendEmail();
+        alert("Your quotation has been submitted.");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    setEmail("");
+    setName("");
+    setPosition("");
+    setLocation("");
+    setBusiness("");
+    setWork("");
+    setIndustry("");
+    setProduct("");
+    setGoal("");
+    setChallenge("");
+    setQ1("");
+    setQ2("");
+    setQ3("");
+  };
+
+
   return (
     <>
       <div className="quote animate__animated animate__bounce animate__delay-3s">
@@ -32,118 +117,8 @@ const Quote = () => {
         >
           Design a quote
         </button>
-        {/* -------------------------------------------TODO One---------------------------------------- */}
-        <Modal show={open}>
-          {/* <ModalOne /> */}
-          <ModalHeader>
-            <i
-              className="fa fa-times times-cross"
-              onClick={() => setOpen(false)}
-              aria-hidden="true"
-            ></i>
-          </ModalHeader>
-          <div>
-            <center>
-              <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                Design a quote
-              </h1>
-              <h3>What services would you like to option ?</h3>
-              {/* <Link className="modal-link" to="https://leo9studio.com/"> */}
-              <a className="link-name" href="https://leo9studio.com/">
-                {" "}
-                <p className="modal-p">UI/UX</p>
-              </a>
-              {/* </Link> */}
-              {/* <Link className="modal-link"> */}
-              <a className="link-name" href="https://leo9studio.com/">
-                <p className="modal-p">Branding</p>
-                {/* </Link> */}
-              </a>
-              {/* <Link className="modal-link"> */}
-              <a className="link-name" href="https://leo9studio.com/">
-                {" "}
-                <p className="modal-p">Developement</p>
-              </a>
-              {/* </Link> */}
-              {/* <Link className="modal-link"> */}
-              <a className="link-name" href="https://leo9studio.com/">
-                <p className="modal-p">Marketing</p>
-              </a>
-
-              {/* </Link> */}
-              {/* <Link className="modal-link"> */}
-              <a className="link-name" href="https://leo9studio.com/">
-                <p className="modal-p">All Services</p>
-              </a>
-
-              {/* </Link> */}
-            </center>
-            <ModalFooter>
-              {/* <center> */}{" "}
-              <button
-                className="btn-primary"
-                onClick={() => {
-                  setNext(true);
-                  setOpen(false);
-                }}
-              >
-                Continue
-              </button>
-              <button className="btn-danger" onClick={() => setOpen(false)}>
-                close Modal
-              </button>
-              {/* </center> */}
-            </ModalFooter>
-          </div>
-          {/* --------------------------------------FIXME Two---------------------------------------------- */}
-        </Modal>
-        <Modal show={next}>
-          <ModalHeader>
-            <i
-              className="fa fa-times times-cross"
-              onClick={() => setOpen(false)}
-              aria-hidden="true"
-            ></i>
-          </ModalHeader>
-          <div>
-            <center>
-              <h1 className="modal-head animate__animated animate__fadeInUp animate__delay-1s">
-                Design a quote
-              </h1>
-              <h3>How do you want to work ?</h3>
-              <a className="link-name" href="https://leo9studio.com/">
-                <p className="modal-p">Project</p>
-              </a>
-              {/* <Link className="modal-link" to="./Modals/ModalOne"> */}
-              <a className="link-name" href="https://leo9studio.com/">
-                <p className="modal-p">Retainer</p>
-              </a>
-              <a className="link-name" href="https://leo9studio.com/">
-                <p className="modal-p">Hourly</p>
-              </a>
-            </center>
-            <ModalFooter>
-              <center>
-                <button
-                  className="btn-primary link-btn"
-                  onClick={() => {
-                    setNext2(true);
-                    setNext(false);
-                  }}
-                >
-                  Continue
-                </button>
-                <button
-                  className="btn-danger  link-btn"
-                  onClick={() => setNext(false)}
-                >
-                  close Modal
-                </button>
-              </center>
-            </ModalFooter>
-          </div>
-        </Modal>
-        <Modal show={next2}>
+        {/* -------------------------------------------One---------------------------------------- */}
+        <Modal show={one}>
           <ModalHeader>
             <i
               className="fa fa-times times-cross"
@@ -158,24 +133,23 @@ const Quote = () => {
               </h1>
               <div>
                 <strong>
-                  <label>Your Name : </label>
+                  <label>Your Name: </label>
                 </strong>
                 <input
                   className="input-field"
                   type="text"
-                  placeholder="     Enter your Name"
+                  placeholder="Enter your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
                 <br />
                 <strong>
-                  <label>Reachme at :</label>
+                  <label>Your E-Mail:</label>
                 </strong>
-
                 <input
                   className="input-field"
                   type="email"
-                  placeholder="    hi@iconmediahouse.com"
+                  placeholder="hi@iconmediahouse.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -186,44 +160,31 @@ const Quote = () => {
                 <input
                   type="text"
                   className="input-field"
-                  placeHolder="      Ceo"
+                  placeHolder="Ceo"
+                  value={position}
+                  onChange={(e) => setPosition(e.target.value)}
                 />
               </div>
             </center>
-            {/* <button>finish</button> */}
-            <ModalFooter>
-              <div>
-                <h5>{/* Hello !! i am <span>{name}</span> */}</h5>
-              </div>
-
-              <p>{email}</p>
-            </ModalFooter>
-            <center>
-              <button
-                className="btn-primary  link-btn"
-                onClick={() => {
-                  setNext3(true);
-                  setNext2(false);
-                }}
-              >
-                Continue
-              </button>
-              <button
-                className="btn-danger  link-btn"
-                onClick={() => setNext2(false)}
-              >
-                close Modal
-              </button>
-            </center>
           </div>
+          <ModalFooter>
+            <button
+              className="btn-primary"
+              onClick={() => {
+                setTwo(true);
+                setOpen(false);
+              }}
+            >
+              Continue
+            </button>
+          </ModalFooter>
         </Modal>
-        {/* --------------------------------------------------TODO Three --------------------------------------- */}
-
-        <Modal show={next3}>
+        {/* --------------------------------------Two---------------------------------------------- */}
+        <Modal show={two}>
           <ModalHeader>
             <i
               className="fa fa-times times-cross"
-              onClick={() => setOpen(false)}
+              onClick={() => setTwo(false)}
               aria-hidden="true"
             ></i>
           </ModalHeader>
@@ -240,20 +201,19 @@ const Quote = () => {
                   className="input-field"
                   type="text"
                   placeholder="    Toronto, Canada"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                 />
                 <br />
                 <strong>
                   <label>Business Name 🚴‍♀️ :</label>
                 </strong>
-
                 <input
                   className="input-field"
-                  type="email"
+                  type="text"
                   placeholder="   Emma Jam's"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={business}
+                  onChange={(e) => setBusiness(e.target.value)}
                 />
                 <strong>
                   <label>What role do you play in your business 🏢? </label>
@@ -262,38 +222,30 @@ const Quote = () => {
                   type="text"
                   className="input-field"
                   placeholder="    Web Developement"
+                  value={work}
+                  onChange={(e) => setWork(e.target.value)}
                 />
               </div>
             </center>
-            {/* <button>finish</button> */}
-            <ModalFooter>
-              <h5>{/* Hello !! i am <span>{name}</span> */}</h5>
-            </ModalFooter>
-            <center>
-              <button
-                className="btn-primary  link-btn"
-                onClick={() => {
-                  setNext4(true);
-                  setNext3(false);
-                }}
-              >
-                Continue
-              </button>
-              <button
-                className="btn-danger  link-btn"
-                onClick={() => setNext3(false)}
-              >
-                close Modal
-              </button>
-            </center>
           </div>
+          <ModalFooter>
+            <button
+              className="btn-primary link-btn"
+              onClick={() => {
+                setThree(true);
+                setTwo(false);
+              }}
+            >
+              Continue
+            </button>
+          </ModalFooter>
         </Modal>
-        {/* --------------------------------------------TODO four----------------------------------------- */}
-        <Modal show={next4}>
+        {/* -----------------three-------------------------- */}
+        <Modal show={three}>
           <ModalHeader>
             <i
               className="fa fa-times times-cross"
-              onClick={() => setOpen(false)}
+              onClick={() => setThree(false)}
               aria-hidden="true"
             ></i>
           </ModalHeader>
@@ -303,72 +255,58 @@ const Quote = () => {
                 Design a quote
               </h1>
               <div>
-                <strong>
-                  <label>Business Name :</label>
-                </strong>
-                <input
-                  className="input-field"
-                  type="text"
-                  placeholder="    Emma Jams"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <br />
                 <strong>
                   <label>What industry is your business in ? </label>
                 </strong>
                 <input
                   className="input-field"
-                  type="email"
+                  type="text"
                   placeholder="    Website Developement"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={industry}
+                  onChange={(e) => setIndustry(e.target.value)}
                 />
                 <strong>
-                  <label>What is the brand/product about ?</label>
+                  <label>What is the brand/product about?</label>
                 </strong>
-                <input type="text" className="input-field" />
+                <input type="text" className="input-field"
+                  value={product}
+                  onChange={(e) => setProduct(e.target.value)}
+                />
                 <strong>
-                  <label>What is the primary goal of your business ?</label>
+                  <label>What is the primary goal of your business?</label>
                 </strong>
-                <input type="text" className="input-field" />
+                <input type="text" className="input-field"
+                  value={goal}
+                  onChange={(e) => setGoal(e.target.value)}
+                />
                 <strong>
-                  <label>What is your biggest challenge ?</label>
+                  <label>What is your biggest challenge?</label>
                 </strong>
-
-                <input type="text" className="input-field" />
+                <input type="text" className="input-field"
+                  value={challenge}
+                  onChange={(e) => setChallenge(e.target.value)}
+                />
               </div>
             </center>
-            {/* <button>finish</button> */}
-            <ModalFooter>
-              <h5>{/* Hello !! i am <span>{name}</span> */}</h5>
-            </ModalFooter>
-            <center>
-              <button
-                className="btn-primary link-btn"
-                onClick={() => {
-                  setNext5(true);
-                  setNext4(false);
-                }}
-              >
-                {" "}
-                Continue
-              </button>
-              <button
-                className="btn-danger  link-btn"
-                onClick={() => setNext4(false)}
-              >
-                close Modal
-              </button>
-            </center>
           </div>
+          <ModalFooter>
+            <button
+              className="btn-primary  link-btn"
+              onClick={() => {
+                setFour(true);
+                setThree(false);
+              }}
+            >
+              Continue
+            </button>
+          </ModalFooter>
         </Modal>
-        {/* -------------------------------------------TODO five------------------------------------------ */}
-        <Modal show={next5}>
+        {/* --------------------------------------------------Four--------------------------------------- */}
+        <Modal show={four}>
           <ModalHeader>
             <i
               className="fa fa-times times-cross"
-              onClick={() => setOpen(false)}
+              onClick={() => setFour(false)}
               aria-hidden="true"
             ></i>
           </ModalHeader>
@@ -379,41 +317,49 @@ const Quote = () => {
               </h1>
               <div>
                 <strong>
-                  {" "}
                   <label>
                     When people interact with your brand, how do we want them to
-                    feel ?
+                    feel?
                   </label>
                 </strong>
-
-                <input type="text" className="input-field" />
+                <input type="text" className="input-field"
+                  value={q1}
+                  onChange={(e) => setQ1(e.target.value)}
+                />
                 <br />
                 <strong>
                   <label>
-                    {" "}
-                    Who are some companies that you admire and why ?
+                    Who are some companies that you admire and why?
                   </label>
                 </strong>
-
-                <input type="text" className="input-field" />
+                <input type="text" className="input-field"
+                  value={q2}
+                  onChange={(e) => setQ2(e.target.value)}
+                />
                 <br />
                 <strong>
-                  <label>Is there anything you would like to add ? </label>
+                  <label>Is there anything you would like to add?</label>
                 </strong>
-
-                <input type="text" className="input-field" />
+                <input type="text" className="input-field"
+                  value={q3}
+                  onChange={(e) => setQ3(e.target.value)}
+                />
               </div>
             </center>
-            {/* <button>finish</button> */}
-            <ModalFooter>
-              {/* <h5>Hello !! i am <span>{name}</span></h5> */}
-              <button className="submit-btn" onClick={() => setNext5(false)}>
-                Submit
-              </button>
-            </ModalFooter>
           </div>
+          <ModalFooter>
+          <button
+              id="submit"
+              className="submit-btn"
+              type="submit"
+              value="Send!"
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+          </ModalFooter>
         </Modal>
-      </div>
+      </div >
       <style jsx>{`
         @font-face {
           font-family: futuramedium;
