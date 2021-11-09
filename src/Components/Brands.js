@@ -28,6 +28,7 @@ const Brands = () => {
         </div>
         {/* <div className="brands"> */}
         <div className="brands-variants">
+       <div class="col--5">
           <Brand src={Allstate} class="brand-img first-brand  " />
           <Brand src={Darkbean} class="brand-img second-brand " />
 
@@ -43,7 +44,7 @@ const Brands = () => {
           <Brand src={subway} class="brand-img eightth-brand" />
 
           <Brand src={pantheraazul} class="brand-img fourth-brand " />
-        </div>
+        </div></div>
       </div>
       <br />
       <br />
@@ -57,6 +58,10 @@ const Brands = () => {
           font-family: futurabook;
           src: url("./fonts/Futura\ Book.ttf");
         }
+        .col--5 {
+          column-count: 5;
+          padding-bottom:25px;
+        }
         .brands {
           display: flex;
           flex-wrap: wrap;
@@ -66,12 +71,13 @@ const Brands = () => {
           padding-bottom: 50px;
         }
         .brands-title {
-          padding-top: 20px;
+          padding-top: 50px;
           font-family: futuramedium;
-          font-size: 42px;
+          font-size: 35px;
           font-weight: bolder;
-          padding-bottom: 50px;
+          padding-bottom: 30px;
           color: #ffc857;
+          text-align:center;
         }
         .brands-heading {
           display: flex;
@@ -88,8 +94,8 @@ const Brands = () => {
         }
         .brand-img {
           display: flex;
-          width: 200px;
-          height: 100px;
+          width: 130px;
+          height: 55px;
           margin-left: 50px;
           margin-right: 50px;
           align-items: center;
@@ -98,31 +104,42 @@ const Brands = () => {
         }
         @media screen and (max-width: 1030px) {
           .brand-img {
-            width: 18vw;
+            width: 12vw;
             height: max-content;
-            margin: auto;
+            margin-right:5px;
+         
           }
+          .col--5 {
+            margin-bottom:-55px;
+          }
+
           .brands {
             margin-top: 200px;
             padding-bottom: 100px;
+            padding-right:80px;
           }
         }
+      
         @media screen and (max-width: 800px) {
           .brand-img {
-            width: 17vw;
+            width: 15vw;
             height: max-content;
             margin: auto;
           }
           .brands {
-            margin-top: 200px;
+            margin-top: 250px;
             padding-bottom: 100px;
+            padding-left:80px;
           }
           .brands-heading {
             font-size: 25px;
             display: flex;
-            padding-top: -50px;
+            padding-top: -40px;
           }
         }
+        
+        
+        
       `}</style>
     </>
   );
