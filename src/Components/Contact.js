@@ -52,7 +52,7 @@ const Contact = () => {
           company: company,
           number: number,
           comment: comment,
-          services: uxui + apps + web + seo + smm + branding + webdesigning + photoshop + other,
+          services: uxui + " " + apps + " " + web + " " + seo + " " + smm + " " + branding + " " + webdesigning + " " + photoshop + " " + other,
         },
         "user_h6Ttnd80UW8eec5uK2xbM"
       )
@@ -219,39 +219,39 @@ const Contact = () => {
               />
             <div class="check-btn">
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux" onPress={(e) => setUXUI(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="uxui" value="uiux" onChange={(e) => setUXUI(e.target.value)}/>
                 <label for="uxui">UX-UI</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps" onPress={(e) => setApps(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="apps" value="mobile apps" onChange={(e) => setApps(e.target.value)}/>
                 <label for="apps">Mobile Apps</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech" onPress={(e) => setWeb(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="tech" value="web tech" onChange={(e) => setWeb(e.target.value)}/>
                 <label for="tech">Web Tech</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo" onPress={(e) => setSEO(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="seo" value="seo" onChange={(e) => setSEO(e.target.value)}/>
                 <label for="seo">SEO</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm" onPress={(e) => setSMM(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="smm" value="smm" onChange={(e) => setSMM(e.target.value)}/>
                 <label for="smm">SMM</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding" onPress={(e) => setBranding(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="branding" value="branding" onChange={(e) => setBranding(e.target.value)}/>
                 <label for="branding">Branding</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning" onPress={(e) => setWebdesigning(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="webdesigning" value="webdesigning" onChange={(e) => setWebdesigning(e.target.value)}/>
                 <label for="webdesigning">Web Designing</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop" onPress={(e) => setPhotoshop(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="photoshop" value="photoshop" onChange={(e) => setPhotoshop(e.target.value)}/>
                 <label for="photoshop">Photoshop</label>
               </div>
               <div class="form-group chbox">
-                <input type="checkbox" class="ckbox" name="service" id="other" value="other" onPress={(e) => setOther(e.target.value)}/>
+                <input type="checkbox" class="ckbox" name="service" id="other" value="other" onChange={(e) => setOther(e.target.value)}/>
                 <label for="other">Other</label>
               </div>
             </div>
