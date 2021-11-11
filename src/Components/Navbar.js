@@ -11,7 +11,7 @@ const Navbar = () => {
           className="navbar navbar-expand-lg navbar-dark "
         >
           <div className="container nav-pad">
-            <Link to="/vaibhav-iconmedia" className="navbar-brand">
+            <Link to="/" className="navbar-brand">
               <img
                 className="text-white"
                 width="150px"
