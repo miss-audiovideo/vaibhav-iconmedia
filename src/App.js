@@ -16,12 +16,12 @@ import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
 // import Dashboard from "./Components/Dashboard";
 import NewDash from "./Components/NewDash";
-import NewDash2 from "./Components/NewDash2";
+// import NewDash2 from "./Components/NewDash2";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import "animate.css";
-import Imageslider from "./Components/ImageSlider";
+// import Imageslider from "./Components/ImageSlider";
 
 const App = () => {
   return (
@@ -49,13 +49,13 @@ const App = () => {
             </HeadingContent>
             <SliderGallery />
             <SliderGalleryReverse />
-            <Imageslider />
+            {/* <Imageslider /> */}
 
             {/* <HeadingContent class="text-center text-capitalize display-3 w-lg-50 w-100 mx-auto slider-reverse-position">
             </HeadingContent> */}
             {/* <Dashboard /> */}
             <NewDash />
-            <NewDash2 />
+            {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
             <Testimonial />
             <Quote />
