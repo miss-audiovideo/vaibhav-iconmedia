@@ -24,6 +24,9 @@ body {
   /* background: #2b0505 !important; */
   width: 100%;
   background-image: url("./Components/images/leaf.gif");
+  background-size: 100% auto;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
 }
 .nav-pad {
   padding-top: 10px;
