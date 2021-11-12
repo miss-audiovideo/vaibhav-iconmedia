@@ -1,20 +1,25 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import music from "./Video/backdrop.mp3";
 
-const Audio = () => {
-    // const [audio, setAudio] = useState(new Audio(music));
-    // const [playing, setPlaying] = useState(false);
+const AudioP = () => {
     const [btn, setBtn] = useState("fa-pause");
+    const [isPlaying, setState] = useState(true);
+    const [audio] = useState(new Audio(music));
+
+    useEffect(() => {
+        isPlaying ? audio.play() : audio.pause();
+    },
+        [isPlaying]
+    );
 
     const togglePlay = () => {
+
         if (btn === "fa-pause") {
             setBtn("fa-play");
-            // audio.play();
-            // setPlaying(true);
+            setState(false);
         } else {
             setBtn("fa-pause");
-            // audio.pause();
-            // setPlaying(false);
+            setState(true);
         }
     }
 
@@ -23,10 +28,10 @@ const Audio = () => {
         <>
             <div className="float" type="button" onClick={togglePlay}>
                 <i className={btn + ` fa my-float`}></i>
-                <audio src={music} autoPlay={true} loop={true}/>
+                <audio src={music} autoPlay={true} loop={true} />
             </div>
         </>
     );
 };
 
-export default Audio;
+export default AudioP;

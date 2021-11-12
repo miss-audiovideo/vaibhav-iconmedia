@@ -256,7 +256,7 @@ body {
   height: 350px;
   width: 100%;
   /* background: linear-gradient(to right, #fd79a8, 50%, #fab1a0); */
-  background-image: url("./Components/images/Leaf.jpeg");
+  /* background-image: url("./Components/images/Leaf.jpeg"); */
   color: #fff;
   font-family: "futurabook";
   position: relative;
