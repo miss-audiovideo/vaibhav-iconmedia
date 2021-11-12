@@ -22,6 +22,7 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import "animate.css";
 import Imageslider from "./Components/ImageSlider";
+import Audio from "./Components/Audio";
 
 const App = () => {
   return (
@@ -83,6 +84,7 @@ const App = () => {
             <Contact />
           </Route>
         </Switch>
+        <Audio/>
       </Router>
     </>
   );

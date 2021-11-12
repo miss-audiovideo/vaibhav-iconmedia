@@ -22,7 +22,8 @@
 }
 body {
   /* background: #2b0505 !important; */
-  background-image: url("./Components/images/Leaf.jpeg");
+  width: 100%;
+  background-image: url("./Components/images/leaf.gif");
 }
 .nav-pad {
   padding-top: 10px;
@@ -1194,4 +1195,23 @@ select.form-field {
 .chbox:nth-child(8) input:checked + label {
   color: #2b0505;
   background: #f1b809;
+}
+
+/* Audio Float Button */
+
+.float{
+	position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #2b0505;
+  color: #ffe462;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 3px #000;
+  z-index: 10000000;
+}
+.my-float{
+	margin-top:16px;
 }
