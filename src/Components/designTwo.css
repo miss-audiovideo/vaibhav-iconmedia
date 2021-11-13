@@ -1,0 +1,113 @@
+@font-face {
+  font-family: futuramedium;
+  src: url("../fonts/futura\ medium\ bt.ttf");
+}
+@font-face {
+  font-family: futurabook;
+  src: url("../fonts/Futura\ Book.ttf");
+}
+@font-face {
+  font-family: futurameditalic;
+  src: url("../fonts/Futura\ Medium\ Italic\ font.ttf");
+}
+.designTwo {
+  margin: 120px;
+  /* background: yellow; */
+  background-image: url("./images/Robo-1.gif");
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.designTwo-p {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-family: futurameditalic;
+  font-size: 50px;
+  padding-left: 250px;
+  /* padding-top: 20px; */
+}
+.designTwo-h1 {
+  display: flex;
+  justify-content: center;
+  color: #ffc857;
+  font-family: futuramedium;
+  font-size: 250px;
+  /* font-weight: bold; */
+
+  letter-spacing: 3px;
+  z-index: -1;
+}
+@media screen and (max-width: 500px) {
+  .designTwo {
+    margin: 150px 20px;
+  }
+  .designTwo-p {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: futurameditalic;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+  .designTwo-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: futuramedium;
+    font-size: 80px;
+    padding-top: -30px;
+    font-weight: lighter;
+  }
+}
+@media screen and (max-width: 700px) {
+  .designTwo {
+    margin: 150px 20px;
+  }
+  .designTwo-p {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: futurameditalic;
+    font-size: 32px;
+    padding-left: 40px;
+    padding-top: 50px;
+    z-index: -1;
+  }
+  .designTwo-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: futuramedium;
+    font-size: 120px;
+    padding-top: -30px;
+    /* font-weight: bold; */
+  }
+}
+@media screen and (max-width: 800px) {
+  .designTwo {
+    margin: 150px 20px;
+  }
+  .designTwo-p {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: futurameditalic;
+    font-size: 42px;
+    padding-left: 75px;
+    padding-top: 50px;
+  }
+  .designTwo-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: futuramedium;
+    font-size: 180px;
+    padding-top: -30px;
+    /* font-weight: bold; */
+  }
+}

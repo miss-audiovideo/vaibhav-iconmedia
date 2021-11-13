@@ -14,8 +14,10 @@ import Profile from "./Components/Profile";
 import SliderGallery from "./Components/SliderGallery";
 import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
+import Design from "./Components/design";
 // import Dashboard from "./Components/Dashboard";
 import NewDash from "./Components/NewDash";
+import DesignTwo from "./Components/designTwo";
 // import NewDash2 from "./Components/NewDash2";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
@@ -54,7 +56,9 @@ const App = () => {
             {/* <HeadingContent class="text-center text-capitalize display-3 w-lg-50 w-100 mx-auto slider-reverse-position">
             </HeadingContent> */}
             {/* <Dashboard /> */}
+            <Design />
             <NewDash />
+            <DesignTwo />
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
             <Testimonial />
