@@ -94,7 +94,7 @@ const App = () => {
             <MidHeading />
           </Route>
         </Switch>
-        <Audio/>
+        <Audio />
       </Router>
     </>
   );

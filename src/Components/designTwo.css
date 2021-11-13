@@ -27,87 +27,71 @@
   color: white;
   font-family: futurameditalic;
   font-size: 50px;
-  padding-left: 250px;
+
   /* padding-top: 20px; */
 }
 .designTwo-h1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   color: #ffc857;
   font-family: futuramedium;
-  font-size: 250px;
-  /* font-weight: bold; */
-
+  /* font-size: 180px; */
   letter-spacing: 3px;
   z-index: -1;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 300px) {
   .designTwo {
-    margin: 150px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .designTwo-p {
-    display: flex;
-    justify-content: flex-start;
-    color: white;
-    font-family: futurameditalic;
-    font-size: 24px;
-    padding-left: 20px;
-    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 40px;
   }
   .designTwo-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: futuramedium;
-    font-size: 80px;
-    padding-top: -30px;
-    font-weight: lighter;
+    font-size: 90px;
   }
 }
-@media screen and (max-width: 700px) {
+@media (min-width: 600px) {
   .designTwo {
-    margin: 150px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .designTwo-p {
-    display: flex;
-    justify-content: flex-start;
-    color: white;
-    font-family: futurameditalic;
-    font-size: 32px;
-    padding-left: 40px;
-    padding-top: 50px;
+    padding-left: 80px;
     z-index: -1;
   }
   .designTwo-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: futuramedium;
-    font-size: 120px;
-    padding-top: -30px;
-    /* font-weight: bold; */
+    font-size: 130px;
   }
 }
-@media screen and (max-width: 800px) {
+@media (min-width: 768px) {
   .designTwo {
-    margin: 150px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .designTwo-p {
-    display: flex;
-    justify-content: flex-start;
-    color: white;
-    font-family: futurameditalic;
-    font-size: 42px;
-    padding-left: 75px;
-    padding-top: 50px;
+    padding-left: 190px;
+    z-index: -1;
   }
   .designTwo-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: futuramedium;
-    font-size: 180px;
-    padding-top: -30px;
-    font-weight: bold;
+    /* font-size: 180px; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .designTwo-p {
+    padding-left: 29%;
+    z-index: -1;
+  }
+}
+@media (min-width: 1080px) {
+  .designTwo-p {
+    padding-left: 30%;
+  }
+  .designTwo-h1 {
+    font-size: 250px;
   }
 }
