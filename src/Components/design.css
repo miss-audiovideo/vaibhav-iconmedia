@@ -1,0 +1,40 @@
+@font-face {
+  font-family: futuramedium;
+  src: url("../fonts/futura\ medium\ bt.ttf");
+}
+.banner-info {
+  text-transform: uppercase;
+}
+.banner-info-h1 {
+  font-family: futuramedium;
+  color: #ffc857;
+  font-size: 82px;
+  /* font-weight: bold; */
+}
+.banner-info-h2 {
+  font-family: futuramedium;
+  font-size: 52px;
+  /* font-weight: bold; */
+}
+.banner-info-h3 {
+  font-family: futuramedium;
+  color: #ffc857;
+  font-size: 82px;
+  /* font-weight: bold; */
+}
+@media screen and (max-width: 800px) {
+  .banner-info-h1 {
+    color: #ffc857;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .banner-info-h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .banner-info-h3 {
+    color: #ffc857;
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
