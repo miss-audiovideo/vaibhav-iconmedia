@@ -26,7 +26,7 @@ const MidHeading = () => {
                 text-transform: uppercase;
                 color: #ffc857 !important;
                 font-size: 3vw;
-                padding: 8vw 46vw 8vw 4vw;
+                padding: 8vw 45.5vw 8vw 4vw;
             }
             .robo2 {
                 position: absolute;
