@@ -6,6 +6,7 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar";
 import HeadingContent from "./Components/HeadingContent";
+import Heading from "./Components/Heading";
 // import HeadingParagraph from "./Components/HeadingParagraph";
 import MainCard from "./Components/MainCard";
 import FirstPage from "./Components/FirstPage";
@@ -24,6 +25,7 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import "animate.css";
 // import Imageslider from "./Components/ImageSlider";
+import Audio from "./Components/Audio";
 
 const App = () => {
   return (
@@ -86,7 +88,11 @@ const App = () => {
           <Route exact path="/get-in-touch">
             <Contact />
           </Route>
+          <Route exact path="/test">
+            <Heading/>
+          </Route>
         </Switch>
+        <Audio/>
       </Router>
     </>
   );
