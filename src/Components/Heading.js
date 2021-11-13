@@ -14,7 +14,7 @@ const Heading = () => {
             <style jsx>{`
             .robo-set-1{
                 padding: 0 10% 10%;
-                height: 500px;
+                height: 40vw;
                 position: relative;
             }
             .robo {
