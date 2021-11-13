@@ -6,6 +6,7 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar";
 import HeadingContent from "./Components/HeadingContent";
+import Heading from "./Components/Heading";
 // import HeadingParagraph from "./Components/HeadingParagraph";
 import MainCard from "./Components/MainCard";
 import FirstPage from "./Components/FirstPage";
@@ -82,6 +83,9 @@ const App = () => {
           ></Route>
           <Route exact path="/get-in-touch">
             <Contact />
+          </Route>
+          <Route exact path="/test">
+            <Heading/>
           </Route>
         </Switch>
         <Audio/>
