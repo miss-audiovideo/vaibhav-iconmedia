@@ -35,14 +35,14 @@
 .D-right h1 {
   color: #e3c257;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 90px;
   font-family: futuramedium;
   justify-content: flex-start;
 }
 .D-right h3 {
   color: white;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 60px;
   font-family: futuramedium;
   text-align: flex-start;
 }
@@ -75,6 +75,17 @@
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .D-right h1 {
+    font-size: 40px !important;
+    justify-content: center;
+    text-align: center;
+  }
+  .D-right h3 {
+    font-size: 28px !important;
+    text-align: center;
+  }
+}
 @media (max-width: 600px) {
   .D-container {
     flex-direction: column;
@@ -94,5 +105,14 @@
   .D-container {
     flex-direction: column;
     margin: 20px;
+  }
+  .D-right h1 {
+    font-size: 65px;
+    /* justify-content: center; */
+    text-align: center;
+  }
+  .D-right h3 {
+    font-size: 50px;
+    text-align: center;
   }
 }
