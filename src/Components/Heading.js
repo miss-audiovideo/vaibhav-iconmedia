@@ -4,48 +4,50 @@ import robo from "./images/Robo-1.gif"
 const Heading = () => {
     return (
         <>
-            <div className="luxury-heading">
-                <div className="luxury">Luxury<span>of</span></div>
-                <div className="design">Design</div>
+            <div className="robo-set-1">
+                <div className="luxury-heading">
+                    <div className="luxury">Luxury<span>of</span></div>
+                    <div className="design">Design</div>
+                </div>
+                <img src={robo} alt="robo" className="robo" />
             </div>
-            <img src={robo} alt="robo" className="robo" />
             <style jsx>{`
+            .robo-set-1{
+                padding: 0 10% 10%;
+                height: 500px;
+                position: relative;
+            }
+            .robo {
+                position: absolute;
+                top: 20vw; 
+                right: 62vw;
+                width: 56vw;
+                height: auto;
+                transform: scaleX(-1) translate(-50%, -50%);
+            }
             .luxury-heading{
                 text-align: center;
             }
-                .luxury {
-                    position: relative;
-                    padding-right: 200px;
-                    font-family: "cinzeldecorativebold";
-                    color: #eaeaf0 !important;
-                    font-size: 100pt;
-                    text-shadow: 0px 0px 13px #eaeaf025;
-                }
-                .luxury span {
-                    font-family: "herculesitalic";
-                    color: #fff !important;
-                    font-size: 30pt;
-                }
-
-                .design {
-                    position: absolute;
-                    top: 200px;
-                    left: 630px;
-                    text-align: center;
-                    font-family: "cinzelbold";
-                    color: #ffc857 !important;
-                    font-size: 100pt;
-                    text-shadow: 0px 0px 13px #ffc85725;
-                }
-                .robo {
-                    width: 735px;
-                    position: absolute;
-                    top: 160px;
-                    left: 230px;
-                    height: auto;
-                    -webkit-transform: scaleX(-1);
-                    transform: scaleX(-1);
-                }
+            .luxury {
+                padding: 0 10vw 0 0 ;
+                font-size: 10vw;
+                font-family: "cinzeldecorativebold";
+                text-shadow: 0px 0px 13px #eaeaf025;
+                color: #eaeaf0 !important;
+            }
+            .luxury span {
+                font-size: 3vw;
+                font-family: "herculesitalic";
+                color: #eaeaf0 !important;
+            }
+            .design {
+                position: absolute;
+                margin: -6vw 0vw  0vw 29vw;
+                font-size: 10vw;
+                font-family: "cinzelbold";
+                text-shadow: 0px 0px 13px #ffc85725;
+                color: #ffc857 !important;
+            }
             `}</style>
         </>
     );
