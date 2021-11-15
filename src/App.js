@@ -36,15 +36,13 @@ const App = () => {
 
         <Switch>
           <Route exact path="/">
-            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
-              {/* <span className="heading-contentOne">GET THE</span>
-              <span className="heading-contentTwo"> ATTENTION</span>
-              <br /> */}
+            {/* <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
               <span className="heading-contentOnes">DESIGN THE</span>
               <span className="heading-contentThree"> FUTURE</span>
-            </HeadingContent>
-
+            </HeadingContent> */}
+            <Heading />
             <MainCard />
+            <MidHeading />
             <FirstPage />
             <Brands />
             <Profile />
@@ -94,7 +92,7 @@ const App = () => {
             <MidHeading />
           </Route>
         </Switch>
-        <Audio/>
+        <Audio />
       </Router>
     </>
   );
