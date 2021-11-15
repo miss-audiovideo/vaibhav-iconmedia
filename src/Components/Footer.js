@@ -14,7 +14,7 @@ function Footer() {
     <>
       {/* <div className="bg-dark"> */}
 
-      <div data-aos="fade-in" className=" light text-light">
+      <div className=" light text-light">
         <section className="container">
           <div className="contact">
             <table>
