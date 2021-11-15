@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import Navbar from "./Components/Navbar";
 import HeadingContent from "./Components/HeadingContent";
@@ -56,7 +54,7 @@ const App = () => {
             <Heading />
             <MainCard />
             <MidHeading />
-            >>>>>>> 30ca27d645c08ee4cce5caf67e34c80b308ac24a
+
             <FirstPage />
             <Brands />
             <Profile />
