@@ -48,8 +48,15 @@ const App = () => {
               <span className="heading-contentOnes">DESIGN THE</span>
               <span className="heading-contentThree"> FUTURE</span>
             </HeadingContent>
-
             <MainCard data-aos="fade-left" />
+            {/* <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
+              <span className="heading-contentOnes">DESIGN THE</span>
+              <span className="heading-contentThree"> FUTURE</span>
+            </HeadingContent> */}
+            <Heading />
+            <MainCard />
+            <MidHeading />
+            >>>>>>> 30ca27d645c08ee4cce5caf67e34c80b308ac24a
             <FirstPage />
             <Brands />
             <Profile />
@@ -60,7 +67,6 @@ const App = () => {
             <SliderGallery />
             <SliderGalleryReverse />
             {/* <Imageslider /> */}
-
             {/* <HeadingContent class="text-center text-capitalize display-3 w-lg-50 w-100 mx-auto slider-reverse-position">
             </HeadingContent> */}
             {/* <Dashboard /> */}
