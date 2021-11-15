@@ -46,13 +46,13 @@ const App = () => {
               <span className="heading-contentOnes">DESIGN THE</span>
               <span className="heading-contentThree"> FUTURE</span>
             </HeadingContent>
-            <MainCard data-aos="fade-left" />
+            {/* <MainCard data-aos="fade-left" /> */}
             {/* <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
               <span className="heading-contentOnes">DESIGN THE</span>
               <span className="heading-contentThree"> FUTURE</span>
             </HeadingContent> */}
             <Heading />
-            <MainCard />
+            <MainCard data-aos="fade-left" />
             <MidHeading />
 
             <FirstPage />

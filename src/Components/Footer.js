@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 function Footer() {
   useEffect(() => {
     AOS.init({
-      offset: 300,
+      offset: 100,
       duration: 2000,
     });
   });

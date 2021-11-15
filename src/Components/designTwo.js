@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const DesignTwo = () => {
   useEffect(() => {
     AOS.init({
-      offset: 400,
+      offset: 500,
       duration: 2000,
       easing: "ease-in",
     });

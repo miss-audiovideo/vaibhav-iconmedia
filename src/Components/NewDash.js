@@ -114,7 +114,7 @@ const NewDash = () => {
   const [img, setImg] = useState(car);
   useEffect(() => {
     AOS.init({
-      offset: 300,
+      offset: 400,
       duration: 2000,
     });
   });
