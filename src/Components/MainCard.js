@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Cards from "./Cards";
 import ThreeCards from "./ThreeCards";
 import one from "./images/main/1.jpg";
@@ -25,6 +25,8 @@ import ninev from "./images/main/9.mp4";
 import tenv from "./images/main/10.mp4";
 import elevenv from "./images/main/11.mp4";
 import twelvev from "./images/main/12.mp4";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 let fCard = {
   first: {
@@ -64,9 +66,20 @@ let fCard = {
 };
 
 const MainCard = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 500,
+      duration: 2000,
+      easing: "ease-in",
+    });
+  });
   return (
     <>
-      <div class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2"
+      >
         <ThreeCards
           src={fCard.first}
           class="d-flex flex-column first_card small-screen col-2 mx-auto"

@@ -99,7 +99,7 @@
 
 // ANCHOR
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NewDash.css";
 import car from "../Components/images/dhoom.jpg";
 import cartwo from "../Components/images/dhoom machale.jpg";
@@ -107,11 +107,19 @@ import audi from "../Components/images/audi.jpeg";
 import landrover from "../Components/images/landrover.jpeg";
 import harrier from "../Components/images/harrier.jpg";
 import buggati from "../Components/images/buggati.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NewDash = () => {
   const [img, setImg] = useState(car);
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 2000,
+    });
+  });
   return (
-    <div className="dash-container">
+    <div data-aos="fade-left" className="dash-container">
       <div className="dash-top">
         <img className="dash-img" src={img} alt="" />
       </div>

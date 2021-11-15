@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "./images/homeLogo.png";
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Footer() {
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 2000,
+    });
+  });
   return (
     <>
       {/* <div className="bg-dark"> */}
 
-      <div className=" light text-light">
+      <div data-aos="fade-in" className=" light text-light">
         <section className="container">
           <div className="contact">
             <table>
@@ -49,7 +55,6 @@ function Footer() {
           </small>
           <small className="text-end">
             <div>Follow us on:</div>
-            
           </small>
         </div>
       </div>

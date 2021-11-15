@@ -6,6 +6,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Italianno&family=Lobster&family=Noto+Sans+Display:wght@300&family=Nova+Oval&display=swap"); */
 * {
   padding: 0;
+  scroll-behavior: smooth;
 }
 @font-face {
   font-family: futuramedium;
@@ -34,6 +35,10 @@ body {
   background-size: 100% auto;
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
+  scroll-behaviour: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .nav-pad {
   padding-top: 10px;
@@ -1209,8 +1214,8 @@ select.form-field {
 
 /* Audio Float Button */
 
-.float{
-	position: fixed;
+.float {
+  position: fixed;
   width: 50px;
   height: 50px;
   bottom: 40px;
@@ -1222,6 +1227,6 @@ select.form-field {
   box-shadow: 1px 1px 3px #000;
   z-index: 10000000;
 }
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }

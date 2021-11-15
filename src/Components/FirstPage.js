@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import twelve from "./images/twelve.jpg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const FirstPage = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+      easing: "ease-in",
+    });
+  });
   return (
     <>
-      <div className="container-fluid my-lg-5 py-lg-5 top-mrgn">
+      <div
+        data-aos="fade-left"
+        className="container-fluid my-lg-5 py-lg-5 top-mrgn"
+      >
         <div className="row mt-lg-5 pt-lg-5">
           <div className="col-md-10 mx-auto">
             <div className="row d-flex justify-content-center align-items-center">

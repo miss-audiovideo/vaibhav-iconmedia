@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Navbar from "./Components/Navbar";
 import HeadingContent from "./Components/HeadingContent";
@@ -36,7 +38,10 @@ const App = () => {
 
         <Switch>
           <Route exact path="/">
-            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
+            <HeadingContent
+              data-aos="fade-left"
+              class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp"
+            >
               {/* <span className="heading-contentOne">GET THE</span>
               <span className="heading-contentTwo"> ATTENTION</span>
               <br /> */}
@@ -44,7 +49,7 @@ const App = () => {
               <span className="heading-contentThree"> FUTURE</span>
             </HeadingContent>
 
-            <MainCard />
+            <MainCard data-aos="fade-left" />
             <FirstPage />
             <Brands />
             <Profile />

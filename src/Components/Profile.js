@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import profile1 from "./images/profile1.gif";
 import profile2 from "./images/profile2.gif";
 import profile3 from "./images/profile3.gif";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Profile = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+    });
+  });
   return (
     <>
-      <div className="profile-bg text-center ">
+      <div data-aos="fade-left" className="profile-bg text-center ">
         <h1
           className="profile-text profile-heading display-4 animate__animated animate__slideInRight"
           // style={{ fontFamily: "Futura-Medium,sans-serif" }}

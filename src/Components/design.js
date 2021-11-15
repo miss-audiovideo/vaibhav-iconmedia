@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./design.css";
 import robo from "./images/Robo-1.gif";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Design = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+    });
+  });
   return (
-    <div className="D-container">
+    <div data-aos="fade-right" className="D-container">
       <div className="D-left">
         {/* <img className="D-img" src={robo} alt="" /> */}
       </div>

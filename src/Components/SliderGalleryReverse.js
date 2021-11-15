@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SliderGalleryReverse = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+      easing: "ease-in",
+    });
+  });
   return (
     <>
-      <div className="" style={{ position: "relative", top: "-60px" }}>
+      <div
+        className=" "
+        data-aos="fade-left"
+        style={{ position: "relative", top: "-60px" }}
+      >
         <div class="slider">
           <div class="slide-track1">
             <div class="slide2"></div>

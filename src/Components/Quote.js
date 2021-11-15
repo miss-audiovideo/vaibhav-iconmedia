@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "./images/c.png";
 import { db } from "../firebase";
 import { Modal, ModalFooter } from "react-bootstrap";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
 import emailjs from "emailjs-com";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import ModalOne from "../Modals/ModalOne.jsx";
 
@@ -27,6 +29,12 @@ const Quote = () => {
   const [q2, setQ2] = useState();
   const [q3, setQ3] = useState();
 
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+    });
+  });
   const sendEmail = () => {
     emailjs
       .send(
@@ -101,10 +109,12 @@ const Quote = () => {
     setQ3("");
   };
 
-
   return (
     <>
-      <div className="quote animate__animated animate__bounce animate__delay-3s">
+      <div
+        data-aos="fade-right"
+        className="quote animate__animated animate__bounce animate__delay-3s"
+      >
         <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
           <span style={{ color: "white" }}>Let's create a measurable</span>
           <br />
@@ -268,21 +278,27 @@ const Quote = () => {
                 <strong>
                   <label>What is the brand/product about?</label>
                 </strong>
-                <input type="text" className="input-field"
+                <input
+                  type="text"
+                  className="input-field"
                   value={product}
                   onChange={(e) => setProduct(e.target.value)}
                 />
                 <strong>
                   <label>What is the primary goal of your business?</label>
                 </strong>
-                <input type="text" className="input-field"
+                <input
+                  type="text"
+                  className="input-field"
                   value={goal}
                   onChange={(e) => setGoal(e.target.value)}
                 />
                 <strong>
                   <label>What is your biggest challenge?</label>
                 </strong>
-                <input type="text" className="input-field"
+                <input
+                  type="text"
+                  className="input-field"
                   value={challenge}
                   onChange={(e) => setChallenge(e.target.value)}
                 />
@@ -322,17 +338,19 @@ const Quote = () => {
                     feel?
                   </label>
                 </strong>
-                <input type="text" className="input-field"
+                <input
+                  type="text"
+                  className="input-field"
                   value={q1}
                   onChange={(e) => setQ1(e.target.value)}
                 />
                 <br />
                 <strong>
-                  <label>
-                    Who are some companies that you admire and why?
-                  </label>
+                  <label>Who are some companies that you admire and why?</label>
                 </strong>
-                <input type="text" className="input-field"
+                <input
+                  type="text"
+                  className="input-field"
                   value={q2}
                   onChange={(e) => setQ2(e.target.value)}
                 />
@@ -340,7 +358,9 @@ const Quote = () => {
                 <strong>
                   <label>Is there anything you would like to add?</label>
                 </strong>
-                <input type="text" className="input-field"
+                <input
+                  type="text"
+                  className="input-field"
                   value={q3}
                   onChange={(e) => setQ3(e.target.value)}
                 />
@@ -348,7 +368,7 @@ const Quote = () => {
             </center>
           </div>
           <ModalFooter>
-          <button
+            <button
               id="submit"
               className="submit-btn"
               type="submit"
@@ -359,7 +379,7 @@ const Quote = () => {
             </button>
           </ModalFooter>
         </Modal>
-      </div >
+      </div>
       <style jsx>{`
         @font-face {
           font-family: futuramedium;

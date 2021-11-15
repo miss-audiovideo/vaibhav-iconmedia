@@ -1,5 +1,5 @@
 import React from "react";
-import homeLogo from "./images/homeLogo.png";
+import homeLogo from "./images/ICONMEDIA.gif";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Navbar = () => {
