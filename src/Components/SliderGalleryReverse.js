@@ -8,12 +8,13 @@ const SliderGalleryReverse = () => {
       offset: 300,
       duration: 2000,
       easing: "ease-in",
+      delay: 200,
     });
   });
   return (
     <>
       <div
-        className=" "
+        className="slide"
         data-aos="fade-up"
         style={{ position: "relative", top: "-60px" }}
       >
@@ -42,6 +43,9 @@ const SliderGalleryReverse = () => {
       </div>
       <style jsx>
         {`
+          .slide {
+            margin-bottom: 22%;
+          }
           .slider {
             background-color: transparent;
           }

@@ -6,8 +6,9 @@ import "aos/dist/aos.css";
 const MidHeading = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 400,
       duration: 2000,
+      delay: 200,
     });
   });
   return (
@@ -21,7 +22,7 @@ const MidHeading = () => {
       <style jsx>{`
         .robo-set-2 {
           margin-top: 35%;
-          margin-bottom: 100px;
+          margin-bottom: 35%;
           padding: 10% 10%;
           height: 40vw;
           position: relative;

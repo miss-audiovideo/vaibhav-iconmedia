@@ -68,17 +68,20 @@ let fCard = {
 const MainCard = () => {
   useEffect(() => {
     AOS.init({
-      offset: 500,
-      duration: 2000,
+      offset: 200,
+      // duration: 3000,
       easing: "ease-in",
+      delay: 50,
+      mirror: true,
     });
   });
   return (
     <>
       <div
+        id="cards"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
-        class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2"
+        class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2 "
       >
         <ThreeCards
           src={fCard.first}
@@ -101,6 +104,13 @@ const MainCard = () => {
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
       </div>
+      <style jsx>
+        {`
+          #cards {
+            margin-top: 35%;
+          }
+        `}
+      </style>
     </>
   );
 };

@@ -6,15 +6,16 @@ const FirstPage = () => {
   useEffect(() => {
     AOS.init({
       offset: 400,
-      duration: 2000,
+      duration: 3000,
       easing: "ease-in",
+      delay: 200,
     });
   });
   return (
     <>
       <div
         data-aos="fade-up"
-        className="container-fluid my-lg-5 py-lg-5 top-mrgn"
+        className="container-fluid my-lg-5 py-lg-5 top-mrgn fp"
       >
         <div className="row mt-lg-5 pt-lg-5">
           <div className="col-md-10 mx-auto">
@@ -33,7 +34,7 @@ const FirstPage = () => {
               </div>
               <div className="col-md-6 col-12 order-lg-2 order-1 mx-auto">
                 <img
-                  className="img-fluid container-img mx-auto animate__animated animate__pulse animate__delay-2s animate__infinite animate__slower"
+                  className="img-fluid container-img mx-auto"
                   src={twelve}
                   alt="main_img"
                 />
@@ -54,6 +55,9 @@ const FirstPage = () => {
           }
           .firstpage {
             font-family: futuramedium;
+          }
+          .fp {
+            margin-bottom: 20%;
           }
           .firstpage-bt {
             font-family: futurabook;

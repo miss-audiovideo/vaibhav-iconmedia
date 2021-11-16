@@ -12,7 +12,7 @@ import MidHeading from "./Components/MidHeading";
 import MainCard from "./Components/MainCard";
 import FirstPage from "./Components/FirstPage";
 import Brands from "./Components/Brands";
-import Profile from "./Components/Profile";
+// import Profile from "./Components/Profile";
 import SliderGallery from "./Components/SliderGallery";
 import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
@@ -57,7 +57,7 @@ const App = () => {
 
             <FirstPage />
             <Brands />
-            <Profile />
+            {/* <Profile /> */}
             {/* <HeadingContent class="head-style text-center text-capitalize display-3 w-50 mt-lg-6  mx-auto headingContent gallery"> */}
             <HeadingContent class="head-style text-center text-capitalize display-3 w-50 mt-lg-6  headingContent gallery">
               Gallery

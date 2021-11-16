@@ -192,13 +192,13 @@
   justify-content: center;
   /* background: white; */
   flex-direction: column;
-  /* margin-bottom: 120px; */
+  margin-bottom: 20%;
 }
 .dash-top {
   margin-bottom: -200px;
   width: 70%;
   background: pink;
-  height: 400px;
+  height: 300px;
   /* background: url("https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
     no-repeat center / cover; */
   z-index: 1;

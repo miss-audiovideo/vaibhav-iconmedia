@@ -16,8 +16,9 @@ import "aos/dist/aos.css";
 const Brands = () => {
   useEffect(() => {
     AOS.init({
-      offset: 400,
+      offset: 200,
       duration: 2000,
+      delay: 200,
     });
   });
   return (
@@ -72,7 +73,8 @@ const Brands = () => {
           padding-bottom: 25px;
         }
         .brands {
-          // margin-top: 130px;
+          margin-top: 20%;
+          margin-bottom: 20%;
           height: min-content;
           display: flex;
           flex-wrap: wrap;

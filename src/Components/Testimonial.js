@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import imgOne from "../Components/images/userone.png";
 import imgTwo from "../Components/images/usertwo.png";
 import imgThree from "../Components/images/userthree.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import testimonial from "../Components/images/Testimonials BG.png";
 
 function Testimonial() {
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 2000,
+      easing: "ease-in-out",
+      delay: 200,
+    });
+  });
   return (
     <>
-      <div className="testimonials">
-        <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
+      <div data-aos="fade-in" className="testimonials">
+        {/* <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
           Less process,
           <br />
           more productivity
@@ -18,9 +28,9 @@ function Testimonial() {
           <br /> requests, no more missed deadlines. We've simplified the <br />
           design process so you can see results faster and we can
           <br /> put more time into what we do best, design...
-        </p>
+        </p> */}
 
-        <div className="testimonials">
+        <div data-aos="fade-in" className="testimonials">
           <h2
             style={{ fontFamily: "futuramedium" }}
             className=" animate__animated animate__zoomIn animate__infinite animate__slower"
@@ -93,8 +103,8 @@ function Testimonial() {
         .testimonials {
           // background-image: url("./Components/images/Testimonials\ BG.png");
           // z-index: 1;
-          margin-top: 100px;
-          margin-bottom: 100px;
+          margin-top: 10%;
+          margin-bottom: 10%;
         }
         .testimonials p {
           text-align: center;
@@ -151,6 +161,9 @@ function Testimonial() {
           background-color: rgba(114, 114, 114, 0.5);
           border-radius: 12px;
           border: 1px solid rgba(255, 255, 255, 0.125);
+          box-sizing: border-box;
+          overflow: hidden;
+          word-wrap: break-word;
         }
         .client-head {
           color: white;
@@ -236,6 +249,8 @@ function Testimonial() {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+          }
+          .color {
           }
         }
       `}</style>

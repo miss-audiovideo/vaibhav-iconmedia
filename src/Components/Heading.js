@@ -6,13 +6,14 @@ import "aos/dist/aos.css";
 const Heading = () => {
   useEffect(() => {
     AOS.init({
-      offset: 400,
-      duration: 2000,
+      offset: 220,
+      duration: 3000,
+      delay: 100,
     });
   });
   return (
     <>
-      <div data-aos="fade-in" className="robo-set-1">
+      <div data-aos="fade-up" className="robo-set-1">
         <div className="luxury-heading">
           <div className="luxury">
             Luxury<span>of</span>
@@ -27,9 +28,6 @@ const Heading = () => {
           height: 30vw;
           position: relative;
           margin-top: 10%;
-          margin-bottom: 30%;
-          // margin-bottom: 120px;
-          // margin: auto;
         }
         .robo {
           position: absolute;
@@ -44,7 +42,7 @@ const Heading = () => {
         }
         .luxury {
           padding: 0 10vw 0 0;
-          font-size: 10vw;
+          font-size: 12vw;
           font-family: "cinzeldecorativebold";
           text-shadow: 0px 0px 13px #eaeaf025;
           color: #eaeaf0 !important;
@@ -61,6 +59,12 @@ const Heading = () => {
           font-family: "cinzelbold";
           text-shadow: 0px 0px 13px #ffc85725;
           color: #ffc857 !important;
+        }
+        @media (max-width: 500px) {
+          .robo-set-1 {
+            margin-top: 40%;
+            margin-bottom: 10%;
+          }
         }
       `}</style>
     </>
