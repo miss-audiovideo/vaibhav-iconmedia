@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 const SliderGalleryReverse = () => {
   useEffect(() => {
     AOS.init({
-      offset: 400,
+      offset: 300,
       duration: 2000,
       easing: "ease-in",
     });
@@ -14,7 +14,7 @@ const SliderGalleryReverse = () => {
     <>
       <div
         className=" "
-        data-aos="fade-left"
+        data-aos="fade-up"
         style={{ position: "relative", top: "-60px" }}
       >
         <div class="slider">

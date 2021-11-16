@@ -12,7 +12,7 @@ const SliderGallery = () => {
   });
   return (
     <>
-      <div data-aos="fade-right" className="">
+      <div data-aos="fade-in" className="">
         <div class="slider">
           <div class="slide-track">
             <div class="slide"></div>

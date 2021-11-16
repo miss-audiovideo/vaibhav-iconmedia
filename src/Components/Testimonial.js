@@ -93,7 +93,8 @@ function Testimonial() {
         .testimonials {
           // background-image: url("./Components/images/Testimonials\ BG.png");
           // z-index: 1;
-          margin-top: 50px;
+          margin-top: 100px;
+          margin-bottom: 100px;
         }
         .testimonials p {
           text-align: center;

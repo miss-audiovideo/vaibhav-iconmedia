@@ -119,7 +119,7 @@ const NewDash = () => {
     });
   });
   return (
-    <div data-aos="fade-left" className="dash-container">
+    <div data-aos="fade-in" className="dash-container">
       <div className="dash-top">
         <img className="dash-img" src={img} alt="" />
       </div>

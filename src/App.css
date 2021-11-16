@@ -36,10 +36,9 @@ body {
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
   scroll-behaviour: smooth;
+  /* overflow-x: hidden; */
 }
-body::-webkit-scrollbar {
-  display: none;
-}
+
 .nav-pad {
   padding-top: 10px;
 }

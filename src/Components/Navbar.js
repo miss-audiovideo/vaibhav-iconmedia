@@ -8,7 +8,7 @@ const Navbar = () => {
       <Router>
         <nav
           // style={{ backgroundColor: "#2b0405" }}
-          className="navbar navbar-expand-lg navbar-dark "
+          className="navbar navbar-expand-lg navbar-dark fixed-top"
         >
           <div className="container nav-pad">
             <Link to="/" className="navbar-brand">
@@ -74,6 +74,9 @@ const Navbar = () => {
           font-family: futurabook;
           src: url("./fonts/Futura\ Book.ttf");
         }
+        // .menubar {
+        //   position: fixed;
+        // }
         .nav-text {
           font-family: futurabook;
         }

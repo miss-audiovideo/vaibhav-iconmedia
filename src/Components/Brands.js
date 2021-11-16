@@ -22,7 +22,7 @@ const Brands = () => {
   });
   return (
     <>
-      <div data-aos="fade-right" className="brands">
+      <div data-aos="fade-up" className="brands">
         <div className="brands-heading">
           <h1
             // style={{
@@ -72,6 +72,8 @@ const Brands = () => {
           padding-bottom: 25px;
         }
         .brands {
+          // margin-top: 130px;
+          height: min-content;
           display: flex;
           flex-wrap: wrap;
           -webkit-backdrop-filter: blur(4px) saturate(200%);

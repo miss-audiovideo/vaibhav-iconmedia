@@ -14,7 +14,7 @@ const Profile = () => {
   });
   return (
     <>
-      <div data-aos="fade-left" className="profile-bg text-center ">
+      <div data-aos="fade-up" className="profile-bg text-center ">
         <h1
           className="profile-text profile-heading display-4 animate__animated animate__slideInRight"
           // style={{ fontFamily: "Futura-Medium,sans-serif" }}

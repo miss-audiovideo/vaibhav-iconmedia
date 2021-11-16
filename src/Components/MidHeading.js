@@ -20,6 +20,8 @@ const MidHeading = () => {
       </div>
       <style jsx>{`
         .robo-set-2 {
+          margin-top: 50px;
+          margin-bottom: 100px;
           padding: 10% 10%;
           height: 40vw;
           position: relative;

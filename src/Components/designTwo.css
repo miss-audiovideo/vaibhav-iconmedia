@@ -11,7 +11,8 @@
   src: url("../fonts/Futura\ Medium\ Italic\ font.ttf");
 }
 .designTwo {
-  margin: 120px;
+  margin-top: 200px;
+  margin-bottom: 100px;
   /* background: yellow; */
   background-image: url("./images/Robo-1.gif");
   display: flex;

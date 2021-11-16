@@ -13,7 +13,7 @@ const FirstPage = () => {
   return (
     <>
       <div
-        data-aos="fade-left"
+        data-aos="fade-up"
         className="container-fluid my-lg-5 py-lg-5 top-mrgn"
       >
         <div className="row mt-lg-5 pt-lg-5">

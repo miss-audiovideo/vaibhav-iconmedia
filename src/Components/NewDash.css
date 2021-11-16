@@ -192,6 +192,7 @@
   justify-content: center;
   /* background: white; */
   flex-direction: column;
+  /* margin-bottom: 120px; */
 }
 .dash-top {
   margin-bottom: -200px;
