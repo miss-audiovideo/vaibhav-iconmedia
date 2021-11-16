@@ -36,16 +36,16 @@ const App = () => {
 
         <Switch>
           <Route exact path="/">
-            <HeadingContent
+            {/* <HeadingContent
               data-aos="fade-left"
               class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp"
-            >
-              {/* <span className="heading-contentOne">GET THE</span>
+            > */}
+            {/* <span className="heading-contentOne">GET THE</span>
               <span className="heading-contentTwo"> ATTENTION</span>
               <br /> */}
-              <span className="heading-contentOnes">DESIGN THE</span>
-              <span className="heading-contentThree"> FUTURE</span>
-            </HeadingContent>
+            {/* <span className="heading-contentOnes">DESIGN THE</span>
+              <span className="heading-contentThree"> FUTURE</span> */}
+            {/* </HeadingContent> */}
             {/* <MainCard data-aos="fade-left" /> */}
             {/* <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent  animate__animated animate__fadeInUp">
               <span className="heading-contentOnes">DESIGN THE</span>
