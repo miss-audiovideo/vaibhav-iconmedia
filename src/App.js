@@ -72,6 +72,7 @@ const App = () => {
             <Design />
             <NewDash />
             <DesignTwo />
+            <Icon />
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
             <Testimonial />
