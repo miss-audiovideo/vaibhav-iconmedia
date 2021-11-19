@@ -1229,3 +1229,57 @@ select.form-field {
 .my-float {
   margin-top: 16px;
 }
+/* Icon Section */
+.icon-section {
+ padding: 5% 10%;
+ position: relative;
+}
+.icon-title{
+  background-color: #ffe462;
+  color: #2b0505;
+  padding: 1% 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 30vw;
+  border-radius: 8px;
+  z-index: 100;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-title h1{
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.iconcard{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr;
+  width: auto;
+  height: 40vw;
+  padding: 5%;
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.iconcard .icon-block{
+  padding: 10% 8% 10% 10%;
+  border-right:2px solid rgba(255, 255, 255, 0.125);
+}
+.iconcard .icon-block:nth-child(4), .iconcard .icon-block:nth-child(8){
+  border-right:none;
+  padding: 10% 0 10% 10%;
+}
+.icon-block img{
+  width: 4vw;
+  height: auto;
+}
+.icon-block h5{
+  font-size: 1.5vw;
+  color: #fff;
+  padding: 1vw 0 0 0;
+}

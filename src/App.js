@@ -24,6 +24,7 @@ import DesignTwo from "./Components/designTwo";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
+import Icon from "./Components/Icon";
 import "animate.css";
 // import Imageslider from "./Components/ImageSlider";
 import Audio from "./Components/Audio";
@@ -101,6 +102,7 @@ const App = () => {
           <Route exact path="/test">
             <Heading />
             <MidHeading />
+            <Icon />
           </Route>
         </Switch>
         <Audio />
