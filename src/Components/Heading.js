@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const Heading = () => {
   useEffect(() => {
     AOS.init({
-      offset: 220,
+      offset: 240,
       duration: 3000,
       delay: 100,
     });
