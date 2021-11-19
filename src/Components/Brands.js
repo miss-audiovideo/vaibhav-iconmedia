@@ -29,6 +29,7 @@ const Brands = () => {
             // style={{
             //   fontFamily: `futuramedium`,
             // }}
+            data-aos="fade-up"
             className="brands-title"
             // className=" firstpage brand-line text-center pt-lg-5 pb-lg-5 animate__animated animate__jackInTheBox animate__delay-10s "
           >

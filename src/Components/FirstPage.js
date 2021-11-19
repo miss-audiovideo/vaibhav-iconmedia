@@ -21,10 +21,16 @@ const FirstPage = () => {
           <div className="col-md-10 mx-auto">
             <div className="row d-flex justify-content-center align-items-center">
               <div className="col-md-6 col-12 order-lg-1 order-2 first_div">
-                <p className="firstpage heading_Para animate__animated animate__backInDown">
+                <p
+                  data-aos="fade-left"
+                  className="firstpage heading_Para animate__animated animate__backInDown"
+                >
                   What we do ?
                 </p>
-                <h1 className="firstpage heading_Content animate__animated animate__backInUp">
+                <h1
+                  data-aos="fade-right"
+                  className="firstpage heading_Content animate__animated animate__backInUp"
+                >
                   Do you need help with <br />
                   your graphic design ?
                 </h1>

@@ -18,7 +18,7 @@ function Testimonial() {
   return (
     <>
       <div data-aos="fade-in" className="testimonials">
-        {/* <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
+        <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
           Less process,
           <br />
           more productivity
@@ -28,7 +28,7 @@ function Testimonial() {
           <br /> requests, no more missed deadlines. We've simplified the <br />
           design process so you can see results faster and we can
           <br /> put more time into what we do best, design...
-        </p> */}
+        </p>
 
         <div data-aos="fade-in" className="testimonials">
           <h2
@@ -53,7 +53,11 @@ function Testimonial() {
             <div className="text">
               <div className="client">
                 <h3 className="client-head">Client name</h3>
-                <p className="color" style={{ fontFamily: "futurabook" }}>
+                <p
+                  data-aos="fade-left"
+                  className="color"
+                  style={{ fontFamily: "futurabook" }}
+                >
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
                   dolorum fugiat iusto dolores quo blanditiis, nesciunt,
@@ -63,7 +67,11 @@ function Testimonial() {
               </div>
               <div className="client">
                 <h3 className="client-head">Client name</h3>
-                <p className="color" style={{ fontFamily: "futurabook" }}>
+                <p
+                  data-aos="fade-up"
+                  className="color"
+                  style={{ fontFamily: "futurabook" }}
+                >
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
                   dolorum fugiat iusto dolores quo blanditiis, nesciunt,
@@ -73,7 +81,11 @@ function Testimonial() {
               </div>
               <div className="client">
                 <h3 className="client-head">Client name</h3>
-                <p className="color" style={{ fontFamily: "futurabook" }}>
+                <p
+                  data-aos="fade-right"
+                  className="color"
+                  style={{ fontFamily: "futurabook" }}
+                >
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Vitae laboriosam ipsum consequatur atque at! Tempore nam
                   dolorum fugiat iusto dolores quo blanditiis, nesciunt,

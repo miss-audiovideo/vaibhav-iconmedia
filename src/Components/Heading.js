@@ -15,10 +15,12 @@ const Heading = () => {
     <>
       <div data-aos="fade-up" className="robo-set-1">
         <div className="luxury-heading">
-          <div className="luxury">
+          <div data-aos="fade-left" className="luxury">
             Luxury<span>of</span>
           </div>
-          <div className="design">Design</div>
+          <div data-aos="fade-right" className="design">
+            Design
+          </div>
         </div>
         <img src={robo} alt="robo" className="robo" />
       </div>
@@ -27,7 +29,7 @@ const Heading = () => {
           padding: 0 10% 10%;
           height: 30vw;
           position: relative;
-          margin-top: 10%;
+          margin-top: 15%;
         }
         .robo {
           position: absolute;

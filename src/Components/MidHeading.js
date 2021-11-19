@@ -15,7 +15,7 @@ const MidHeading = () => {
     <>
       <div data-aos="fade-up" className="robo-set-2">
         <div className="mid-heading-text">
-          <div>Designs that make a difference</div>
+          <div data-aos="fade-left">Designs that make a difference</div>
         </div>
         <img src={robo} alt="robo" className="robo2" />
       </div>
