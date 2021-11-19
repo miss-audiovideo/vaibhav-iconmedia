@@ -1237,7 +1237,7 @@ select.form-field {
 .icon-title{
   background-color: #ffe462;
   color: #2b0505;
-  padding: 1% 0;
+  /* padding: 1% 0; */
   margin: 0 auto;
   text-align: center;
   width: 30vw;
