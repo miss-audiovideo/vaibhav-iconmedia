@@ -26,26 +26,4 @@ const ThreeSixty = () => {
     )
 }
 
-//     const handlePlayVideo = () => {
-//         if(videojs.getPlayers()["360"]) {
-//             setBtn("btn-icon2");
-//             vidRef.current.pause();
-//         }else{
-//             setBtn("btn-icon");
-//             vidRef.current.play();
-//         }
-//     }
-//     return (
-//         <div className="three-sixty-section">
-//             <video muted autoPlay loop className="three-sixty-video" onMouseOver={handlePlayVideo}>
-//                 <source src={video} type="video/mp4" />
-//             </video>
-//             <div className="three-sixty-overlay">
-//                 <div>360degree</div>
-//                 <button className="btn-icon">+</button>
-//             </div>
-//         </div>
-//     );
-// }
-
 export default ThreeSixty;
