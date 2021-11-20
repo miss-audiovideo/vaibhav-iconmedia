@@ -1351,3 +1351,75 @@ select.form-field {
 .three-sixty-popup{
   display: none;
 }
+/* Testimonial New */
+.testimonials-new h1{
+  color: #ffc857;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: futuramedium;
+  font-size: 40px;
+}
+.slider .test-card {
+  height: 260px;
+  width: 260px;
+}
+
+.test-card {
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.5);
+  border-radius: 12px 12px 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+.test-card p{
+  color: #fff;
+  font-size: .8em;
+  font-family: futurabook;
+  font-weight: 200;
+  padding: 5% 10% 0 10%;
+}
+.test-card h3{
+  color: #ffe462;
+  padding: 0 10% 0 10%;
+  font-size: 1.2em;
+  font-family: futuramedium;
+}
+.test-card .test-work{
+  display: flex;
+}
+.test-card .test-work h6{
+  color: #fff;
+  font-size: .6em;
+  padding: 0 5px 0 10%;
+  font-family: futurabook;
+}
+.test-card .test-work span{
+  position: absolute;
+  left: 20.5%;
+  bottom: 30%;
+  font-size: .6em;
+  color: #fff;
+  font-family: futurabook;
+}
+.test-card .test-work h5{
+  color: #ffe462;
+  font-size: .6em;
+  padding: 0 10% 0 5px;
+  font-family: futurabook;
+}
+.test-card .test-stars {
+  color: #ffe462;
+  font-size: 1em;
+  padding: 0 10%;
+}
+.test-card .test-stars i{
+  padding: 0 0 0 5px;
+}
