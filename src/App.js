@@ -16,6 +16,7 @@ import Brands from "./Components/Brands";
 import SliderGallery from "./Components/SliderGallery";
 import SliderGalleryReverse from "./Components/SliderGalleryReverse";
 import Testimonial from "./Components/Testimonial";
+import Testimonial2 from "./Components/Testimonial2";
 import Design from "./Components/design";
 // import Dashboard from "./Components/Dashboard";
 import NewDash from "./Components/NewDash";
@@ -77,7 +78,8 @@ const App = () => {
             <ThreeSixty />
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
-            <Testimonial />
+          <Testimonial2 />
+            {/* <Testimonial /> */}
             <Quote />
             <Footer />
           </Route>
@@ -107,6 +109,7 @@ const App = () => {
             <MidHeading />
             <Icon />
             <ThreeSixty />
+            <Testimonial2 />
           </Route>
         </Switch>
         <Audio />
