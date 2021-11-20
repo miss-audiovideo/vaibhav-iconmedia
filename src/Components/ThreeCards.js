@@ -14,7 +14,7 @@ const ThreeCards = (props) => {
             overflow: "hidden",
           }}
           videoSrc={props.src.second}
-          className="card_img img_two"
+          className="card_img img_two animate__animated animate__fadeInDown animate__delay-2s"
           restartOnPaused
           muted={false}
           pausedOverlay={

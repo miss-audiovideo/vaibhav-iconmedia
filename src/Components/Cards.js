@@ -7,6 +7,7 @@ const Cards = (props) => {
     <>
       <div className={props.class}>
         <HoverVideoPlayer
+          data-aos="fade-up"
           style={{
             objectFit: "cover",
             borderRadius: "10px !imporatnt",
@@ -19,6 +20,7 @@ const Cards = (props) => {
           muted={false}
           pausedOverlay={
             <img
+              className="animate__animated animate__backInUp animate__delay-2s"
               src={props.src.first}
               alt=""
               style={{
