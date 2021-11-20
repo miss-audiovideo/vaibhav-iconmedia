@@ -25,6 +25,7 @@ import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Icon from "./Components/Icon";
+import ThreeSixty from "./Components/360";
 import "animate.css";
 // import Imageslider from "./Components/ImageSlider";
 import Audio from "./Components/Audio";
@@ -73,6 +74,7 @@ const App = () => {
             <NewDash />
             <DesignTwo />
             <Icon />
+            <ThreeSixty />
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
             <Testimonial />
@@ -104,6 +106,7 @@ const App = () => {
             <Heading />
             <MidHeading />
             <Icon />
+            <ThreeSixty />
           </Route>
         </Switch>
         <Audio />
