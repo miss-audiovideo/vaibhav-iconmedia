@@ -1297,13 +1297,23 @@ select.form-field {
   box-shadow: 0px 0px 10px #00000050, 0px 0px 20px #00000050;;  
   height: auto;
 }
-.pause-btn{
+.three-sixty-overlay{
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 65%;
+  height: 75%;
+}
+.three-sixty-section .three-sixty-overlay:hover{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .btn-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -1312,8 +1322,4 @@ select.form-field {
   background-color: #2b0505;
   font-size: 2.5vw;
   box-shadow: 0 0 5px #ffffff20, 0 0 10px #ffffff20;
-}
-.btn-icon2{
-  color: #999;
-  font-size: 2.5vw;
 }
