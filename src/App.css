@@ -1311,15 +1311,40 @@ select.form-field {
 }
 .btn-icon{
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  color: #fff;
+  color: #ffe462;
   border: none;
   background-color: #2b0505;
   font-size: 2.5vw;
   box-shadow: 0 0 5px #ffffff20, 0 0 10px #ffffff20;
+}
+.btn-icon:hover{
+  background-color:#ffe462;
+  color: #2b0505;
+}
+.btn-name{
+  padding: 11px;
+}
+.popup-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: futuramedium;
+  color: #fff;
+  text-shadow: 0 0 5px #00000050, 0 0 10px #00000050;
+}
+.popup-text p{
+  padding: 0 15%;
+}
+.three-sixty-popup{
+  display: none;
 }
