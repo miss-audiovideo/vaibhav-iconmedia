@@ -13,7 +13,6 @@ const AudioP = () => {
     );
 
     const togglePlay = () => {
-
         if (btn === "fa-pause") {
             setBtn("fa-play");
             setState(false);
