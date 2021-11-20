@@ -87,7 +87,7 @@ const MainCard = () => {
           // data-aos="fade-left"
           // data-aos-easing="ease-in-out"
           src={fCard.first}
-          className="animate__animated animate__bounce animate__delay-2s"
+          // className="animate__animated animate__bounce animate__delay-2s"
           class=" d-flex flex-column first_card small-screen col-2 mx-auto"
         />
         <Cards

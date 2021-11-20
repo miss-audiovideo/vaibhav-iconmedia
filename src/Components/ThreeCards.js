@@ -14,7 +14,7 @@ const ThreeCards = (props) => {
             overflow: "hidden",
           }}
           videoSrc={props.src.second}
-          className="card_img img_two animate__animated animate__fadeInDown animate__delay-5s"
+          className="card_img img_two animate__animated animate__fadeInUp animate__delay-5s animate__slower"
           restartOnPaused
           muted={false}
           pausedOverlay={
@@ -40,7 +40,7 @@ const ThreeCards = (props) => {
             overflow: "hidden",
           }}
           videoSrc={props.src.fourth}
-          className="card_img img_two"
+          className="card_img img_two  animate__animated animate__fadeInDown animate__delay-5s animate__slower"
           restartOnPaused
           muted={false}
           pausedOverlay={

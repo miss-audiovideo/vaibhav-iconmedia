@@ -29,7 +29,7 @@ const Heading = () => {
           padding: 0 10% 10%;
           height: 30vw;
           position: relative;
-          margin-top: 15%;
+          // margin-top: 15%;
         }
         .robo {
           position: absolute;
