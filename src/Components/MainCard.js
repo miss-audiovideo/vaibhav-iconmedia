@@ -118,7 +118,7 @@ const MainCard = () => {
       <style jsx>
         {`
           #cards {
-            margin-top: 35%;
+            margin-top: 10%;
           }
         `}
       </style>
