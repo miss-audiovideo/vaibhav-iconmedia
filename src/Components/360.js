@@ -25,7 +25,6 @@ const ThreeSixty = () => {
                 <div className={show}>
                     <div className="three-sixty-popup-text">
                         <div className="three-sixty-popup-text-inner">
-                            <h1>360°</h1>
                             <p>
                                 360° is a 360° video that shows you the 360° view of the building.
                             </p>
