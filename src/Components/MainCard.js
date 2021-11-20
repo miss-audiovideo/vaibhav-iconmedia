@@ -79,8 +79,8 @@ const MainCard = () => {
     <>
       <div
         id="cards"
-        data-aos="fade-up"
-        data-aos-easing="ease-in-out"
+        // data-aos="fade-up"
+        // data-aos-easing="ease-in-out"
         class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2 "
       >
         <ThreeCards

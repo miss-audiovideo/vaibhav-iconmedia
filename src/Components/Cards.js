@@ -20,7 +20,7 @@ const Cards = (props) => {
           muted={false}
           pausedOverlay={
             <img
-              className="animate__animated animate__backInUp animate__delay-2s"
+              // className="animate__animated animate__backInUp animate__delay-2s"
               src={props.src.first}
               alt=""
               style={{

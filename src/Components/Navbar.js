@@ -8,7 +8,7 @@ const Navbar = () => {
       <Router>
         <nav
           // style={{ backgroundColor: "#2b0405" }}
-          className="navbar navbar-expand-lg navbar-dark fixed-top"
+          className="navbar navbar-expand-lg navbar-dark "
         >
           <div className="container nav-pad">
             <Link to="/" className="navbar-brand">
