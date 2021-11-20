@@ -116,7 +116,9 @@ const Quote = () => {
         className="quote animate__animated animate__bounce animate__delay-3s"
       >
         <h1 className="animate__animated animate__zoomIn animate__infinite animate__slower">
-          <span style={{ color: "white" }}>Let's create a measurable</span>
+          <span style={{ color: "#FFC857", fontSize: "60px" }}>
+            Let's create a measurable
+          </span>
           <br />
           impact on your business.
         </h1>
@@ -418,8 +420,9 @@ const Quote = () => {
           border-radius: 50%;
         }
         .quote h1 {
-          color: #ffe462;
+          color: white;
           text-align: center;
+          // font-size: 40px;
           font-family: futuramedium;
         }
         .quote {

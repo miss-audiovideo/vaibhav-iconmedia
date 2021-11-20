@@ -44,7 +44,7 @@ const Heading = () => {
         }
         .luxury {
           padding: 0 10vw 0 0;
-          font-size: 8vw;
+          font-size: 12vw;
           font-family: "cinzeldecorativebold";
           text-shadow: 0px 0px 13px #eaeaf025;
           color: #eaeaf0 !important;
@@ -57,7 +57,7 @@ const Heading = () => {
         .design {
           position: absolute;
           margin: -6vw 0vw 0vw 29vw;
-          font-size: 8vw;
+          font-size: 10vw;
           font-family: "cinzelbold";
           text-shadow: 0px 0px 13px #ffc85725;
           color: #ffc857 !important;

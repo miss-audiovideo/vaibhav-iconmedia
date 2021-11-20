@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import robo from "./images/robo-2.gif";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./MidHeading.css";
 
 const MidHeading = () => {
   useEffect(() => {
@@ -15,11 +16,17 @@ const MidHeading = () => {
     <>
       <div data-aos="fade-up" className="robo-set-2">
         <div className="mid-heading-text">
-          <div data-aos="fade-left">Designs that make a difference</div>
+          <div data-aos="fade-left">
+            Designs that{" "}
+            <span className="midHeading-text">make a difference</span>
+          </div>
         </div>
         <img src={robo} alt="robo" className="robo2" />
       </div>
       <style jsx>{`
+        .mid-heading-text span {
+          color: white;
+        }
         .robo-set-2 {
           margin-top: 35%;
           margin-bottom: 35%;
@@ -27,9 +34,10 @@ const MidHeading = () => {
           height: 40vw;
           position: relative;
         }
-        .mid-heading-text {
-          border-radius: 10px;
-          border: 3px solid #fff;
+        .midHeading-text {
+          color: pink;
+          animation: animated-text 4s steps(29, end) 1s 1 normal both,
+            animated-cursor 600ms steps(29, end) infinite;
         }
 
         .mid-heading-text div {
@@ -45,6 +53,25 @@ const MidHeading = () => {
           right: 10vw;
           width: auto;
           height: 54vw;
+        }
+        @keyframes animated-text {
+          from {
+            width: 0;
+          }
+          to {
+            width: 472px;
+          }
+        }
+
+        /* cursor animations */
+
+        @keyframes animated-cursor {
+          from {
+            border-right-color: rgba(0, 255, 0, 0.75);
+          }
+          to {
+            border-right-color: transparent;
+          }
         }
       `}</style>
     </>
