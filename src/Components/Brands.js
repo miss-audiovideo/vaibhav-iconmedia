@@ -74,15 +74,15 @@ const Brands = () => {
           padding-bottom: 25px;
         }
         .brands {
-          margin-top: 20%;
-          margin-bottom: 20%;
+          margin-top: 10%;
+          // margin-bottom: 10%;
           height: min-content;
           display: flex;
           flex-wrap: wrap;
           -webkit-backdrop-filter: blur(4px) saturate(200%);
           background-color: rgba(114, 114, 114, 0.5);
           border: 1px solid rgba(255, 255, 255, 0.125);
-          padding-bottom: 50px;
+          padding-bottom: 20px;
         }
         .brands-title {
           padding-top: 50px;
@@ -141,7 +141,7 @@ const Brands = () => {
           }
           .brands {
             margin-top: 250px;
-            padding-bottom: 100px;
+            padding-bottom: 60px;
             padding-left: 80px;
           }
           .brands-heading {
