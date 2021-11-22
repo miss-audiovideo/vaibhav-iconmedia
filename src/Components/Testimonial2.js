@@ -33,6 +33,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -46,6 +49,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -59,6 +65,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -72,6 +81,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -85,6 +97,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -98,6 +113,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -111,6 +129,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -124,6 +145,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -137,6 +161,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -150,6 +177,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -163,6 +193,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -176,6 +209,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -189,6 +225,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -202,6 +241,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -215,6 +257,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -228,6 +273,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -241,6 +289,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
             <div className="test-card">
               <p>
@@ -254,6 +305,9 @@ function Testimonial2() {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i></div>
+              <div className="clinet-img">
+                <img src={imgOne} alt="user" />
+              </div>
             </div>
           </div>
         </div>
