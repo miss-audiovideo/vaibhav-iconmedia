@@ -47,7 +47,8 @@ const FAQs = () => {
                 <div className="col-md-12">
                     <div className="faq-content">
                         {faqs.map((faq, i) => {
-                            <FAQ src={faq} index={i} toggleFAQ={toggleFAQ}/>
+                            <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ}/>
+                            console.log(faq);
                         })}
                     </div>
                 </div>
