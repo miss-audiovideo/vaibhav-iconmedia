@@ -27,6 +27,7 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Icon from "./Components/Icon";
 import ThreeSixty from "./Components/360";
+import FAQ from "./Components/FAQ";
 import "animate.css";
 // import Imageslider from "./Components/ImageSlider";
 import Audio from "./Components/Audio";
@@ -78,7 +79,8 @@ const App = () => {
             <ThreeSixty />
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
-            <Testimonial2 />
+          <Testimonial2 />
+          <FAQ />
             {/* <Testimonial /> */}
             <Quote />
             <Footer />
@@ -105,11 +107,7 @@ const App = () => {
             <Contact />
           </Route>
           <Route exact path="/test">
-            <Heading />
-            <MidHeading />
-            <Icon />
-            <ThreeSixty />
-            <Testimonial2 />
+            <FAQ />
           </Route>
         </Switch>
         <Audio />

@@ -1443,3 +1443,77 @@ select.form-field {
   height: 55px;
   border-radius: 50px;
 }
+/* FAQ */
+.faq-title h1{
+  color: #ffc857;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: futuramedium;
+  font-size: 40px;
+}
+.faq-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1vw;
+}
+.faq-content .panel-group{
+  padding: 1% 3%;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-family: futuramedium;
+}
+.faq-content .panel-group .panel-heading{
+  display: flex;
+  color: #ffe462;
+  margin: 1rem 0 ;
+  justify-content: space-between;
+
+}
+.faq-content .panel-group .panel-heading h4{
+  margin-bottom: 0;
+}
+.faq-content .panel-group .panel-heading a{
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.faq-content .panel-group .panel-body{
+  margin: 0;
+  font-family: futurabook;
+  font-size: 1em;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+.faq-content .panel-group .panel-body .panel-body-head{
+  display: flex;
+  text-transform: uppercase;
+}
+.faq-content .panel-group .panel-body .panel-body-head h5{
+  margin-bottom: 0;
+}
+.faq-content .panel-group .panel-body .panel-body-head hr{
+  width: 70%;
+  border-top: 3px solid #999;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  margin: auto;
+}
+.faq-content .panel-group .panel-body p{
+  margin: 1rem 0;
+}
+.faq-content .panel-group .panel-body span{
+  color: #ffe462;
+}
