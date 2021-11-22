@@ -167,8 +167,7 @@ const Contact = () => {
                 id="country"
                 options={options}
                 value={value}
-                onChange={(e) => setValue(e.target.value)}
-                onChange={changeHandler}
+                onChange={(e) => {setValue(e.target.value); changeHandler(); }}
                 size="1"
                 required=""
                 className="form-field"

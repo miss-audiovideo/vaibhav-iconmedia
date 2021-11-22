@@ -9,7 +9,7 @@ const AudioP = () => {
     useEffect(() => {
         isPlaying ? audio.play() : audio.pause();
     },
-        [isPlaying]
+        [isPlaying, audio]
     );
 
     const togglePlay = () => {

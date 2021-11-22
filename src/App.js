@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -15,7 +15,7 @@ import Brands from "./Components/Brands";
 // import Profile from "./Components/Profile";
 import SliderGallery from "./Components/SliderGallery";
 import SliderGalleryReverse from "./Components/SliderGalleryReverse";
-import Testimonial from "./Components/Testimonial";
+// import Testimonial from "./Components/Testimonial";
 import Testimonial2 from "./Components/Testimonial2";
 import Design from "./Components/design";
 // import Dashboard from "./Components/Dashboard";

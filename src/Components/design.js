@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./design.css";
-import robo from "./images/Robo-1.gif";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "./Video/default-image.png";
 
 import HoverVideoPlayer from "react-hover-video-player";
 
