@@ -63,7 +63,7 @@ const App = () => {
             {/* <Profile /> */}
             {/* <HeadingContent class="head-style text-center text-capitalize display-3 w-50 mt-lg-6  mx-auto headingContent gallery"> */}
             <HeadingContent class="head-style text-center text-capitalize display-3 w-50 mt-lg-6  headingContent gallery">
-              Gallery
+              {/* Gallery */}
             </HeadingContent>
             <SliderGallery />
             <SliderGalleryReverse />
@@ -78,7 +78,7 @@ const App = () => {
             <ThreeSixty />
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
-          <Testimonial2 />
+            <Testimonial2 />
             {/* <Testimonial /> */}
             <Quote />
             <Footer />
