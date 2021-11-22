@@ -15,7 +15,7 @@ const Cards = (props) => {
             overflow: "hidden",
           }}
           videoSrc={props.src.second}
-          className="card_img img_two animate__animated animate__backInUp animate__delay-5s animate__slower"
+          className="card_img img_two animate__animated animate__backInUp animate__delay-3s animate__slower"
           restartOnPaused
           muted={false}
           pausedOverlay={

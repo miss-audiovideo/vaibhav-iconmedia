@@ -17,15 +17,43 @@ const MidHeading = () => {
       <div data-aos="fade-up" className="robo-set-2">
         <div className="mid-heading-text">
           <div data-aos="fade-left">
-            Designs that{" "}
-            <span className="midHeading-text">make a difference</span>
+            Designs that <br />
+            {/* <span className="midHeading-text">make a difference</span> */}
+            <label className="tejas" data-text="make a difference.">
+              make a difference.
+            </label>
           </div>
         </div>
         <img src={robo} alt="robo" className="robo2" />
       </div>
       <style jsx>{`
-        .mid-heading-text span {
-          color: white;
+        .tejas {
+          position: absolute;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: transparent;
+        }
+        .tejas:before {
+          content: attr(data-text);
+          position: absolute;
+          color: #fff;
+          overflow: hidden;
+          border-right: 1px solid #000;
+          // animation: type 10s steps(17) infinite;
+          animation: type 10s linear infinite;
+          white-space: nowrap;
+        }
+        @keyframes type {
+          0% {
+            width: 0%;
+          }
+
+          50% {
+            width: 100%;
+          }
+          // 100% {
+          //   width: 0%;
+          // }
         }
         .robo-set-2 {
           margin-top: 35%;
@@ -33,11 +61,6 @@ const MidHeading = () => {
           padding: 10% 10%;
           height: 40vw;
           position: relative;
-        }
-        .midHeading-text {
-          color: pink;
-          animation: animated-text 4s steps(29, end) 1s 1 normal both,
-            animated-cursor 600ms steps(29, end) infinite;
         }
 
         .mid-heading-text div {
@@ -53,25 +76,6 @@ const MidHeading = () => {
           right: 10vw;
           width: auto;
           height: 54vw;
-        }
-        @keyframes animated-text {
-          from {
-            width: 0;
-          }
-          to {
-            width: 472px;
-          }
-        }
-
-        /* cursor animations */
-
-        @keyframes animated-cursor {
-          from {
-            border-right-color: rgba(0, 255, 0, 0.75);
-          }
-          to {
-            border-right-color: transparent;
-          }
         }
       `}</style>
     </>
