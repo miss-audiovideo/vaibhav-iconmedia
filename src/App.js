@@ -27,7 +27,7 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Icon from "./Components/Icon";
 import ThreeSixty from "./Components/360";
-// import FAQ from "./Components/FAQ";
+import FAQ from "./Components/FAQ";
 import "animate.css";
 // import Imageslider from "./Components/ImageSlider";
 import Audio from "./Components/Audio";
@@ -107,7 +107,7 @@ const App = () => {
             <Contact />
           </Route>
           <Route exact path="/test">
-            {/* <FAQ /> */}
+            <FAQ />
           </Route>
         </Switch>
         <Audio />
