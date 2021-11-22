@@ -80,7 +80,7 @@ const App = () => {
             {/* <NewDash2 /> */}
             {/* <Imageslider /> */}
           <Testimonial2 />
-          {/* <FAQ /> */}
+          <FAQ />
             {/* <Testimonial /> */}
             <Quote />
             <Footer />
