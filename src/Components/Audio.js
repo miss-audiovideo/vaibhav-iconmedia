@@ -11,7 +11,6 @@ const AudioP = () => {
     },
         [isPlaying, audio]
     );
-
     const togglePlay = () => {
         if (btn === "fa-pause") {
             setBtn("fa-play");
@@ -21,8 +20,7 @@ const AudioP = () => {
             setState(true);
         }
     }
-
-
+    
     return (
         <>
             <div className="float" type="button" onClick={togglePlay}>

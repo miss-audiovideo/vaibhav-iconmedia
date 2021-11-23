@@ -7,8 +7,6 @@ import emailjs from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// import ModalOne from "../Modals/ModalOne.jsx";
-
 const Quote = () => {
   const [one, setOpen] = useState(false);
   const [two, setTwo] = useState(false);

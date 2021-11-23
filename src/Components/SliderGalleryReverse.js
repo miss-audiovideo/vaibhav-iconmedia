@@ -43,17 +43,7 @@ const SliderGalleryReverse = () => {
       </div>
       <style jsx>
         {`
-          .slide {
-            margin-bottom: 22%;
-          }
-          .slider {
-            background-color: transparent;
-          }
-          .slide2 {
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 20px;
-          }
+          
         `}
       </style>
     </>

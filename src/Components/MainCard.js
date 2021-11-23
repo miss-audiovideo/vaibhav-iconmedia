@@ -72,39 +72,27 @@ const MainCard = () => {
       duration: 3000,
       easing: "ease-in",
       delay: 50,
-      // mirror: true,
     });
   });
   return (
     <>
       <div
         id="cards"
-        // data-aos="fade-up"
-        // data-aos-easing="ease-in-out"
         class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2 "
       >
         <ThreeCards
-          // data-aos="fade-left"
-          // data-aos-easing="ease-in-out"
           src={fCard.first}
-          // className="animate__animated animate__bounce animate__delay-2s"
           class=" d-flex flex-column first_card small-screen col-2 mx-auto"
         />
         <Cards
-          // data-aos="fade-in"
-          // data-aos-easing="ease-in-out"
           src={fCard.second}
           class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
         />
         <Cards
-          // data-aos="fade-up"
-          // data-aos-easing="ease-in-out"
           src={fCard.third}
           class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
         />
         <Cards
-          // data-aos="fade-in"
-          // data-aos-easing="ease-in-out"
           src={fCard.fourth}
           class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
         />
@@ -115,13 +103,6 @@ const MainCard = () => {
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
       </div>
-      <style jsx>
-        {`
-          #cards {
-            margin-top: 10%;
-          }
-        `}
-      </style>
     </>
   );
 };

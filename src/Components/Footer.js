@@ -12,8 +12,6 @@ function Footer() {
   });
   return (
     <>
-      {/* <div className="bg-dark"> */}
-
       <div className=" light text-light">
         <section className="container">
           <div className="contact">
@@ -58,86 +56,6 @@ function Footer() {
           </small>
         </div>
       </div>
-      <style jsx>{`
-        @font-face {
-          font-family: futuramedium;
-          src: url("./fonts/Futura-Medium.ttf");
-        }
-        @font-face {
-          font-family: futurabook;
-          src: url("./fonts/Futura-Book.ttf");
-        }
-        .footer{
-          font-family:futuramedium;
-        }
-        .copy-social-container {
-          background-color: #191919;
-          height: auto;
-        }
-        .copy-social {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          }
-        .text-end {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          flex-wrap: wrap;
-        }
-        .light {
-          height: 300px;
-          background-color: #333333;
-          padding: 50px;
-        }
-        .iconText {
-          font-size: 12px;
-          font-weight: normal;
-          border-left: 1px solid #ffe462;
-          padding-left: 10px;
-        }
-        .textYellow {
-          font-size: 25px;
-          color: #ffe462;
-        }
-        .txsi {
-          font-size: 25px;
-        }
-        .contact {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
-        .contact ul {
-          list-style-type: none;
-          width: 200px;
-        }
-        .contact ul li {
-          margin-bottom: 20px;
-        }
-        .heading {
-          border-bottom: 1px solid #ffe462;
-          color: #ffe462;
-        }
-        @media screen and (max-width: 800px) {
-          .light {
-            height: 500px;
-            padding: 20px 20px 20px 20px;
-          }
-          .contact {
-            display: flex;
-            flex-direction: column;
-          }
-          .quickLinks {
-            margin-top: 50px;
-          }
-          .contact ul {
-            width: 100%;
-            padding: 0;
-          }
-      `}</style>
-      {/* </div> */}
     </>
   );
 }

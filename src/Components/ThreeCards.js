@@ -1,5 +1,4 @@
 import React from "react";
-
 import HoverVideoPlayer from "react-hover-video-player";
 
 const ThreeCards = (props) => {
@@ -21,7 +20,6 @@ const ThreeCards = (props) => {
               src={props.src.first}
               alt=""
               style={{
-                // Make the image expand to cover the video's dimensions
                 height: "100%",
                 width: "100%",
                 objectFit: "cover",
@@ -47,7 +45,6 @@ const ThreeCards = (props) => {
               src={props.src.third}
               alt=""
               style={{
-                // Make the image expand to cover the video's dimensions
                 height: "100%",
                 width: "100%",
                 objectFit: "cover",
@@ -73,7 +70,6 @@ const ThreeCards = (props) => {
               src={props.src.fifth}
               alt=""
               style={{
-                // Make the image expand to cover the video's dimensions
                 height: "100%",
                 width: "100%",
                 objectFit: "cover",

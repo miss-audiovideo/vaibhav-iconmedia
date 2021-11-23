@@ -6,9 +6,7 @@ const Navbar = () => {
   return (
     <>
       <Router>
-        <nav
-          className="navbar navbar-expand-lg navbar-dark "
-        >
+        <nav className="navbar navbar-expand-lg navbar-dark">
           <div className="container nav-pad">
             <Link to="/" className="navbar-brand">
               <img
@@ -64,29 +62,6 @@ const Navbar = () => {
           </div>
         </nav>
       </Router>
-      <style jsx>{`
-        @font-face {
-          font-family: futuramedium;
-          src: url("./fonts/Futura-Medium.ttf");
-        }
-        @font-face {
-          font-family: futurabook;
-          src: url("./fonts/Futura-Book.ttf");
-        }
-        // .menubar {
-        //   position: fixed;
-        // }
-        .nav-text {
-          font-family: futurabook;
-        }
-        .navbar-img {
-          font-size: 16px;
-          // font-weight: bold;
-        }
-        .navbar-button {
-          color: yellow;
-        }
-      `}</style>
     </>
   );
 };

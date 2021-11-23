@@ -26,46 +26,28 @@ const Brands = () => {
       <div data-aos="fade-up" className="brands">
         <div className="brands-heading">
           <h1
-            // style={{
-            //   fontFamily: `futuramedium`,
-            // }}
             data-aos="fade-up"
             className="brands-title"
-            // className=" firstpage brand-line text-center pt-lg-5 pb-lg-5 animate__animated animate__jackInTheBox animate__delay-10s "
           >
             BRANDS WE HAVE WORKED WITH
           </h1>
         </div>
-        {/* <div className="brands"> */}
         <div className="brands-variants">
           <div class="col--5">
             <Brand src={Allstate} class="brand-img first-brand  " />
             <Brand src={Darkbean} class="brand-img second-brand " />
-
             <Brand src={nozzle} class="brand-img ninth-brand  " />
-
             <Brand src={mistyvalley} class="brand-img third-brand " />
-
             <Brand src={remax} class="brand-img fifth-brand " />
             <Brand src={snapfit} class="brand-img sixth-brand" />
             <Brand src={studio97} class="brand-img seventh-brand  " />
             <Brand src={hudsonwatches} class="brand-img tenth-brand " />
-
             <Brand src={subway} class="brand-img eightth-brand" />
-
             <Brand src={pantheraazul} class="brand-img fourth-brand " />
           </div>
         </div>
       </div>
       <style jsx>{`
-        @font-face {
-          font-family: futuramedium;
-          src: url("./fonts/Futura-Medium.ttf");
-        }
-        @font-face {
-          font-family: futurabook;
-          src: url("./fonts/Futura-Book.ttf");
-        }
         .col--5 {
           column-count: 5;
           padding-bottom: 25px;

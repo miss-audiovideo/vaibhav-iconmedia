@@ -1,5 +1,4 @@
 import React from "react";
-
 import HoverVideoPlayer from "react-hover-video-player";
 
 const Cards = (props) => {
@@ -20,7 +19,6 @@ const Cards = (props) => {
           muted={false}
           pausedOverlay={
             <img
-              // className="animate__animated animate__backInUp animate__delay-2s"
               src={props.src.first}
               alt=""
               style={{
@@ -57,12 +55,6 @@ const Cards = (props) => {
           }
         />
       </div>
-      <style jsx>
-        {`
-          // .card_img {
-          // }
-        `}
-      </style>
     </>
   );
 };

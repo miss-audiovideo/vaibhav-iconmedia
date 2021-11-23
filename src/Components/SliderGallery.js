@@ -38,14 +38,7 @@ const SliderGallery = () => {
       </div>
       <style jsx>
         {`
-          .slider {
-            // background-color: transparent;
-          }
-          .slide {
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 20px;
-          }
+          
         `}
       </style>
     </>
