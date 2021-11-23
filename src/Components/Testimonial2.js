@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import imgOne from "../Components/images/userone.png";
-import imgTwo from "../Components/images/usertwo.png";
-import imgThree from "../Components/images/userthree.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import testimonial from "../Components/images/Testimonials BG.png";

@@ -14,7 +14,7 @@ const SliderGalleryReverse = () => {
   return (
     <>
       <div
-        className="slide"
+        className="slider"
         data-aos="fade-up"
         style={{ position: "relative", top: "-60px" }}
       >

@@ -53,11 +53,11 @@ const FirstPage = () => {
         {`
           @font-face {
             font-family: futuramedium;
-            src: url("./fonts/futura\ medium\ bt.ttf");
+            src: url("./fonts/Futura-Medium.ttf");
           }
           @font-face {
             font-family: futurabook;
-            src: url("./fonts/Futura\ Book.ttf");
+            src: url("./fonts/Futura-Book.ttf");
           }
           .firstpage {
             font-family: futuramedium;

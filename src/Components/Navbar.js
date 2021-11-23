@@ -7,7 +7,6 @@ const Navbar = () => {
     <>
       <Router>
         <nav
-          // style={{ backgroundColor: "#2b0405" }}
           className="navbar navbar-expand-lg navbar-dark "
         >
           <div className="container nav-pad">
@@ -68,11 +67,11 @@ const Navbar = () => {
       <style jsx>{`
         @font-face {
           font-family: futuramedium;
-          src: url("./fonts/futura\ medium\ bt.ttf");
+          src: url("./fonts/Futura-Medium.ttf");
         }
         @font-face {
           font-family: futurabook;
-          src: url("./fonts/Futura\ Book.ttf");
+          src: url("./fonts/Futura-Book.ttf");
         }
         // .menubar {
         //   position: fixed;

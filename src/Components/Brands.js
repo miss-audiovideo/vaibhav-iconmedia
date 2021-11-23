@@ -57,25 +57,21 @@ const Brands = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
       <style jsx>{`
         @font-face {
           font-family: futuramedium;
-          src: url("./fonts/futura\ medium\ bt.ttf");
+          src: url("./fonts/Futura-Medium.ttf");
         }
         @font-face {
           font-family: futurabook;
-          src: url("./fonts/Futura\ Book.ttf");
+          src: url("./fonts/Futura-Book.ttf");
         }
         .col--5 {
           column-count: 5;
           padding-bottom: 25px;
         }
         .brands {
-          margin-top: 10%;
-          // margin-bottom: 10%;
+          margin: 15% 0;
           height: min-content;
           display: flex;
           flex-wrap: wrap;

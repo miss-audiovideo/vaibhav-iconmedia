@@ -32,7 +32,7 @@ const FAQ = () => {
         setFaqs(faq.open);
     }
     return (
-    <>
+    <><div className="faq">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
@@ -52,7 +52,7 @@ const FAQ = () => {
                                             {faqs[0].question}
                                         </div>
                                     </h4>
-                                    <a data-toggle="#collapse1" data-id="1" data-parent="#accordion1" onClick={()=>toggleFAQ(faqs[0].id)}>+</a>
+                                    <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1" onClick={()=>toggleFAQ(faqs[0].id)}>+</div>
                                 </div>
                             </div>  
                             <div id="collapse1" className={(faqs[0].open ? "panel-collapse in" : "panel-collapse collapse in")}>
@@ -73,7 +73,7 @@ const FAQ = () => {
                                             {faqs[1].question}
                                         </div>
                                     </h4>
-                                    <a data-toggle="#collapse1" data-id="1" data-parent="#accordion1" onClick={()=>toggleFAQ(faqs[1].id)}>+</a>
+                                    <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1" onClick={()=>toggleFAQ(faqs[1].id)}>+</div>
                                 </div>
                             </div>  
                             <div id="collapse1" className={(faqs[1].open ? "panel-collapse in" : "panel-collapse collapse in")}>
@@ -94,7 +94,7 @@ const FAQ = () => {
                                             {faqs[2].question}
                                         </div>
                                     </h4>
-                                    <a data-toggle="#collapse1" data-id="1" data-parent="#accordion1" onClick={()=>toggleFAQ(faqs[2].id)}>+</a>
+                                    <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1" onClick={()=>toggleFAQ(faqs[2].id)}>+</div>
                                 </div>
                             </div>  
                             <div id="collapse1" className={(faqs[2].open ? "panel-collapse in" : "panel-collapse collapse in")}>
@@ -110,6 +110,7 @@ const FAQ = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </>
     );

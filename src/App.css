@@ -10,15 +10,15 @@
 }
 @font-face {
   font-family: futuramedium;
-  src: url("./fonts/futura\ medium\ bt.ttf");
+  src: url("./fonts/Futura-Medium.ttf");
 }
 @font-face {
   font-family: futurabook;
-  src: url("./fonts/Futura\ Book.ttf");
+  src: url("./fonts/Futura-Book.ttf");
 }
 @font-face {
   font-family: futurameditalic;
-  src: url("./fonts/Futura\ Medium\ Italic\ font.ttf");
+  src: url("./fonts/Futura-Medium-Italic.ttf");
 }
 @font-face {
   font-family: cinzelbold;
@@ -1231,8 +1231,8 @@ select.form-field {
 }
 /* Icon Section */
 .icon-section {
- padding: 5% 10%;
- position: relative;
+  padding: 10% 10%;
+  position: relative;
 }
 .icon-title{
   background-color: #ffe462;
@@ -1244,7 +1244,7 @@ select.form-field {
   border-radius: 8px;
   z-index: 100;
   position: absolute;
-  top: 10%;
+  top: 16.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1352,6 +1352,10 @@ select.form-field {
   display: none;
 }
 /* Testimonial New */
+.testimonials-new{
+  padding: 12% 0;
+  position: relative;
+}
 .testimonials-new h1{
   color: #ffc857;
   display: flex;
@@ -1444,6 +1448,10 @@ select.form-field {
   border-radius: 50px;
 }
 /* FAQ */
+.faq{
+  padding: 5% 15%;
+  position: relative;
+}
 .faq-title h1{
   color: #ffc857;
   display: flex;

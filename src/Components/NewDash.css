@@ -180,19 +180,15 @@
 /* TODO */
 @font-face {
   font-family: futuramedium;
-  src: url("../fonts/futura\ medium\ bt.ttf");
+  src: url("../fonts/Futura-Medium.ttf");
 }
 .dash-container {
   width: 100%;
-  /* max-width: 1000px; */
-  /* margin: 0 auto; */
-  margin: 0;
+  padding: 15% 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: white; */
   flex-direction: column;
-  margin-bottom: 20%;
 }
 .dash-top {
   margin-bottom: -200px;

@@ -56,8 +56,8 @@ const MidHeading = () => {
           // }
         }
         .robo-set-2 {
-          margin-top: 35%;
-          margin-bottom: 35%;
+          margin-top: 10%;
+          margin-bottom: 10%;
           padding: 10% 10%;
           height: 40vw;
           position: relative;
