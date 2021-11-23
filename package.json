@@ -24,6 +24,7 @@
     "react-scripts": "^4.0.3",
     "react-select": "^5.1.0",
     "react-select-country-list": "^2.2.3",
+    "scrollmagic": "^2.0.8",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

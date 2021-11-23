@@ -24,7 +24,7 @@ import FirstPage from "./Components/FirstPage";
 import Contact from "./Components/Contact";
 import Audio from "./Components/Audio";
 // Test
-import ThreeSixty from "./Components/360";
+// import ThreeSixty from "./Components/360";
 // import Profile from "./Components/Profile";
 // import Testimonial from "./Components/Testimonial";
 // import Imageslider from "./Components/ImageSlider";
@@ -65,7 +65,7 @@ const App = () => {
             <Contact />
           </Route>
           <Route exact path="/test">
-            <ThreeSixty />
+            {/* <ThreeSixty /> */}
           </Route>
         </Switch>
         <Footer />
