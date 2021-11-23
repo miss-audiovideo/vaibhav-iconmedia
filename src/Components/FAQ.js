@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 let faqs =[
     {
         id: 1,
@@ -24,6 +27,14 @@ let faqs =[
 ]
 
 const FAQ = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 400,
+            duration: 3000,
+            easing: "ease-in",
+            delay: 200,
+        });
+    });
     const [faq, setFaqs] = useState("");
     const toggleFAQ = (e) => {
         let id = e;
@@ -44,7 +55,7 @@ const FAQ = () => {
             <div className="row">
                 <div className="col-md-12">
                     <div className="faq-content">
-                        <div className="panel-group" id="accordion1">
+                        <div className="panel-group" data-aos="fade-up" id="accordion1">
                             <div className="panel panel-default">
                                 <div className="panel-heading">
                                     <h4 className="panel-title">
@@ -65,7 +76,7 @@ const FAQ = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="panel-group" id="accordion1">
+                        <div className="panel-group" data-aos="fade-up" id="accordion1">
                             <div className="panel panel-default">
                                 <div className="panel-heading">
                                     <h4 className="panel-title">
@@ -86,7 +97,7 @@ const FAQ = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="panel-group" id="accordion1">
+                        <div className="panel-group" data-aos="fade-up" id="accordion1">
                             <div className="panel panel-default">
                                 <div className="panel-heading">
                                     <h4 className="panel-title">

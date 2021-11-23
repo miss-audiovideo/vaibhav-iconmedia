@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import one from "../Components/images/icons/ads.png";
 import two from "../Components/images/icons/app.png";
 import three from "../Components/images/icons/content.png";
@@ -7,14 +7,24 @@ import five from "../Components/images/icons/logo.png";
 import six from "../Components/images/icons/motion.png";
 import seven from "../Components/images/icons/store.png";
 import eight from "../Components/images/icons/web.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Icon = () => {
-  return (
+    useEffect(() => {
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+            easing: "ease-in",
+            delay: 100,
+        });
+    });
+    return (
     <>
-      <div className="icon-section">
-          <div className="icon-title">
-              <h1>The Icon Advantage</h1>
-          </div>
+        <div className="icon-section"  data-aos="fade-up">
+            <div className="icon-title">
+                <h1>The Icon Advantage</h1>
+            </div>
         <div className="iconcard">
             <div className="icon-block">
                 <img src={one} alt="icon-1" />
