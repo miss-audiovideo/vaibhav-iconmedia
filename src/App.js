@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
-import "animate.css";
+import 'animate.css';
 
 import Navbar from "./Components/Navbar";
 import Heading from "./Components/Heading";
@@ -66,6 +66,10 @@ const App = () => {
           </Route>
           <Route exact path="/test">
             {/* <ThreeSixty /> */}
+            <Heading />
+            <MidHeading />
+            <Design />
+            <DesignTwo />
           </Route>
         </Switch>
         <Footer />

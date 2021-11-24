@@ -27,6 +27,7 @@ body {
   width: 100%;
   background-image: url("./Components/images/leaf.gif");
   background-size: 100% auto;
+  background-repeat: round;
   background-attachment: fixed;
 }
 
