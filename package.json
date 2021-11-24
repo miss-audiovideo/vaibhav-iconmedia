@@ -13,6 +13,7 @@
     "dics": "^2.5.4",
     "emailjs-com": "^3.2.0",
     "firebase": "^7.24.0",
+    "gsap": "^3.8.0",
     "mobx-react": "^7.2.1",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
@@ -25,7 +26,7 @@
     "react-scripts": "^4.0.3",
     "react-select": "^5.1.0",
     "react-select-country-list": "^2.2.3",
-    "scrollmagic": "^2.0.8",
+    "react-use": "^17.3.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
