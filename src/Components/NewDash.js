@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 import car from "../Components/images/dhoom.jpg";
 import cartwo from "../Components/images/dhoom machale.jpg";
 import audi from "../Components/images/audi.jpeg";
@@ -11,17 +9,11 @@ import buggati from "../Components/images/buggati.webp";
 const NewDash = () => {
   const [img, setImg] = useState(car);
   
-  useEffect(() => {
-    AOS.init({
-      offset: 400,
-      duration: 2000,
-    });
-  });
 
   return (
     <>
     <br/>
-    <div data-aos="fade-in" className="dash-container fadeIn">
+    <div className="dash-container">
       <div className="dash-top">
         <img className="dash-img" src={img} alt="" />
       </div>
