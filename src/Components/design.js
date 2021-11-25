@@ -17,7 +17,7 @@ const Design = () => {
     gsap.to(element, 1, {
       opacity: 1,
       y: -60,
-      ease: "power4.out",
+      ease: "slow(0.7, 0.7, false)",
       stagger: {
         amount: 0.3
       }
@@ -28,7 +28,7 @@ const Design = () => {
     gsap.to(element, 1, {
       opacity: 0,
       y: -20,
-      ease: "power4.out"
+      ease: "slow(0.7, 0.7, false)",
     });
   };
 

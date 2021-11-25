@@ -19,6 +19,8 @@ const NewDash = () => {
   });
 
   return (
+    <>
+    <br/>
     <div data-aos="fade-in" className="dash-container fadeIn">
       <div className="dash-top">
         <img className="dash-img" src={img} alt="" />
@@ -44,6 +46,7 @@ const NewDash = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

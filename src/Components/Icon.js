@@ -21,6 +21,7 @@ const Icon = () => {
     });
     return (
     <>
+    <br/>
         <div className="icon-section"  data-aos="fade-up">
             <div className="icon-title">
                 <h1>The Icon Advantage</h1>
