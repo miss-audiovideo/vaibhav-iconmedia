@@ -8,7 +8,7 @@ const Design = () => {
   // All the ref to be observed
   const intersection = useIntersection(sectionRef, {
     root: null,
-    rootMargin: "-280px",
+    rootMargin: "0px",
     threshold: 0.2
   });
 
