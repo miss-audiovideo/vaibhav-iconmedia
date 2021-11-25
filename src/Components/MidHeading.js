@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { useIntersection } from "react-use";
 import robo from "./images/robo-2.gif";
+import { useIntersection } from "react-use";
 import gsap from "gsap";
 
 const MidHeading = () => {
@@ -40,16 +40,16 @@ const MidHeading = () => {
   
   return (
     <>
-      <div ref={sectionRef} className="robo-set-2">
+      <div ref={sectionRef} className="fadeIn robo-set-2">
         <div className="mid-heading-text">
-          <div className="fadeIn">
+          <div>
             Designs that <br />
             <label className="mid-heading-span" data-text="make a difference.">
               make a difference.
             </label>
           </div>
         </div>
-        <img src={robo} alt="robo" className="robo2 fadeIn" />
+        <img src={robo} alt="robo" className="robo2" />
       </div>
     </>
   );
