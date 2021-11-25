@@ -1,21 +1,47 @@
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import twelve from "./images/twelve.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
+
 const FirstPage = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 400,
-      duration: 3000,
-      easing: "ease-in",
-      delay: 200,
-    });
+  // Ref for our element
+  const sectionRef = useRef(null);
+  // All the ref to be observed
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "-280px",
+    threshold: 0.2
   });
+
+  // Animation for fading in
+  const fadeIn = element => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -60,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.3
+      }
+    });
+  };
+  // Animation for fading out
+  const fadeOut = element => {
+    gsap.to(element, 1, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out"
+    });
+  };
+
+  // checking to see when the vieport is visible to the user
+  intersection && intersection.intersectionRatio < 0.2
+    ? fadeOut(".fadeIn")
+    : fadeIn(".fadeIn");
+  
   return (
     <>
-      <div
-        data-aos="fade-up"
-        className="container-fluid my-lg-5 py-lg-5 top-mrgn fp"
+      <div ref={sectionRef}
+        className="container-fluid my-lg-5 py-lg-5 top-mrgn fp fadeIn"
       >
         <div className="row mt-lg-5 pt-lg-5">
           <div className="col-md-10 mx-auto">
