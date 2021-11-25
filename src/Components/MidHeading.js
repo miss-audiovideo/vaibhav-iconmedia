@@ -9,7 +9,7 @@ const MidHeading = () => {
   // All the ref to be observed
   const intersection = useIntersection(roboRef, {
     root: null,
-    rootMargin: "-280px",
+    rootMargin: "-20px",
     threshold: 0.2
   });
   const intersection2 = useIntersection(textRef, {

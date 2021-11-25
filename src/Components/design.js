@@ -9,7 +9,7 @@ const Design = () => {
   // All the ref to be observed
   const intersection = useIntersection(roboRef, {
     root: null,
-    rootMargin: "-280px",
+    rootMargin: "0px",
     threshold: 0.2
   });
   const intersection2 = useIntersection(textRef, {
@@ -33,7 +33,7 @@ const Design = () => {
       <div ref={roboRef} className="D-left fadeIn"></div>
       <div ref={textRef} className="D-right fadeIn">
         <h1>great design</h1>
-        <h3>get you noticed.</h3>
+        <h3 >get you noticed.</h3>
         <h1>it's that simple</h1>
       </div>
     </div>
