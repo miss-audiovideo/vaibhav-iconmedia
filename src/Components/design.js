@@ -21,7 +21,7 @@ const Design = () => {
   // Animation for fading in
   const fadeIn = el => {gsap.to(el, .8, {opacity: 1,y: -60,ease: "expo.out",}, 0.2); };
   // Animation for fading out
-  const fadeOut = el => { gsap.to(el, .8, {opacity: 0, y: -40, ease: "expo.out",}, 0.2); };
+  const fadeOut = el => { gsap.to(el, .8, {opacity: 0, x: -20, ease: "expo.out",}, 0.2); };
 
   // checking to see when the vieport is visible to the user
   intersection && intersection2 && intersection2.intersectionRatio && intersection.intersectionRatio < 0.2
@@ -29,9 +29,9 @@ const Design = () => {
     : fadeIn(".fadeIn");
     
   return (
-    <div className="D-container fadeIn">
-      <div ref={roboRef} className="D-left"></div>
-      <div ref={textRef} className="D-right">
+    <div className="D-container">
+      <div ref={roboRef} className="D-left fadeIn"></div>
+      <div ref={textRef} className="D-right fadeIn">
         <h1>great design</h1>
         <h3>get you noticed.</h3>
         <h1>it's that simple</h1>
