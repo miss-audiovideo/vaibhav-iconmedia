@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
-import { useIntersection } from "react-use";
-import gsap from "gsap";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import car from "../Components/images/dhoom.jpg";
 import cartwo from "../Components/images/dhoom machale.jpg";
 import audi from "../Components/images/audi.jpeg";
@@ -11,42 +11,15 @@ import buggati from "../Components/images/buggati.webp";
 const NewDash = () => {
   const [img, setImg] = useState(car);
   
-  // Ref for our element
-  const sectionRef = useRef(null);
-  // All the ref to be observed
-  const intersection = useIntersection(sectionRef, {
-    root: null,
-    rootMargin: "-280px",
-    threshold: 0.2
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+    });
   });
 
-  // Animation for fading in
-  const fadeIn = element => {
-    gsap.to(element, 1, {
-      opacity: 1,
-      y: -60,
-      ease: "power4.out",
-      stagger: {
-        amount: 0.3
-      }
-    });
-  };
-  // Animation for fading out
-  const fadeOut = element => {
-    gsap.to(element, 1, {
-      opacity: 0,
-      y: -20,
-      ease: "power4.out"
-    });
-  };
-
-  // checking to see when the vieport is visible to the user
-  intersection && intersection.intersectionRatio < 0.2
-    ? fadeOut(".fadeIn")
-    : fadeIn(".fadeIn");
-  
   return (
-    <div ref={sectionRef} className="dash-container fadeIn">
+    <div data-aos="fade-in" className="dash-container fadeIn">
       <div className="dash-top">
         <img className="dash-img" src={img} alt="" />
       </div>
