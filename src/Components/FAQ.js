@@ -34,7 +34,8 @@ const FAQ = () => {
         setFaqs(faq.open);
     }
     return (
-    <><div className="faq">
+    <>
+    <div className="faq">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
