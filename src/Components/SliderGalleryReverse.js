@@ -31,11 +31,6 @@ const SliderGalleryReverse = () => {
           </div>
         </div>
       </div>
-      <style jsx>
-        {`
-          
-        `}
-      </style>
     </>
   );
 };
