@@ -23,9 +23,9 @@
   src: url("./fonts/CinzelDecorative-Bold.ttf");
 }
 body {
-  /* background: #2b0505 !important; */
+  background: #2b0505 !important;
   width: 100%;
-  background-image: url("./Components/images/leaf.gif");
+  /* background-image: url("./Components/images/leaf.gif"); */
   background-size: 100% auto;
   background-repeat: round;
   background-attachment: fixed;
@@ -602,7 +602,89 @@ body {
     margin: 5px 10px;
   }
 }
-F
+/* Design Two */
+.designTwo {
+  margin: 10% 0;
+  background-image: url("./Components/images/Robo-1.gif");
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.designTwo-p {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-family: futurameditalic;
+  font-size: 50px;
+}
+.designTwo-h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: #ffc857;
+  font-family: futuramedium;
+  letter-spacing: 3px;
+  z-index: -1;
+}
+@media (min-width: 300px) {
+  .designTwo {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .designTwo-p {
+    padding-left: 50px;
+    font-size: 40px;
+  }
+  .designTwo-h1 {
+    font-size: 90px;
+  }
+}
+@media (min-width: 600px) {
+  .designTwo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .designTwo-p {
+    padding-left: 80px;
+    z-index: -1;
+  }
+  .designTwo-h1 {
+    font-size: 130px;
+  }
+}
+@media (min-width: 768px) {
+  .designTwo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .designTwo-p {
+    padding-left: 190px;
+    z-index: -1;
+  }
+  .designTwo-h1 {
+    /* font-size: 180px; */
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .designTwo-p {
+    padding-left: 29%;
+    z-index: -1;
+  }
+}
+@media (min-width: 1080px) {
+  .designTwo-p {
+    padding-left: 30%;
+  }
+  .designTwo-h1 {
+    font-size: 250px;
+  }
+}
 /* Icon */
 .icon-section {
   padding: 3% 10%;
