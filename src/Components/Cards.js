@@ -1,12 +1,11 @@
-import React from "react";
 import HoverVideoPlayer from "react-hover-video-player";
 
 const Cards = (props) => {
+  
   return (
     <>
       <div className={props.class}>
         <HoverVideoPlayer
-          data-aos="fade-up"
           style={{
             objectFit: "cover",
             borderRadius: "10px !imporatnt",

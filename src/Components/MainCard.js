@@ -69,7 +69,7 @@ const MainCard = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 3000,
+      duration: 500,
       easing: "ease-in",
       delay: 50,
     });
@@ -83,18 +83,22 @@ const MainCard = () => {
         <ThreeCards
           src={fCard.first}
           class=" d-flex flex-column first_card small-screen col-2 mx-auto"
+          aos-data="fade-in"
         />
         <Cards
           src={fCard.second}
           class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
+          aos-data="fade-in"
         />
         <Cards
           src={fCard.third}
           class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
+          aos-data="fade-in"
         />
         <Cards
           src={fCard.fourth}
           class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
+          aos-data="fade-in"
         />
         <ThreeCards
           data-aos="fade-right"
