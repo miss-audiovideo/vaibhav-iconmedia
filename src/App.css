@@ -503,6 +503,7 @@ body {
   width: 100%;
   padding: 10% 0;
   display: flex;
+  padding-bottom: 20%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
