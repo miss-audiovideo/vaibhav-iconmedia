@@ -38,7 +38,7 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Heading />
-            <MainCard data-aos="fade-left" />
+            <MainCard />
             <MidHeading />
             <SliderGallery />
             <SliderGalleryReverse />

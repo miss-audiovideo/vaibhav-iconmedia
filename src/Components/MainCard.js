@@ -79,16 +79,15 @@ const MainCard = () => {
       <div
         id="cards"
         class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2 "
+        data-aos="fade-in"
       >
         <ThreeCards
           src={fCard.first}
           class=" d-flex flex-column first_card small-screen col-2 mx-auto"
-          aos-data="fade-in"
         />
         <Cards
           src={fCard.second}
           class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
-          aos-data="fade-in"
         />
         <Cards
           src={fCard.third}
@@ -98,11 +97,8 @@ const MainCard = () => {
         <Cards
           src={fCard.fourth}
           class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
-          aos-data="fade-in"
         />
         <ThreeCards
-          data-aos="fade-right"
-          data-aos-easing="ease-in-out"
           src={fCard.fifth}
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
