@@ -5,6 +5,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
 import 'animate.css';
 
+
 import Navbar from "./Components/Navbar";
 import Heading from "./Components/Heading";
 import MainCard from "./Components/MainCard";
@@ -17,7 +18,6 @@ import DesignTwo from "./Components/designTwo";
 import Icon from "./Components/Icon";
 import Testimonial from "./Components/Testimonial";
 import Brands from "./Components/Brands";
-import FAQ from "./Components/FAQ";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import FirstPage from "./Components/FirstPage";
@@ -49,7 +49,6 @@ const App = () => {
             <Testimonial />
             <Brands />
             <ThreeSixty />
-            <FAQ />
             <Quote />
           </Route>
           <Route exact path="/about">

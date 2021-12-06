@@ -3,6 +3,7 @@ import Select from "react-select";
 import { db } from "../firebase";
 import countryList from "react-select-country-list";
 import emailjs from "emailjs-com";
+import FAQ from "./FAQ.js";
 import Lottie from "react-lottie";
 import animationData from "../lotties/email.json";
 
@@ -370,6 +371,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <FAQ />
     </>
   );
 };

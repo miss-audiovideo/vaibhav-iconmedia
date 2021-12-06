@@ -97,10 +97,10 @@ body {
 }
 /* MainCard */
 #cards {
-  margin-top: 10%;
+  margin: 10rem 0;
+  height: fit-content;
 }
 .main_card {
-  top: 100px;
 }
 .first_card {
   position: relative;
@@ -913,7 +913,7 @@ body {
 
 /* FAQ */
 .faq{
-  padding: 8% 15%;
+  padding: 15%;
   position: relative;
 }
 .faq-title h1{
