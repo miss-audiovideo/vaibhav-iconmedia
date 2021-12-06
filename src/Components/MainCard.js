@@ -25,8 +25,8 @@ import ninev from "./images/main/9.mp4";
 import tenv from "./images/main/10.mp4";
 import elevenv from "./images/main/11.mp4";
 import twelvev from "./images/main/12.mp4";
-// import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
-import "aos/dist/aos.css";
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 let fCard = {
   first: {
@@ -66,41 +66,36 @@ let fCard = {
 };
 
 const MainCard = () => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     offset: 200,
-  //     duration: 500,
-  //     easing: "ease-in",
-  //     delay: 50,
-  //   });
-  // });
+
   return (
-          <div
-          id="cards"
-          class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap   main_card_flex pb-lg-2 "
-          data-aos="fade-up"
-          >
-            <ThreeCards
-            src={fCard.first}
-            class=" d-flex flex-column first_card small-screen col-2 mx-auto"
-            />
-            <Cards
-            src={fCard.second}
-            class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
-            />
-            <Cards
-            src={fCard.third}
-            class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
-            />
-            <Cards
-            src={fCard.fourth}
-            class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
-            />
-            <ThreeCards
-            src={fCard.fifth}
-            class="d-flex flex-column first_card small-screen col-2 mx-auto"
-            />
+          <ScrollAnimation animateIn="fadeIn"
+          animateOut="fadeOut">
+            <div
+            id="cards"
+            class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap   main_card_flex pb-lg-2 "
+            >
+              <ThreeCards
+              src={fCard.first}
+              class=" d-flex flex-column first_card small-screen col-2 mx-auto"
+              />
+              <Cards
+              src={fCard.second}
+              class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
+              />
+              <Cards
+              src={fCard.third}
+              class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
+              />
+              <Cards
+              src={fCard.fourth}
+              class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
+              />
+              <ThreeCards
+              src={fCard.fifth}
+              class="d-flex flex-column first_card small-screen col-2 mx-auto"
+              />
           </div>
+          </ScrollAnimation>
   );
 };
 
